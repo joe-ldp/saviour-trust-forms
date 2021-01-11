@@ -1,10 +1,5 @@
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\bin\Debug\GSDP.Android.dll
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\bin\Debug\GSDP.Android.pdb
-C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\bin\Debug\com.companyname.gsdp.apk
-C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\bin\Debug\com.companyname.gsdp.aab
-C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\bin\Debug\com.companyname.gsdp-Signed.aab
-C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\bin\Debug\com.companyname.gsdp-Signed.apk
-C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\bin\Debug\com.companyname.gsdp-Signed.apk.idsig
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\bin\Debug\GSDP.dll
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\bin\Debug\GSDP.pdb
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
@@ -31,10 +26,7 @@ C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\GSDP.An
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\GSDP.Android.csproj.CopyComplete
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\GSDP.Android.dll
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\GSDP.Android.pdb
-C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\android\bin\com.companyname.gsdp.apk
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\android\bin\base.zip
-C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\android\bin\com.companyname.gsdp.aab
-C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\android\bin\com.companyname.gsdp.apks
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\res\layout\tabbar.xml
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\res\layout\toolbar.xml
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\res\values\styles.xml
@@ -464,7 +456,6 @@ C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\android
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\android\src\mono\MonoPackageManager_Resources.java
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\android\src\xamarin\essentials\fileProvider.java
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\android\bin\packaged_resources
-C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\android\src\com\companyname\gsdp\R.java
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\android\compressed_assemblies.arm64-v8a.s
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\android\compressed_assemblies.armeabi-v7a.s
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\android\compressed_assemblies.x86.s
@@ -493,3 +484,12 @@ C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\stamp\_
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\bin\Debug\com.saviourtrust.trustforms.apk
+C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\bin\Debug\com.saviourtrust.trustforms.aab
+C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\bin\Debug\com.saviourtrust.trustforms-Signed.aab
+C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\bin\Debug\com.saviourtrust.trustforms-Signed.apk
+C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\bin\Debug\com.saviourtrust.trustforms-Signed.apk.idsig
+C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\android\bin\com.saviourtrust.trustforms.apk
+C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\android\bin\com.saviourtrust.trustforms.aab
+C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\android\bin\com.saviourtrust.trustforms.apks
+C:\Users\joeki\Documents\GitHub\gsdp\GSDP\GSDP\GSDP.Android\obj\Debug\90\android\src\com\saviourtrust\trustforms\R.java
