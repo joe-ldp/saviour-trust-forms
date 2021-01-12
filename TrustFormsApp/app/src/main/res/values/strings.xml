@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">SaviourTrustFormsApp</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_complete">Complete Form</string>
+    <string name="title_view">View Forms</string>
 </resources>
