@@ -2,7 +2,10 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent" android:layout_height="match_parent">
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:layout_above="@+id/lastThing"
+    android:windowSoftInputMode="adjustPan"
+    >
 
     <LinearLayout android:id="@+id/menu_ll"
         android:layout_width="fill_parent"
@@ -115,6 +118,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textLongMessage"
+            android:hint="Kitchen"
             android:importantForAutofill="no" />
 
         <TextView
@@ -129,6 +133,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textLongMessage"
+            android:hint="Living Room"
             android:importantForAutofill="no" />
 
         <TextView
@@ -143,6 +148,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textLongMessage"
+            android:hint="Bathrooms"
             android:importantForAutofill="no" />
 
         <TextView
@@ -234,7 +240,6 @@
             android:importantForAutofill="no"
             android:hint="Fault(s) and location(s)" />
 
-
         <CheckBox
             android:id="@+id/checkBox"
             android:layout_width="match_parent"
@@ -242,15 +247,13 @@
             android:text="Problems with carbon monoxide alarm(s)" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/lastThing"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textLongMessage"
             android:importantForAutofill="no"
             android:hint="Fault(s) and location(s)" />
-
-
 
     </LinearLayout>
 
