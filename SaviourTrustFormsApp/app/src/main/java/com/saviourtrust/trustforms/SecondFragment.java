@@ -66,7 +66,7 @@ public class SecondFragment extends Fragment
 
         CheckBox cbCarbonMonoxideAlarms = view.findViewById(R.id.checkBoxCarbonMonoxideAlarms);
         EditText etCarbonMonoxideAlarms = view.findViewById(R.id.editTextCarbonMonoxideAlarms);
-        cbSmokeAlarms.setOnClickListener(new View.OnClickListener() {
+        cbCarbonMonoxideAlarms.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 doVisibility(cbCarbonMonoxideAlarms.isChecked(), etCarbonMonoxideAlarms);
             }
@@ -74,7 +74,7 @@ public class SecondFragment extends Fragment
 
         CheckBox cbFridgeFreezer = view.findViewById(R.id.checkBoxFridgeFreezer);
         EditText etFridgeFreezer = view.findViewById(R.id.editTextFridgeFreezer);
-        cbSmokeAlarms.setOnClickListener(new View.OnClickListener() {
+        cbFridgeFreezer.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 doVisibility(cbFridgeFreezer.isChecked(), etFridgeFreezer);
             }
@@ -82,7 +82,7 @@ public class SecondFragment extends Fragment
 
         CheckBox cbWasher = view.findViewById(R.id.checkBoxWasher);
         EditText etWasher = view.findViewById(R.id.editTextWasher);
-        cbSmokeAlarms.setOnClickListener(new View.OnClickListener() {
+        cbWasher.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 doVisibility(cbWasher.isChecked(), etWasher);
             }
@@ -90,7 +90,7 @@ public class SecondFragment extends Fragment
 
         CheckBox cbMicrowave = view.findViewById(R.id.checkBoxMicrowave);
         EditText etMicrowave = view.findViewById(R.id.editTextMicrowave);
-        cbSmokeAlarms.setOnClickListener(new View.OnClickListener() {
+        cbMicrowave.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 doVisibility(cbMicrowave.isChecked(), etMicrowave);
             }
@@ -98,7 +98,7 @@ public class SecondFragment extends Fragment
 
         CheckBox cbKettle = view.findViewById(R.id.checkBoxKettle);
         EditText etKettle = view.findViewById(R.id.editTextKettle);
-        cbSmokeAlarms.setOnClickListener(new View.OnClickListener() {
+        cbKettle.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 doVisibility(cbKettle.isChecked(), etKettle);
             }
@@ -106,7 +106,7 @@ public class SecondFragment extends Fragment
 
         CheckBox cbHoover = view.findViewById(R.id.checkBoxHoover);
         EditText etHoover = view.findViewById(R.id.editTextHoover);
-        cbSmokeAlarms.setOnClickListener(new View.OnClickListener() {
+        cbHoover.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 doVisibility(cbHoover.isChecked(), etHoover);
             }
@@ -114,7 +114,7 @@ public class SecondFragment extends Fragment
 
         CheckBox cbFryer = view.findViewById(R.id.checkBoxFryer);
         EditText etFryer = view.findViewById(R.id.editTextFryer);
-        cbSmokeAlarms.setOnClickListener(new View.OnClickListener() {
+        cbFryer.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 doVisibility(cbFryer.isChecked(), etFryer);
             }
@@ -122,7 +122,7 @@ public class SecondFragment extends Fragment
 
         CheckBox cbToaster = view.findViewById(R.id.checkBoxToaster);
         EditText etToaster = view.findViewById(R.id.editTextToaster);
-        cbSmokeAlarms.setOnClickListener(new View.OnClickListener() {
+        cbToaster.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 doVisibility(cbToaster.isChecked(), etToaster);
             }
@@ -139,7 +139,7 @@ public class SecondFragment extends Fragment
         }
         else
         {
-            et.setVisibility(View.INVISIBLE);
+            et.setVisibility(View.GONE);
         }
     }
 }

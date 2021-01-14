@@ -239,7 +239,7 @@
             android:hint="Fault(s) and location(s)"
             android:importantForAutofill="no"
             android:inputType="textLongMessage"
-            android:visibility="visible" />
+            android:visibility="gone" />
 
         <CheckBox
             android:id="@+id/checkBoxCarbonMonoxideAlarms"
@@ -254,7 +254,8 @@
             android:ems="10"
             android:hint="Fault(s) and location(s)"
             android:importantForAutofill="no"
-            android:inputType="textLongMessage" />
+            android:inputType="textLongMessage"
+            android:visibility="gone" />
 
         <CheckBox
             android:id="@+id/checkBoxFridgeFreezer"
