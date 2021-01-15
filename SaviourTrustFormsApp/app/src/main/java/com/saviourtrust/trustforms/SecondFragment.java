@@ -9,6 +9,7 @@ import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -43,7 +44,8 @@ public class SecondFragment extends Fragment
         EditText textDate = (EditText) view.findViewById(R.id.editTextDate);
         EditText textTime = (EditText) view.findViewById(R.id.editTextTime);
 
-        String date_n = new SimpleDateFormat("dd/mm/yyyy", Locale.getDefault()).format(new Date());
+        String date_n = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()).format(new Date());
+        textDate.setText(date_n);
 
         Calendar c = Calendar.getInstance();
         int hr = c.get(Calendar.HOUR_OF_DAY);
@@ -53,7 +55,6 @@ public class SecondFragment extends Fragment
         time_n.append(":");
         time_n.append(mm);
 
-        textDate.setText(date_n);
         textTime.setText(time_n);
 
         CheckBox cbSmokeAlarms = view.findViewById(R.id.checkBoxSmokeAlarms);
@@ -72,59 +73,13 @@ public class SecondFragment extends Fragment
             }
         });
 
-        CheckBox cbFridgeFreezer = view.findViewById(R.id.checkBoxFridgeFreezer);
-        EditText etFridgeFreezer = view.findViewById(R.id.editTextFridgeFreezer);
-        cbFridgeFreezer.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                doVisibility(cbFridgeFreezer.isChecked(), etFridgeFreezer);
-            }
-        });
+        view.findViewById(R.id.btnSubmit).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                NavHostFragment.findNavController(SecondFragment.this)
+                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
 
-        CheckBox cbWasher = view.findViewById(R.id.checkBoxWasher);
-        EditText etWasher = view.findViewById(R.id.editTextWasher);
-        cbWasher.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                doVisibility(cbWasher.isChecked(), etWasher);
-            }
-        });
 
-        CheckBox cbMicrowave = view.findViewById(R.id.checkBoxMicrowave);
-        EditText etMicrowave = view.findViewById(R.id.editTextMicrowave);
-        cbMicrowave.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                doVisibility(cbMicrowave.isChecked(), etMicrowave);
-            }
-        });
-
-        CheckBox cbKettle = view.findViewById(R.id.checkBoxKettle);
-        EditText etKettle = view.findViewById(R.id.editTextKettle);
-        cbKettle.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                doVisibility(cbKettle.isChecked(), etKettle);
-            }
-        });
-
-        CheckBox cbHoover = view.findViewById(R.id.checkBoxHoover);
-        EditText etHoover = view.findViewById(R.id.editTextHoover);
-        cbHoover.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                doVisibility(cbHoover.isChecked(), etHoover);
-            }
-        });
-
-        CheckBox cbFryer = view.findViewById(R.id.checkBoxFryer);
-        EditText etFryer = view.findViewById(R.id.editTextFryer);
-        cbFryer.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                doVisibility(cbFryer.isChecked(), etFryer);
-            }
-        });
-
-        CheckBox cbToaster = view.findViewById(R.id.checkBoxToaster);
-        EditText etToaster = view.findViewById(R.id.editTextToaster);
-        cbToaster.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                doVisibility(cbToaster.isChecked(), etToaster);
             }
         });
 

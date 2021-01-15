@@ -257,119 +257,75 @@
             android:inputType="textLongMessage"
             android:visibility="gone" />
 
-        <CheckBox
-            android:id="@+id/checkBoxFridgeFreezer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Problems with fridge/freezer" />
-
         <EditText
             android:id="@+id/editTextFridgeFreezer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Fault(s) and location(s)"
+            android:hint="Notes on fridge / freezer"
             android:importantForAutofill="no"
-            android:inputType="textLongMessage"
-            android:visibility="gone" />
-
-        <CheckBox
-            android:id="@+id/checkBoxWasher"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Problems with washer" />
+            android:inputType="textLongMessage" />
 
         <EditText
             android:id="@+id/editTextWasher"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Fault(s) and location(s)"
+            android:hint="Notes on washer"
             android:importantForAutofill="no"
-            android:inputType="textLongMessage"
-            android:visibility="gone" />
-
-        <CheckBox
-            android:id="@+id/checkBoxMicrowave"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Problems with microwave" />
+            android:inputType="textLongMessage" />
 
         <EditText
             android:id="@+id/editTextMicrowave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Fault(s) and location(s)"
+            android:hint="Notes on microwave"
             android:importantForAutofill="no"
-            android:inputType="textLongMessage"
-            android:visibility="gone" />
-
-        <CheckBox
-            android:id="@+id/checkBoxKettle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Problems with kettle" />
+            android:inputType="textLongMessage" />
 
         <EditText
             android:id="@+id/editTextKettle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Fault(s) and location(s)"
+            android:hint="Notes on kettle"
             android:importantForAutofill="no"
-            android:inputType="textLongMessage"
-            android:visibility="gone" />
-
-        <CheckBox
-            android:id="@+id/checkBoxHoover"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Problems with hoover" />
+            android:inputType="textLongMessage" />
 
         <EditText
             android:id="@+id/editTextHoover"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Fault(s) and location(s)"
+            android:hint="Notes on hoover"
             android:importantForAutofill="no"
-            android:inputType="textLongMessage"
-            android:visibility="gone" />
-
-        <CheckBox
-            android:id="@+id/checkBoxFryer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Problems with fryer" />
+            android:inputType="textLongMessage" />
 
         <EditText
             android:id="@+id/editTextFryer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Fault(s) and location(s)"
+            android:hint="Notes on fryer"
             android:importantForAutofill="no"
-            android:inputType="textLongMessage"
-            android:visibility="gone" />
-
-        <CheckBox
-            android:id="@+id/checkBoxToaster"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Problems with toaster" />
+            android:inputType="textLongMessage" />
 
         <EditText
             android:id="@+id/editTextToaster"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Fault(s) and location(s)"
+            android:hint="Notes on toaster"
             android:importantForAutofill="no"
-            android:inputType="textLongMessage"
-            android:visibility="gone" />
+            android:inputType="textLongMessage" />
 
-
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Submit Form" />
 
     </LinearLayout>
 
