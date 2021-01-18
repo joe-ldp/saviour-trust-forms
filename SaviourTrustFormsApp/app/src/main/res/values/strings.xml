@@ -2,7 +2,7 @@
     <string name="app_name">Saviour Trust Forms App</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="homepage_label">Homepage</string>
+    <string name="homepage_label">Welcome to The Saviour Trust App</string>
     <string name="weekly_form_label">Weekly Form</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>

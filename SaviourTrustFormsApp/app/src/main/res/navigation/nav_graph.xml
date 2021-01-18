@@ -13,11 +13,25 @@
 
         <action
             android:id="@+id/action_Homepage_to_WeeklyForm"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/WeeklyForm" />
+
+        <action
+            android:id="@+id/action_Homepage_to_InitialAssessment"
+            app:destination="@id/InitialAssessment" />
+
+        <action
+            android:id="@+id/action_Homepage_to_PropertyForm"
+            app:destination="@id/PropertyForm" />
+
+        <action
+            android:id="@+id/action_Homepage_to_ServiceUserForm"
+            app:destination="@id/ServiceUserForm" />
+
+
     </fragment>
 
     <fragment
-        android:id="@+id/SecondFragment"
+        android:id="@+id/WeeklyForm"
         android:name="com.saviourtrust.trustforms.WeeklyForm"
         android:label="@string/weekly_form_label"
         tools:layout="@layout/fragment_weekly_form">
@@ -26,4 +40,39 @@
             android:id="@+id/action_WeeklyForm_to_Homepage"
             app:destination="@id/Homepage" />
     </fragment>
+
+    <fragment
+        android:id="@+id/InitialAssessment"
+        android:name="com.saviourtrust.trustforms.InitialAssessment"
+        android:label="@string/weekly_form_label"
+        tools:layout="@layout/fragment_initial_assessment">
+
+        <action
+            android:id="@+id/action_WeeklyForm_to_Homepage"
+            app:destination="@id/Homepage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/PropertyForm"
+        android:name="com.saviourtrust.trustforms.PropertyForm"
+        android:label="@string/weekly_form_label"
+        tools:layout="@layout/fragment_property_form">
+
+        <action
+            android:id="@+id/action_WeeklyForm_to_Homepage"
+            app:destination="@id/Homepage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ServiceUserForm"
+        android:name="com.saviourtrust.trustforms.ServiceUserForm"
+        android:label="@string/weekly_form_label"
+        tools:layout="@layout/fragment_service_user_form">
+
+        <action
+            android:id="@+id/action_WeeklyForm_to_Homepage"
+            app:destination="@id/Homepage" />
+    </fragment>
+
+
 </navigation>
