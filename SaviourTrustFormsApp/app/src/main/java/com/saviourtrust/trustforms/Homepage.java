@@ -35,7 +35,7 @@ public class Homepage extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(Homepage.this)
-                        .navigate(R.id.action_Homepage_to_WeeklyForm);
+                        .navigate(R.id.action_Homepage_to_InitialAssessment);
             }
         });
 
@@ -43,7 +43,7 @@ public class Homepage extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(Homepage.this)
-                        .navigate(R.id.action_Homepage_to_WeeklyForm);
+                        .navigate(R.id.action_Homepage_to_PropertyForm);
             }
         });
 
@@ -51,7 +51,7 @@ public class Homepage extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(Homepage.this)
-                        .navigate(R.id.action_Homepage_to_WeeklyForm);
+                        .navigate(R.id.action_Homepage_to_ServiceUserForm);
             }
         });
     }
