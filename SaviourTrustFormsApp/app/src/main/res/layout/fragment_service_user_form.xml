@@ -1,14 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ServiceUserForm">
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:windowSoftInputMode="adjustPan"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <LinearLayout
+        android:id="@+id/menu_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
 
-</FrameLayout>
+        tools:ignore="HardcodedText">
+
+        <EditText
+            android:id="@+id/editTextApplicantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Applicant's Name"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/editTextPhoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Telephone Number"
+            android:inputType="phone"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/lblAltContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alternative Contact Information" />
+
+        <LinearLayout
+            android:id="@+id/horizontalLayoutAltContact"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextAlternativeContactName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:importantForAutofill="no"/>
+
+            <EditText
+                android:id="@+id/editTextAlternativeContactPhone"
+                android:layout_width="226dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:importantForAutofill="no"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblNIInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="National Insurance Information" />
+
+        <LinearLayout
+            android:id="@+id/horizontalLayoutNIField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkboxNIProof"
+                android:layout_width="18dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Proof of N.I No" />
+
+            <EditText
+                android:id="@+id/editTextNINo"
+                android:layout_width="78dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="N.I No"
+                android:importantForAutofill="no"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/HorizontalLayoutID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkboxID"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="I.D Produced" />
+
+            <EditText
+                android:id="@+id/editTextID"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:importantForAutofill="no"
+                android:hint="ID Details"/>
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/DropdownCountries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/DOBField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="Date Of Birth"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/AgeField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Age"
+            android:importantForAutofill="no" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/GenderMaleCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Male" />
+
+            <CheckBox
+                android:id="@+id/GenderFemaleCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Female" />
+
+            <CheckBox
+                android:id="@+id/GenderTransCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Transgender" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Submit Form" />
+
+    </LinearLayout>
+
+</ScrollView>
