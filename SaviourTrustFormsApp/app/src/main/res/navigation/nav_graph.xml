@@ -72,7 +72,15 @@
         <action
             android:id="@+id/action_WeeklyForm_to_Homepage"
             app:destination="@id/Homepage" />
+        <action
+            android:id="@+id/action_ServiceUserForm_to_fragment_service_user_form_2"
+            app:destination="@id/fragment_service_user_form_2" />
     </fragment>
+    <fragment
+        android:id="@+id/fragment_service_user_form_2"
+        android:name="com.saviourtrust.trustforms.fragment_service_user_form_2"
+        android:label="fragment_service_user_form_2"
+        tools:layout="@layout/fragment_service_user_form_2" />
 
 
 </navigation>

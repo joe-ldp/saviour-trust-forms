@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:windowSoftInputMode="adjustPan"
+    tools:context=".fragment_service_user_form_3">
+
+    <LinearLayout
+        android:id="@+id/menu_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        tools:ignore="HardcodedText">
+
+        <TextView
+            android:id="@+id/AboutYouLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="About You"
+            android:textSize="24sp"/>
+
+
+        <EditText
+            android:id="@+id/FamilySituationField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint = "Family Situation:"/>
+
+
+        <Switch
+            android:id="@+id/SubstanceMisuseSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Substance misuse?" />
+
+        <Switch
+            android:id="@+id/IllicitSubstancesSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Illicit substances?" />
+
+        <EditText
+            android:id="@+id/SubstanceDetailsField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint = "Details:"/>
+
+        <Switch
+            android:id="@+id/WorkingWithAgencySwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Working with agency?" />
+
+        <EditText
+            android:id="@+id/WWADetailsField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint = "Details:"/>
+
+        <EditText
+            android:id="@+id/ContactNameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Contact's Name:"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/ContactNumberField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Contact's Phone Number:"
+            android:inputType="phone"
+            android:importantForAutofill="no" />
+
+        <Switch
+            android:id="@+id/CriminalRecordSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Criminal Record?" />
+
+        <EditText
+            android:id="@+id/CRDetailsField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint = "Details:"/>
+
+        <Switch
+            android:id="@+id/ProbationSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Probation?" />
+
+        <Switch
+            android:id="@+id/MappaSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mappa?" />
+
+        <EditText
+            android:id="@+id/ProbationDetailsField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint = "Details:"/>
+
+        <EditText
+            android:id="@+id/ProbationOfficerNameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Probation officer's Name:"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/AreaField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <!--TODO: uncheck other boxes when one has been clicked -->
+            <CheckBox
+                android:id="@+id/HighRiskCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="High Risk" />
+
+            <CheckBox
+                android:id="@+id/MediumRiskCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Medium Risk" />
+
+            <CheckBox
+                android:id="@+id/LowRiskCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Low Risk" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

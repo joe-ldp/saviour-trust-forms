@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:windowSoftInputMode="adjustPan"
+    tools:context=".fragment_service_user_form_4">
+
+    <LinearLayout
+        android:id="@+id/menu_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        tools:ignore="HardcodedText">
+
+        <Switch
+            android:id="@+id/SexOffenderSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you on the sex offenders register?" />
+
+        <EditText
+            android:id="@+id/SOField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint = "Details:"/>
+
+        <Switch
+            android:id="@+id/ArsonSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Do you have any convictions for Arson?" />
+
+        <EditText
+            android:id="@+id/ArsonDetailsField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint = "Details:"/>
+
+        <Switch
+            android:id="@+id/LegalMattersSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Legal matters pending?" />
+
+        <EditText
+            android:id="@+id/LegalMattersField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint = "Details:"/>
+
+        <Switch
+            android:id="@+id/DisabilitySwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Do you consider yourself to have disability?" />
+
+        <EditText
+            android:id="@+id/DisabilityField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint = "Details:"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/GPSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registered with GP?" />
+
+        <EditText
+            android:id="@+id/GPDetailsField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint = "GP Details:"/>
+
+        <Switch
+            android:id="@+id/MedicalConditionSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mappa?" />
+
+        <EditText
+            android:id="@+id/MedicalConditionDetailsField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint = "Details:"/>
+
+        <Switch
+            android:id="@+id/MentalHealthIssuesSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mental health issues?" />
+
+        <EditText
+            android:id="@+id/MHIDetailsField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint = "Details:"/>
+        <Switch
+            android:id="@+id/RegisteredWithAgencySwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registered with agency?" />
+
+        <EditText
+            android:id="@+id/RWADetailsField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint = "Contact Details:"/>
+
+        <Switch
+            android:id="@+id/DomesticAbuseSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you experiencing domestic abuse?" />
+
+        <EditText
+            android:id="@+id/DADetailsField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint = "Details:"/>
+
+        <Switch
+            android:id="@+id/SupportSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are there any other areas that you would like support with??" />
+
+        <EditText
+            android:id="@+id/SupportDetailsField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint = "Details:"/>
+
+        <CheckBox
+            android:id="@+id/PermanentAccommodationCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Permanent Checkbox" />
+
+        <CheckBox
+            android:id="@+id/MentalHealthCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mental Health" />
+
+        <CheckBox
+            android:id="@+id/EmploymentCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Employment" />
+
+        <CheckBox
+            android:id="@+id/BudgetCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Budget" />
+
+        <CheckBox
+            android:id="@+id/OtherCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Other" />
+
+    </LinearLayout>
+</ScrollView>

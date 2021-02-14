@@ -128,6 +128,18 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="fragment_service_user_form_2">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-385" />
+                            <option name="y" value="290" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                 </map>
               </option>
             </LayoutPositions>

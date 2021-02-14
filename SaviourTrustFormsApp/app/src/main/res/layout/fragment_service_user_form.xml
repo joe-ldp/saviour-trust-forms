@@ -13,11 +13,10 @@
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="5dp"
         android:orientation="vertical"
-
         tools:ignore="HardcodedText">
 
         <EditText
-            android:id="@+id/editTextApplicantName"
+            android:id="@+id/NameField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -26,7 +25,7 @@
             android:importantForAutofill="no" />
 
         <EditText
-            android:id="@+id/editTextAddress"
+            android:id="@+id/AddressField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -35,7 +34,7 @@
             android:importantForAutofill="no" />
 
         <EditText
-            android:id="@+id/editTextPhoneNo"
+            android:id="@+id/PhoneNoField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -44,10 +43,11 @@
             android:importantForAutofill="no" />
 
         <TextView
-            android:id="@+id/lblAltContact"
+            android:id="@+id/AltContactLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Alternative Contact Information" />
+            android:text="Alternative Contact Information"
+            android:textSize="24sp"/>
 
         <LinearLayout
             android:id="@+id/horizontalLayoutAltContact"
@@ -56,84 +56,105 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/editTextAlternativeContactName"
+                android:id="@+id/AltContactName"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:baselineAligned="false"
                 android:ems="10"
                 android:hint="Name"
-                android:inputType="textPersonName"
-                android:importantForAutofill="no"/>
+                android:importantForAutofill="no"
+                android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editTextAlternativeContactPhone"
-                android:layout_width="226dp"
+                android:id="@+id/AltContactPhoneNo"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:ems="10"
                 android:hint="Phone Number"
-                android:inputType="phone"
-                android:importantForAutofill="no"/>
+                android:importantForAutofill="no"
+                android:inputType="phone" />
         </LinearLayout>
 
         <TextView
-            android:id="@+id/lblNIInfo"
+            android:id="@+id/NINLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="National Insurance Information" />
 
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/ProofOfNINCheckbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Proof of N.I No" />
+            </TableRow>
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/NINField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="N.I No"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/IDProducedCheckbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="I.D Produced" />
+
+            </TableRow>
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/IDDetailsField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="ID Details"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+            </TableRow>
+
+        </TableLayout>
         <LinearLayout
-            android:id="@+id/horizontalLayoutNIField"
+            android:id="@+id/HorizontalLayoutNIN2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <CheckBox
-                android:id="@+id/checkboxNIProof"
-                android:layout_width="18dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Proof of N.I No" />
-
-            <EditText
-                android:id="@+id/editTextNINo"
-                android:layout_width="78dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="number"
-                android:hint="N.I No"
-                android:importantForAutofill="no"/>
 
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/HorizontalLayoutID"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <CheckBox
-                android:id="@+id/checkboxID"
-                android:layout_width="94dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="I.D Produced" />
-
-            <EditText
-                android:id="@+id/editTextID"
-                android:layout_width="260dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="number"
-                android:importantForAutofill="no"
-                android:hint="ID Details"/>
-        </LinearLayout>
-
+        <!--TODO: DOESN'T WORK-->
         <Spinner
             android:id="@+id/DropdownCountries"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:visibility="visible" />
 
         <EditText
             android:id="@+id/DOBField"
@@ -157,7 +178,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
-
+        <!--TODO: uncheck other boxes when one has been clicked -->
             <CheckBox
                 android:id="@+id/GenderMaleCheckbox"
                 android:layout_width="wrap_content"
@@ -180,6 +201,48 @@
                 android:text="Transgender" />
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/NOKLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next of Kin's Details" />
+
+        <EditText
+            android:id="@+id/NOKNameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/NOKAddressField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/NOKPhoneNoField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Telephone Number"
+            android:inputType="phone"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/NOKPostcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPostalAddress"
+            android:text="Postcode" />
+
+
         <Button
             android:id="@+id/btnSubmit"
             android:layout_width="match_parent"
@@ -187,6 +250,20 @@
             android:layout_marginBottom="10dp"
             android:text="Submit Form" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/NextPageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Next Page >" />
+
+
+        </LinearLayout>
     </LinearLayout>
 
 </ScrollView>
