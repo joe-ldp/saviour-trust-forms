@@ -65,7 +65,7 @@ public class InitialAssessment2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_initial_asessment2, container, false);
+        return inflater.inflate(R.layout.fragment_initial_assessment2, container, false);
     }
 
     @Override
@@ -77,7 +77,7 @@ public class InitialAssessment2 extends Fragment {
             public void onClick(View view) {
 
                 NavHostFragment.findNavController(InitialAssessment2.this)
-                        .navigate(R.id.action_ServiceUserForm2_to_ServiceUserForm3);
+                        .navigate(R.id.action_initialAssessment2_to_initialAssessment3);
 
             }
         });
