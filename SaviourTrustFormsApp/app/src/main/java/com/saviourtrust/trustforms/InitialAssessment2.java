@@ -78,7 +78,6 @@ public class InitialAssessment2 extends Fragment {
 
                 NavHostFragment.findNavController(InitialAssessment2.this)
                         .navigate(R.id.action_initialAssessment2_to_initialAssessment3);
-
             }
         });
 
@@ -91,19 +90,19 @@ public class InitialAssessment2 extends Fragment {
 
         rentCheckbox.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                //doVisibility(rentCheckbox.isChecked(), rentField);
+                Utilities.doVisibility(rentCheckbox.isChecked(), rentField);
             }
         });
 
         injunctionCheckbox.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                //doVisibility(injunctionCheckbox.isChecked(), injunctionField);
+                Utilities.doVisibility(injunctionCheckbox.isChecked(), injunctionField);
             }
         });
 
         concernCheckbox.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                //doVisibility(concernCheckbox.isChecked(), concernField);
+                Utilities.doVisibility(concernCheckbox.isChecked(), concernField);
             }
         });
     }

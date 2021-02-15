@@ -21,6 +21,9 @@
         <action
             android:id="@+id/action_Homepage_to_initialAssessment"
             app:destination="@id/initialAssessment" />
+        <action
+            android:id="@+id/action_Homepage_to_serviceUserForm"
+            app:destination="@id/serviceUserForm" />
 
     </fragment>
 
@@ -88,5 +91,9 @@
             android:id="@+id/action_initialAssessment5_to_Homepage"
             app:destination="@id/Homepage" />
     </fragment>
+    <fragment
+        android:id="@+id/serviceUserForm"
+        android:name="com.saviourtrust.trustforms.ServiceUserForm"
+        android:label="ServiceUserForm" />
 
 </navigation>
