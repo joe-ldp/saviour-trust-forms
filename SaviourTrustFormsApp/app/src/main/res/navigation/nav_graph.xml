@@ -27,9 +27,6 @@
             android:id="@+id/action_Homepage_to_ServiceUserForm"
             app:destination="@id/ServiceUserForm" />
 
-        <action
-            android:id="@+id/action_Homepage_to_ServiceUserForm2"
-            app:destination="@id/ServiceUserForm2" />
     </fragment>
 
     <fragment
