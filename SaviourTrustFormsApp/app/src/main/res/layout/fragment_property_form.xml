@@ -1,14 +1,216 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PropertyForm">
+    android:orientation="vertical"
+    android:fillViewport="true">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="AUTOFILL_HINT_ADDRESS"
+            android:inputType="textPostalAddress" />
+
+        <EditText
+            android:id="@+id/editTextPostcode"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/postcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="AUTOFILL_HINT_POSTCODE"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextOwner"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/owner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="AUTOFILL_HINT_NAME"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="AUTOFILL_HINT_PHONE_NUMBER"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/editTextRentPaid"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/rent_paid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Amount of rent paid"
+            android:inputType="textNoSuggestions" />
+
+        <EditText
+            android:id="@+id/editTextRoomRate"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/room_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Cost of room"
+            android:inputType="textNoSuggestions" />
+
+        <LinearLayout
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/cbSpareRoom"
+                android:text="@string/spare_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:id="@+id/cbSrVoid"
+                android:text="@string/sr_void"
+                android:layout_marginLeft="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/date_property"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/editTextRoom"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/rooms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="textLongMessage" />
+
+        <EditText
+            android:id="@+id/editTextVoids"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/voids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="textLongMessage" />
+
+        <EditText
+            android:id="@+id/editTextGasExp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/gas_cert_expiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextElectExp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/elec_cert_expiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/editTextGasSerialNo"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/gas_serial_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextElectSerialNo"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/elec_serial_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextGasProvider"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/gas_provider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextElecProvider"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/electric_provider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextGasMeter"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/gas_meter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextElecMeter"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="@string/elec_meter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:text="@string/submit_form"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginVertical="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>
