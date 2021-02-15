@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="@string/e_g_john_doe"
+            android:hint="@string/name_example"
             android:autofillHints="AUTOFILL_HINT_NAME" />
 
         <TextView
@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="date"
-            android:hint="@string/e_g_13_01_2021"
+            android:hint="@string/date_example"
             android:autofillHints="AUTOFILL_HINT_DATE" />
 
         <TextView
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="time"
-            android:hint="@string/e_g_13_38"
+            android:hint="@string/time_example"
             android:autofillHints="AUTOFILL_HINT_TIME" />
 
         <TextView
@@ -72,7 +72,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPostalAddress"
-            android:hint="@string/e_g_10_downing_street"
+            android:hint="@string/address_example"
             android:autofillHints="AUTOFILL_HINT_ADDRESS" />
 
         <TextView
