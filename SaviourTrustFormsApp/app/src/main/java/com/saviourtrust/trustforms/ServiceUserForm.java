@@ -82,13 +82,12 @@ public class ServiceUserForm extends Fragment {
         view.findViewById(R.id.btnNextPage).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(ServiceUserForm.this)
-                        .navigate(R.id.action_ServiceUserForm_to_ServiceUserForm2);
+                NavHostFragment.findNavController(ServiceUserForm.this).navigate(R.id.action_ServiceUserForm_to_ServiceUserForm2);
             }
         });
 
         CheckBox maleCB = view.findViewById(R.id.GenderMaleCheckbox);
-        CheckBox femaleCB= view.findViewById(R.id.GenderFemaleCheckbox);
+        CheckBox femaleCB = view.findViewById(R.id.GenderFemaleCheckbox);
         CheckBox transCB = view.findViewById(R.id.GenderTransCheckbox);
 
         maleCB.setOnClickListener(new View.OnClickListener(){
@@ -129,13 +128,13 @@ public class ServiceUserForm extends Fragment {
 
         NINCheckbox.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                doVisibility(NINCheckbox.isChecked(), NINField);
+                Utilities.doVisibility(NINCheckbox.isChecked(), NINField);
             }
         });
 
         IDCheckbox.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                doVisibility(IDCheckbox.isChecked(), IDField);
+                Utilities.doVisibility(IDCheckbox.isChecked(), IDField);
             }
         });
 
@@ -215,17 +214,5 @@ public class ServiceUserForm extends Fragment {
                 doVisibility(agencySwitch.isChecked(), WWAContactNumber);
             }
         });*/
-    }
-
-    public void doVisibility(boolean checked, EditText et)
-    {
-        if (checked)
-        {
-            et.setVisibility(View.VISIBLE);
-        }
-        else
-        {
-            et.setVisibility(View.GONE);
-        }
     }
 }

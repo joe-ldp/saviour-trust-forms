@@ -31,16 +31,6 @@ public class WeeklyForm extends Fragment
     {
         super.onViewCreated(view, savedInstanceState);
 
-        /*view.findViewById(R.id.button_second).setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-                NavHostFragment.findNavController(SecondFragment.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
-            }
-        });*/
-
         EditText textDate = (EditText) view.findViewById(R.id.editTextDate);
         EditText textTime = (EditText) view.findViewById(R.id.editTextTime);
 
@@ -75,11 +65,8 @@ public class WeeklyForm extends Fragment
 
         view.findViewById(R.id.btnSubmit).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-                NavHostFragment.findNavController(WeeklyForm.this)
-                        .navigate(R.id.action_WeeklyForm_to_Homepage);
-
-
+            public void onClick(View view) {
+                NavHostFragment.findNavController(WeeklyForm.this).navigate(R.id.action_WeeklyForm_to_Homepage);
             }
         });
 
