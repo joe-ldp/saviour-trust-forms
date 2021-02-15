@@ -11,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -73,5 +75,31 @@ public class fragment_service_user_form_2 extends Fragment {
             }
         });
 
+        CheckBox rentCheckbox = view.findViewById(R.id.CHSRentCheckbox);
+        EditText rentField = view.findViewById(R.id.CHSRentField);
+        CheckBox injunctionCheckbox = view.findViewById(R.id.CHSInjunctionCheckbox);
+        EditText injunctionField = view.findViewById(R.id.CHSInjunctionField);
+        CheckBox concernCheckbox = view.findViewById(R.id.CHSConcernCheckbox);
+        EditText concernField = view.findViewById(R.id.CHSConcernField);
+
+        rentCheckbox.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                //doVisibility(rentCheckbox.isChecked(), rentField);
+            }
+        });
+
+        injunctionCheckbox.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                //doVisibility(injunctionCheckbox.isChecked(), injunctionField);
+            }
+        });
+
+        concernCheckbox.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                //doVisibility(concernCheckbox.isChecked(), concernField);
+            }
+        });
     }
+
 }
+
