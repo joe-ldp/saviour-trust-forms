@@ -19,11 +19,11 @@
             android:id="@+id/action_Homepage_to_PropertyForm"
             app:destination="@id/PropertyForm" />
         <action
-            android:id="@+id/action_Homepage_to_initialAssessment"
-            app:destination="@id/initialAssessment" />
-        <action
             android:id="@+id/action_Homepage_to_serviceUserForm"
             app:destination="@id/serviceUserForm" />
+        <action
+            android:id="@+id/action_Homepage_to_initialAssessment"
+            app:destination="@id/initialAssessment" />
 
     </fragment>
 
@@ -47,14 +47,6 @@
         <action
             android:id="@+id/action_WeeklyForm_to_Homepage"
             app:destination="@id/Homepage" />
-    </fragment>
-    <fragment
-        android:id="@+id/initialAssessment"
-        android:name="com.saviourtrust.trustforms.InitialAssessment"
-        android:label="InitialAssessment" >
-        <action
-            android:id="@+id/action_initialAssessment_to_initialAssessment2"
-            app:destination="@id/initialAssessment2" />
     </fragment>
     <fragment
         android:id="@+id/initialAssessment2"
@@ -95,5 +87,13 @@
         android:id="@+id/serviceUserForm"
         android:name="com.saviourtrust.trustforms.ServiceUserForm"
         android:label="ServiceUserForm" />
+    <fragment
+        android:id="@+id/initialAssessment"
+        android:name="com.saviourtrust.trustforms.InitialAssessment"
+        android:label="InitialAssessment" >
+        <action
+            android:id="@+id/action_initialAssessment_to_initialAssessment2"
+            app:destination="@id/initialAssessment2" />
+    </fragment>
 
 </navigation>

@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SwitchCompat;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
@@ -11,6 +12,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.Switch;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -79,6 +83,94 @@ public class InitialAssessment4 extends Fragment {
 
             }
         });
+
+        Switch SOSwitch = view.findViewById(R.id.SexOffenderSwitch);
+        EditText SOField = view.findViewById(R.id.SOField);
+
+        Switch arsonSwitch = view.findViewById(R.id.ArsonSwitch);
+        EditText arsonField = view.findViewById(R.id.ArsonDetailsField);
+
+        Switch LMSwitch = view.findViewById(R.id.LegalMattersSwitch);
+        EditText LMField = view.findViewById(R.id.LegalMattersField);
+
+        Switch disabilitySwitch = view.findViewById(R.id.DisabilitySwitch);
+        EditText disabilityField = view.findViewById(R.id.DisabilityField);
+
+        SwitchCompat GPSwitch = view.findViewById(R.id.GPSwitch);
+        EditText GPField = view.findViewById(R.id.GPDetailsField);
+
+        Switch MCSwitch = view.findViewById(R.id.MedicalConditionSwitch);
+        EditText MCField = view.findViewById(R.id.MedicalConditionDetailsField);
+
+        Switch RWASwitch = view.findViewById(R.id.RegisteredWithAgencySwitch);
+        EditText RWAField = view.findViewById(R.id.RWADetailsField);
+
+        Switch DASwitch = view.findViewById(R.id.DomesticAbuseSwitch);
+        EditText DAField = view.findViewById(R.id.DADetailsField);
+
+        Switch supportSwitch = view.findViewById(R.id.SupportSwitch);
+        EditText supportField = view.findViewById(R.id.SupportDetailsField);
+
+        CheckBox PACB = view.findViewById(R.id.PermanentAccommodationCheckbox);
+        CheckBox MHCB = view.findViewById(R.id.MentalHealthCheckbox);
+        CheckBox employmentCB = view.findViewById(R.id.EmploymentCheckbox);
+        CheckBox budgetCB = view.findViewById(R.id.BudgetCheckbox);
+        CheckBox otherCB = view.findViewById(R.id.OtherCheckbox);
+
+        SOSwitch.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Utilities.doVisibility(SOSwitch.isChecked(), SOField);
+            }
+        });
+
+        arsonSwitch.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Utilities.doVisibility(arsonSwitch.isChecked(), arsonField);
+            }
+        });
+
+        LMSwitch.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Utilities.doVisibility(LMSwitch.isChecked(), LMField);
+            }
+        });
+
+        disabilitySwitch.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Utilities.doVisibility(disabilitySwitch.isChecked(), disabilityField);
+            }
+        });
+
+        GPSwitch.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Utilities.doVisibility(GPSwitch.isChecked(), GPField);
+            }
+        });
+
+        MCSwitch.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Utilities.doVisibility(MCSwitch.isChecked(), MCField);
+            }
+        });
+
+        RWASwitch.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Utilities.doVisibility(RWASwitch.isChecked(), RWAField);
+            }
+        });
+
+        DASwitch.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Utilities.doVisibility(DASwitch.isChecked(), DAField);
+            }
+        });
+
+        supportSwitch.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Utilities.doVisibility(supportSwitch.isChecked(), supportField);
+            }
+        });
+
 
     }
 }

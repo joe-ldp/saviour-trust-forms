@@ -72,10 +72,8 @@ public class InitialAssessment2 extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button nextPage = view.findViewById(R.id.btnNextPage);
-        nextPage.setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.NextPageButton).setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-
                 NavHostFragment.findNavController(InitialAssessment2.this)
                         .navigate(R.id.action_initialAssessment2_to_initialAssessment3);
             }
@@ -87,6 +85,7 @@ public class InitialAssessment2 extends Fragment {
         EditText injunctionField = view.findViewById(R.id.CHSInjunctionField);
         CheckBox concernCheckbox = view.findViewById(R.id.CHSConcernCheckbox);
         EditText concernField = view.findViewById(R.id.CHSConcernField);
+
 
         rentCheckbox.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {

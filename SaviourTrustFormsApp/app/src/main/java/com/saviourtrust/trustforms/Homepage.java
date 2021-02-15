@@ -23,19 +23,20 @@ public class Homepage extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        view.findViewById(R.id.button_weekly_form).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(Homepage.this)
-                        .navigate(R.id.action_Homepage_to_WeeklyForm);
-            }
-        });
 
         view.findViewById(R.id.button_initial_assessment).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(Homepage.this)
                         .navigate(R.id.action_Homepage_to_initialAssessment);
+            }
+        });
+
+        view.findViewById(R.id.button_weekly_form).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(Homepage.this)
+                        .navigate(R.id.action_Homepage_to_WeeklyForm);
             }
         });
 

@@ -72,8 +72,7 @@ public class InitialAssessment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)
     {
         super.onViewCreated(view, savedInstanceState);
-
-        view.findViewById(R.id.btnNextPage).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.NextPageButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(InitialAssessment.this).navigate(R.id.action_initialAssessment_to_initialAssessment2);
@@ -131,82 +130,5 @@ public class InitialAssessment extends Fragment {
                 Utilities.doVisibility(IDCheckbox.isChecked(), IDField);
             }
         });
-
-
-        /*
-        Switch agencySwitch = view.findViewById(R.id.WorkingWithAgencySwitch);
-        EditText WWADetails = view.findViewById(R.id.WWADetailsField);
-        EditText WWAContactName = view.findViewById(R.id.ContactNameField);
-        EditText WWAContactNumber = view.findViewById(R.id.ContactNumberField);
-
-        Switch criminalRecordSwitch = view.findViewById(R.id.CriminalRecordSwitch);
-        EditText CRField = view.findViewById(R.id.CRDetailsField);
-
-        Switch sexOffenderSwitch = view.findViewById(R.id.SexOffenderSwitch);
-        EditText sexOffenderField = view.findViewById(R.id.SOField);
-
-        Switch arsonSwitch = view.findViewById(R.id.ArsonSwitch);
-        EditText arsonField = view.findViewById(R.id.ArsonDetailsField);
-
-        Switch legalMattersSwitch = view.findViewById(R.id.LegalMattersSwitch);
-        EditText legalMattersField = view.findViewById(R.id.LegalMattersField);
-
-        Switch disabilitySwitch = view.findViewById(R.id.DisabilitySwitch);
-        EditText disabilityField = view.findViewById(R.id.DisabilityField);
-
-        Switch GPSwitch = view.findViewById(R.id.GPSwitch);
-        EditText GPField = view.findViewById(R.id.GPDetailsField);
-
-        nextPage.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                NavHostFragment.findNavController(ServiceUserForm.this)
-                        .navigate(R.id.action_Homepage_to_InitialAssessment);
-            }
-        });
-
-        criminalRecordSwitch.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                doVisibility(criminalRecordSwitch.isChecked(), CRField);
-            }
-        });
-
-        sexOffenderSwitch.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                doVisibility(sexOffenderSwitch.isChecked(), sexOffenderField);
-            }
-        });
-
-        arsonSwitch.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                doVisibility(arsonSwitch.isChecked(), arsonField);
-            }
-        });
-
-        legalMattersSwitch.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                doVisibility(legalMattersSwitch.isChecked(), legalMattersField);
-            }
-        });
-
-        disabilitySwitch.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                doVisibility(disabilitySwitch.isChecked(), disabilityField);
-            }
-        });
-
-        legalMattersSwitch.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                doVisibility(legalMattersSwitch.isChecked(), legalMattersField);
-            }
-        });
-
-        agencySwitch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                doVisibility(agencySwitch.isChecked(), WWADetails);
-                doVisibility(agencySwitch.isChecked(), WWAContactName);
-                doVisibility(agencySwitch.isChecked(), WWAContactNumber);
-            }
-        });*/
     }
 }

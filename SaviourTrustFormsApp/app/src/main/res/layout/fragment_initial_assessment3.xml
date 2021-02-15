@@ -65,16 +65,20 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-            android:hint = "Details:"/>
+            android:hint = "Details:"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <EditText
             android:id="@+id/ContactNameField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
             android:hint="Contact's Name:"
-            android:importantForAutofill="no" />
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:visibility="gone"
+            tools:visibility="visible" />
 
         <EditText
             android:id="@+id/ContactNumberField"
@@ -83,7 +87,9 @@
             android:ems="10"
             android:hint="Contact's Phone Number:"
             android:inputType="phone"
-            android:importantForAutofill="no" />
+            android:importantForAutofill="no"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <Switch
             android:id="@+id/CriminalRecordSwitch"
@@ -98,7 +104,9 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-            android:hint = "Details:"/>
+            android:hint = "Details:"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <Switch
             android:id="@+id/ProbationSwitch"
@@ -134,10 +142,11 @@
             android:id="@+id/AreaField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Area:" />
 
 
         <LinearLayout
+            android:id="@+id/RiskCheckboxLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">

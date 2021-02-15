@@ -28,7 +28,9 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-            android:hint = "Details:"/>
+            android:hint = "Details:"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <Switch
             android:id="@+id/ArsonSwitch"
@@ -43,7 +45,9 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-            android:hint = "Details:"/>
+            android:hint = "Details:"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <Switch
             android:id="@+id/LegalMattersSwitch"
@@ -58,7 +62,9 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-            android:hint = "Details:"/>
+            android:hint = "Details:"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <Switch
             android:id="@+id/DisabilitySwitch"
@@ -73,7 +79,9 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-            android:hint = "Details:"/>
+            android:hint = "Details:"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/GPSwitch"
@@ -88,7 +96,9 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-            android:hint = "GP Details:"/>
+            android:hint = "GP Details:"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <Switch
             android:id="@+id/MedicalConditionSwitch"
@@ -103,7 +113,9 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-            android:hint = "Details:"/>
+            android:hint = "Details:"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <Switch
             android:id="@+id/MentalHealthIssuesSwitch"
@@ -118,7 +130,10 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-            android:hint = "Details:"/>
+            android:hint = "Details:"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
         <Switch
             android:id="@+id/RegisteredWithAgencySwitch"
             android:layout_width="match_parent"
@@ -132,7 +147,9 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-            android:hint = "Contact Details:"/>
+            android:hint = "Contact Details:"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <Switch
             android:id="@+id/DomesticAbuseSwitch"
@@ -162,7 +179,9 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-            android:hint = "Details:"/>
+            android:hint = "Details:"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <CheckBox
             android:id="@+id/PermanentAccommodationCheckbox"

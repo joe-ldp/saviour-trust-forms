@@ -11,6 +11,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.Switch;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -70,13 +73,75 @@ public class InitialAssessment3 extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button nextPage = view.findViewById(R.id.NextPageButton);
-        nextPage.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
 
+        Switch substanceMisuseSwitch = view.findViewById(R.id.SubstanceMisuseSwitch);
+        Switch illicitSubstanceSwitch = view.findViewById(R.id.IllicitSubstancesSwitch);
+        EditText substanceField = view.findViewById(R.id.SubstanceDetailsField);
+
+        Switch WWA = view.findViewById(R.id.WorkingWithAgencySwitch);
+        EditText WWADetails = view.findViewById(R.id.WWADetailsField);
+        EditText WWAName = view.findViewById(R.id.ContactNameField);
+        EditText WWANumber = view.findViewById(R.id.ContactNumberField);
+
+        Switch criminalRecordSwitch = view.findViewById(R.id.CriminalRecordSwitch);
+        EditText CRField = view.findViewById(R.id.CRDetailsField);
+
+        Switch probationSwitch = view.findViewById(R.id.ProbationSwitch);
+        Switch mappaSwitch = view.findViewById(R.id.MappaSwitch);
+        EditText detailsField = view.findViewById(R.id.ProbationDetailsField);
+        EditText POField = view.findViewById(R.id.ProbationOfficerNameField);
+        EditText areaField = view.findViewById(R.id.AreaField);
+
+        LinearLayout riskCheckboxes = view.findViewById(R.id.RiskCheckboxLayout);
+
+        view.findViewById(R.id.NextPageButton).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
                 NavHostFragment.findNavController(InitialAssessment3.this)
                         .navigate(R.id.action_initialAssessment3_to_initialAssessment4);
+            }
+        });
 
+        probationSwitch.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view){
+                Utilities.doVisibility(probationSwitch.isChecked(), detailsField);
+                Utilities.doVisibility(probationSwitch.isChecked(), POField);
+                Utilities.doVisibility(probationSwitch.isChecked(), areaField);
+
+            }
+        });
+
+        mappaSwitch.setOnClickListener(new View.OnClickListener() {
+           public void onClick(View view) {
+               Utilities.doVisibility(probationSwitch.isChecked(), detailsField);
+               Utilities.doVisibility(probationSwitch.isChecked(), POField);
+               Utilities.doVisibility(probationSwitch.isChecked(), areaField);
+           }
+        });
+
+
+        substanceMisuseSwitch.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Utilities.doVisibility(substanceMisuseSwitch.isChecked(), substanceField);
+            }
+        });
+
+        illicitSubstanceSwitch.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Utilities.doVisibility(illicitSubstanceSwitch.isChecked(), substanceField);
+            }
+        });
+
+        WWA.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Utilities.doVisibility(WWA.isChecked(), WWADetails);
+                Utilities.doVisibility(WWA.isChecked(), WWAName);
+                Utilities.doVisibility(WWA.isChecked(), WWANumber);
+            }
+        });
+
+        criminalRecordSwitch.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Utilities.doVisibility(criminalRecordSwitch.isChecked(), CRField);
             }
         });
 
