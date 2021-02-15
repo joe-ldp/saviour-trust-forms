@@ -53,5 +53,27 @@
     <string name="date">Date</string>
     <string name="e_g_john_doe">e.g. John Doe</string>
     <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="postcode">Postcode</string>
+    <string name="owner">Owner</string>
+    <string name="phone">Phone</string>
+    <string name="rent_paid">Rent Paid</string>
+    <string name="room_rate">Room Rate</string>
+    <string name="spare_room">Spare Room</string>
+    <string name="sr_void">Sr Void</string>
+    <string name="date_property">Date Property</string>
+    <string name="rooms">Rooms</string>
+    <string name="voids">Voids</string>
+    <string name="gas_cert_expiry">Gas Cert Expiry</string>
+    <string name="elec_cert_expiry">Elec Cert Expiry</string>
+    <string name="gas_serial_number">Gas Serial Number</string>
+    <string name="elec_serial_number">Elec Serial Number</string>
+    <string name="gas_provider">Gas Provider</string>
+    <string name="electric_provider">Electric Provider</string>
+    <string name="gas_meter">Gas Meter</string>
+    <string name="elec_meter">Elec Meter</string>
+    <string name="save">Save</string>
+    <string name="room_one_details">Room one details</string>
+    <string name="room_two_details">Room two details</string>
 
 </resources>
