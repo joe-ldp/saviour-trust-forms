@@ -193,7 +193,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textLongMessage"
-            android:importantForAutofill="no" />
+            android:importantForAutofill="no"
+            android:hint="@string/room_one_details" />
 
         <TextView
             android:id="@+id/textView12"
@@ -207,7 +208,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textLongMessage"
-            android:importantForAutofill="no" />
+            android:importantForAutofill="no"
+            android:hint="@string/room_two_details" />
 
         <TextView
             android:id="@+id/textView13"
