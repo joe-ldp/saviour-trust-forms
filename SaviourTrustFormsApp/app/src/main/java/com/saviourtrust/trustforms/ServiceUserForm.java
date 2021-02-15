@@ -82,8 +82,8 @@ public class ServiceUserForm extends Fragment {
         nextPage.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
-                /*NavHostFragment.findNavController()
-                        .navigate(R.id.action_ServiceUserForm_to_fragment_service_user_form_2);*/
+                NavHostFragment.findNavController(ServiceUserForm.this)
+                        .navigate(R.id.action_ServiceUserForm_to_fragment_service_user_form_2);
 
             }
         });
