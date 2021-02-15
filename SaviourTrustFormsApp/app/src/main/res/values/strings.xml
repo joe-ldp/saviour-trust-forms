@@ -1,12 +1,10 @@
 <resources>
     <string name="app_name">Saviour Trust Forms App</string>
     <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
     <string name="homepage_label">Welcome to The Saviour Trust App</string>
     <string name="weekly_form_label">Weekly Form</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="weekly_recurring_form">Weekly Recurring Form</string>
     <string name="initial_assessment">Initial Assessment</string>
@@ -46,12 +44,12 @@
     <string name="hall_inc_cubby_hole">Hall inc. Cubby Hole</string>
     <string name="names_of_those_present">Names of those present</string>
     <string name="present">Present</string>
-    <string name="e_g_10_downing_street">e.g. 10 Downing Street</string>
-    <string name="e_g_13_38">e.g. 13:38</string>
+    <string name="address_example">e.g. 10 Downing Street</string>
+    <string name="time_example">e.g. 13:38</string>
     <string name="time">Time</string>
-    <string name="e_g_13_01_2021">e.g. 13/01/2021</string>
+    <string name="date_example">e.g. 13/01/2021</string>
     <string name="date">Date</string>
-    <string name="e_g_john_doe">e.g. John Doe</string>
+    <string name="name_example">e.g. John Doe</string>
     <string name="name">Name</string>
     <string name="postcode">Postcode</string>
     <string name="owner">Owner</string>
