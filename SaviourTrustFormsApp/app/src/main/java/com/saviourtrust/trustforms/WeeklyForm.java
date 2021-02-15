@@ -61,7 +61,7 @@ public class WeeklyForm extends Fragment
         EditText etSmokeAlarms = view.findViewById(R.id.editTextSmokeAlarms);
         cbSmokeAlarms.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                doVisibility(cbSmokeAlarms.isChecked(), etSmokeAlarms);
+                Utilities.doVisibility(cbSmokeAlarms.isChecked(), etSmokeAlarms);
             }
         });
 
@@ -69,7 +69,7 @@ public class WeeklyForm extends Fragment
         EditText etCarbonMonoxideAlarms = view.findViewById(R.id.editTextCarbonMonoxideAlarms);
         cbCarbonMonoxideAlarms.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                doVisibility(cbCarbonMonoxideAlarms.isChecked(), etCarbonMonoxideAlarms);
+                Utilities.doVisibility(cbCarbonMonoxideAlarms.isChecked(), etCarbonMonoxideAlarms);
             }
         });
 
@@ -86,7 +86,7 @@ public class WeeklyForm extends Fragment
 
     }
 
-    public void doVisibility(boolean checked, EditText et)
+/*    public void doVisibility(boolean checked, EditText et)
     {
         if (checked)
         {
@@ -96,5 +96,5 @@ public class WeeklyForm extends Fragment
         {
             et.setVisibility(View.GONE);
         }
-    }
+    }*/
 }
