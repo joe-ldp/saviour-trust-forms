@@ -78,7 +78,6 @@ public class ServiceUserForm extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         Button nextPage = view.findViewById(R.id.NextPageButton);
-
         nextPage.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
@@ -92,26 +91,54 @@ public class ServiceUserForm extends Fragment {
         CheckBox femaleCB= view.findViewById(R.id.GenderFemaleCheckbox);
         CheckBox transCB = view.findViewById(R.id.GenderTransCheckbox);
 
-
         maleCB.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
-                if (femaleCB.isChecked())
-                {
-                    maleCB.setChecked(false);
-                    transCB.setChecked(false);
-                }
-                if (maleCB.isChecked())
+                if (femaleCB.isChecked() || transCB.isChecked())
                 {
                     femaleCB.setChecked(false);
                     transCB.setChecked(false);
-                }
-                if (transCB.isChecked())
-                {
-                    maleCB.setChecked(false);
-                    femaleCB.setChecked(false);
                 }
             }
         });
+
+        femaleCB.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                if (maleCB.isChecked() || transCB.isChecked())
+                {
+                    maleCB.setChecked(false);
+                    transCB.setChecked(false);
+                }
+            }
+        });
+
+        transCB.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                if (femaleCB.isChecked() || maleCB.isChecked())
+                {
+                    femaleCB.setChecked(false);
+                    maleCB.setChecked(false);
+                }
+            }
+        });
+
+        CheckBox NINCheckbox = view.findViewById(R.id.ProofOfNINCheckbox);
+        EditText NINField = view.findViewById(R.id.NINField);
+        CheckBox IDCheckbox = view.findViewById(R.id.IDProducedCheckbox);
+        EditText IDField = view.findViewById(R.id.IDDetailsField);
+
+
+        NINCheckbox.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                doVisibility(NINCheckbox.isChecked(), NINField);
+            }
+        });
+
+        IDCheckbox.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                doVisibility(IDCheckbox.isChecked(), IDField);
+            }
+        });
+
 
         /*CheckBox rentCheckbox = view.findViewById(R.id.CHSRentCheckbox);
         EditText rentField = view.findViewById(R.id.CHSRentField);
@@ -119,10 +146,6 @@ public class ServiceUserForm extends Fragment {
         EditText injunctionField = view.findViewById(R.id.CHSInjunctionField);
         CheckBox concernCheckbox = view.findViewById(R.id.CHSConcernCheckbox);
         EditText concernField = view.findViewById(R.id.CHSConcernField);
-        CheckBox NINCheckbox = view.findViewById(R.id.ProofOfNINCheckbox);
-        EditText NINField = view.findViewById(R.id.NINField);
-        CheckBox IDCheckbox = view.findViewById(R.id.IDProducedCheckbox);
-        EditText IDField = view.findViewById(R.id.IDDetailsField);
 
         Switch agencySwitch = view.findViewById(R.id.WorkingWithAgencySwitch);
         EditText WWADetails = view.findViewById(R.id.WWADetailsField);
@@ -199,17 +222,7 @@ public class ServiceUserForm extends Fragment {
             }
         });
 
-        NINCheckbox.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                doVisibility(NINCheckbox.isChecked(), NINField);
-            }
-        });
 
-        IDCheckbox.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                doVisibility(IDCheckbox.isChecked(), IDField);
-            }
-        });
 
         rentCheckbox.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -234,6 +247,7 @@ public class ServiceUserForm extends Fragment {
 
 */
     }
+
 
 
     public void replaceFragment(Fragment someFragment) {

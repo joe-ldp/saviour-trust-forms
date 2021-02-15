@@ -2,11 +2,15 @@ package com.saviourtrust.trustforms;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -56,9 +60,18 @@ public class fragment_service_user_form_2 extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_service_user_form_2, container, false);
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        Button nextPage = view.findViewById(R.id.NextPageButton);
+        nextPage.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                NavHostFragment.findNavController(fragment_service_user_form_2.this)
+                        .navigate(R.id.action_fragment_service_user_form_2_to_fragment_service_user_form_3);
+
+            }
+        });
+
     }
 }

@@ -68,10 +68,6 @@
         android:name="com.saviourtrust.trustforms.ServiceUserForm"
         android:label="@string/weekly_form_label"
         tools:layout="@layout/fragment_service_user_form">
-
-        <action
-            android:id="@+id/action_WeeklyForm_to_Homepage"
-            app:destination="@id/Homepage" />
         <action
             android:id="@+id/action_ServiceUserForm_to_fragment_service_user_form_2"
             app:destination="@id/fragment_service_user_form_2" />
@@ -80,7 +76,38 @@
         android:id="@+id/fragment_service_user_form_2"
         android:name="com.saviourtrust.trustforms.fragment_service_user_form_2"
         android:label="fragment_service_user_form_2"
-        tools:layout="@layout/fragment_service_user_form_2" />
+        tools:layout="@layout/fragment_service_user_form_2" >
+        <action
+            android:id="@+id/action_fragment_service_user_form_2_to_fragment_service_user_form_3"
+            app:destination="@id/fragment_service_user_form_3" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_service_user_form_3"
+        android:name="com.saviourtrust.trustforms.fragment_service_user_form_3"
+        android:label="fragment_service_user_form_3"
+        tools:layout="@layout/fragment_service_user_form_3" >
+        <action
+            android:id="@+id/action_fragment_service_user_form_3_to_fragment_service_user_form_4"
+            app:destination="@id/fragment_service_user_form_4" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_service_user_form_4"
+        android:name="com.saviourtrust.trustforms.fragment_service_user_form_4"
+        android:label="fragment_service_user_form_4"
+        tools:layout="@layout/fragment_service_user_form_4" >
+        <action
+            android:id="@+id/action_fragment_service_user_form_4_to_fragment_service_user_form_5"
+            app:destination="@id/fragment_service_user_form_5" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_service_user_form_5"
+        android:name="com.saviourtrust.trustforms.fragment_service_user_form_5"
+        android:label="fragment_service_user_form_5"
+        tools:layout="@layout/fragment_service_user_form_5" >
+        <action
+            android:id="@+id/action_fragment_service_user_form_5_to_Homepage"
+            app:destination="@id/Homepage" />
+    </fragment>
 
 
 </navigation>
