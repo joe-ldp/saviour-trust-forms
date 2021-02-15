@@ -7,17 +7,15 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link fragment_service_user_form_4#newInstance} factory method to
+ * Use the {@link ServiceUserForm5#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class fragment_service_user_form_4 extends Fragment {
+public class ServiceUserForm5 extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,7 +26,7 @@ public class fragment_service_user_form_4 extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public fragment_service_user_form_4() {
+    public ServiceUserForm5() {
         // Required empty public constructor
     }
 
@@ -38,11 +36,11 @@ public class fragment_service_user_form_4 extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment fragment_service_user_form_4.
+     * @return A new instance of fragment fragment_service_user_form_5.
      */
     // TODO: Rename and change types and number of parameters
-    public static fragment_service_user_form_4 newInstance(String param1, String param2) {
-        fragment_service_user_form_4 fragment = new fragment_service_user_form_4();
+    public static ServiceUserForm5 newInstance(String param1, String param2) {
+        ServiceUserForm5 fragment = new ServiceUserForm5();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -67,8 +65,8 @@ public class fragment_service_user_form_4 extends Fragment {
         nextPage.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
-                NavHostFragment.findNavController(fragment_service_user_form_4.this)
-                        .navigate(R.id.action_fragment_service_user_form_4_to_fragment_service_user_form_5);
+                NavHostFragment.findNavController(ServiceUserForm5.this)
+                        .navigate(R.id.action_ServiceUserForm5_to_Homepage);
 
             }
         });

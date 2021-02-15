@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent" android:layout_height="fill_parent"
     android:windowSoftInputMode="adjustPan"
-    tools:context=".fragment_service_user_form_3">
+    tools:context=".ServiceUserForm3">
 
     <LinearLayout
         android:id="@+id/menu_ll"
@@ -13,7 +13,7 @@
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="5dp"
         android:orientation="vertical"
-        tools:ignore="HardcodedText">
+        tools:ignore="UseSwitchCompatOrMaterialXml, HardcodedText">
 
         <TextView
             android:id="@+id/AboutYouLabel"
@@ -21,7 +21,6 @@
             android:layout_height="match_parent"
             android:text="About You"
             android:textSize="24sp"/>
-
 
         <EditText
             android:id="@+id/FamilySituationField"
@@ -32,12 +31,11 @@
             android:inputType="textMultiLine"
             android:hint = "Family Situation:"/>
 
-
         <Switch
             android:id="@+id/SubstanceMisuseSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Substance misuse?" />
+            android:text="Substance misuse?"/>
 
         <Switch
             android:id="@+id/IllicitSubstancesSwitch"

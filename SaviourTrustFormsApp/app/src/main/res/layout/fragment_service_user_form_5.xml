@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent" android:layout_height="fill_parent"
     android:windowSoftInputMode="adjustPan"
-    tools:context=".fragment_service_user_form_5">
+    tools:context=".ServiceUserForm5">
 
 
     <TextView

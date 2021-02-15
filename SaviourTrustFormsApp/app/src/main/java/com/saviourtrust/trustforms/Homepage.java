@@ -54,5 +54,13 @@ public class Homepage extends Fragment {
                         .navigate(R.id.action_Homepage_to_ServiceUserForm);
             }
         });
+
+        view.findViewById(R.id.button_bruh).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(Homepage.this)
+                        .navigate(R.id.action_Homepage_to_ServiceUserForm2);
+            }
+        });
     }
 }

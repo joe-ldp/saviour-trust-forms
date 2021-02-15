@@ -85,16 +85,4 @@ public class WeeklyForm extends Fragment
 
 
     }
-
-/*    public void doVisibility(boolean checked, EditText et)
-    {
-        if (checked)
-        {
-            et.setVisibility(View.VISIBLE);
-        }
-        else
-        {
-            et.setVisibility(View.GONE);
-        }
-    }*/
 }

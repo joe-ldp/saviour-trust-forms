@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent" android:layout_height="fill_parent"
     android:windowSoftInputMode="adjustPan"
-    tools:context=".fragment_service_user_form_2">
+    >
 
     <LinearLayout
         android:id="@+id/menu_ll"
@@ -13,13 +13,13 @@
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="5dp"
         android:orientation="vertical"
-        tools:ignore="HardcodedText">
+        >
 
         <TextView
             android:id="@+id/CHSLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Current Housing Situation:"
+            android:text="@string/current_housing_situation"
             android:textSize="24sp" />
 
         <EditText
@@ -28,157 +28,117 @@
             android:layout_height="88dp"
             android:ems="10"
             android:gravity="start|top"
-            android:hint="Details:"
-            android:inputType="textMultiLine" />
+            android:hint="@string/details"
+            android:inputType="textMultiLine"
+            android:autofillHints="" />
 
-
-        <TableLayout
+        <CheckBox
+            android:id="@+id/CHSRentCheckbox"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rent_arrears" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <CheckBox
-                    android:id="@+id/CHSRentCheckbox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Rent Arrears?" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <EditText
-                    android:id="@+id/CHSRentField"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:hint="Details:"
-                    android:inputType="textMultiLine"
-                    android:visibility="gone"
-                    tools:visibility="visible" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <CheckBox
-                    android:id="@+id/CHSInjunctionCheckbox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Injunction orders?" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <EditText
-                    android:id="@+id/CHSInjunctionField"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:hint="Details:"
-                    android:inputType="textMultiLine"
-                    android:visibility="gone"
-                    tools:visibility="visible" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <CheckBox
-                    android:id="@+id/CHSConcernCheckbox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Area of concern?" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <EditText
-                    android:id="@+id/CHSConcernField"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:hint="Details:"
-                    android:inputType="textMultiLine"
-                    android:visibility="gone"
-                    tools:visibility="visible" />
-            </TableRow>
-
-        </TableLayout>
-
-        <TableLayout
+        <EditText
+            android:id="@+id/CHSRentField"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/details"
+            android:inputType="textMultiLine"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:autofillHints="" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+        <CheckBox
+            android:id="@+id/CHSInjunctionCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/injunction_orders" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+        <EditText
+            android:id="@+id/CHSInjunctionField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/details"
+            android:inputType="textMultiLine"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:autofillHints="" />
 
-                    <TextView
-                        android:id="@+id/AddressHeadingLabel"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Address" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/CHSConcernCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/area_of_concern" />
 
-                    <TextView
-                        android:id="@+id/FromHeadingLabel"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="From" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+        <EditText
+            android:id="@+id/CHSConcernField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/details"
+            android:inputType="textMultiLine"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:autofillHints="" />
 
-                    <TextView
-                        android:id="@+id/ToHeadingLabel"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="To" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <TextView
-                        android:id="@+id/RFLHeadingLabel"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Reason for leaving" />
-                </LinearLayout>
-            </TableRow>
-        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/AddressHeadingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/FromHeadingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ToHeadingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/RFLHeadingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reason_for_leaving" />
+        </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -186,18 +146,19 @@
 
             <Button
                 android:id="@+id/btnSubmit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
                 android:layout_weight="1"
-                android:text="Submit Form" />
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/submit_form" />
 
             <Button
-                android:id="@+id/NextPageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/btnNextPage"
+                android:layout_width="0dp"
                 android:layout_weight="1"
-                android:text="Next Page >" />
-
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/next_page" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

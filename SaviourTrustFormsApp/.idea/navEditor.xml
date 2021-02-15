@@ -13,8 +13,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="61" />
-                            <option name="y" value="-161" />
+                            <option name="x" value="-851" />
+                            <option name="y" value="-438" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -49,8 +49,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="564" />
-                            <option name="y" value="87" />
+                            <option name="x" value="-1283" />
+                            <option name="y" value="-350" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -70,8 +70,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="562" />
-                            <option name="y" value="388" />
+                            <option name="x" value="-1168" />
+                            <option name="y" value="224" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -91,13 +91,97 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-858" />
-                            <option name="y" value="288" />
+                            <option name="x" value="-475" />
+                            <option name="y" value="-656" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_ServiceUserForm_to_fragment_service_user_form_2">
+                            <entry key="action_ServiceUserForm_to_ServiceUserForm2">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="ServiceUserForm2">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-281" />
+                            <option name="y" value="-656" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_ServiceUserForm2_to_ServiceUserForm3">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="ServiceUserForm3">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-94" />
+                            <option name="y" value="-656" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_ServiceUserForm3_to_fragment_ServiceUserForm4">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="ServiceUserForm4">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="96" />
+                            <option name="y" value="-654" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_ServiceUserForm4_to_ServiceUserForm5">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="ServiceUserForm5">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="303" />
+                            <option name="y" value="-434" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_ServiceUserForm5_to_Homepage">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -112,97 +196,13 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="561" />
-                            <option name="y" value="-227" />
+                            <option name="x" value="-189" />
+                            <option name="y" value="73" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
                             <entry key="action_WeeklyForm_to_Homepage">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="fragment_service_user_form_2">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="-633" />
-                            <option name="y" value="288" />
-                          </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_fragment_service_user_form_2_to_fragment_service_user_form_3">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="fragment_service_user_form_3">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="-407" />
-                            <option name="y" value="288" />
-                          </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_fragment_service_user_form_3_to_fragment_service_user_form_4">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="fragment_service_user_form_4">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="-171" />
-                            <option name="y" value="284" />
-                          </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_fragment_service_user_form_4_to_fragment_service_user_form_5">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="fragment_service_user_form_5">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="51" />
-                            <option name="y" value="286" />
-                          </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_fragment_service_user_form_5_to_Homepage">
                               <value>
                                 <LayoutPositions />
                               </value>

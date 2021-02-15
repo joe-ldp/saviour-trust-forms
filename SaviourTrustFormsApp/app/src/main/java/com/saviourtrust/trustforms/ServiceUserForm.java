@@ -58,7 +58,8 @@ public class ServiceUserForm extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
@@ -74,16 +75,15 @@ public class ServiceUserForm extends Fragment {
     }
 
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)
+    {
         super.onViewCreated(view, savedInstanceState);
 
-        Button nextPage = view.findViewById(R.id.NextPageButton);
-        nextPage.setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.btnNextPage).setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View view) {
-
                 NavHostFragment.findNavController(ServiceUserForm.this)
-                        .navigate(R.id.action_ServiceUserForm_to_fragment_service_user_form_2);
-
+                        .navigate(R.id.action_ServiceUserForm_to_ServiceUserForm2);
             }
         });
 
@@ -214,25 +214,7 @@ public class ServiceUserForm extends Fragment {
                 doVisibility(agencySwitch.isChecked(), WWAContactName);
                 doVisibility(agencySwitch.isChecked(), WWAContactNumber);
             }
-        });
-
-
-
-
-
-
-
-
-*/
-    }
-
-
-
-    public void replaceFragment(Fragment someFragment) {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.fragment_container_view_tag, someFragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
+        });*/
     }
 
     public void doVisibility(boolean checked, EditText et)

@@ -7,19 +7,15 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.EditText;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link fragment_service_user_form_2#newInstance} factory method to
+ * Use the {@link ServiceUserForm3#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class fragment_service_user_form_2 extends Fragment {
+public class ServiceUserForm3 extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,7 +26,7 @@ public class fragment_service_user_form_2 extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public fragment_service_user_form_2() {
+    public ServiceUserForm3() {
         // Required empty public constructor
     }
 
@@ -40,11 +36,11 @@ public class fragment_service_user_form_2 extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment fragment_service_user_form_2.
+     * @return A new instance of fragment fragment_service_user_form_3.
      */
     // TODO: Rename and change types and number of parameters
-    public static fragment_service_user_form_2 newInstance(String param1, String param2) {
-        fragment_service_user_form_2 fragment = new fragment_service_user_form_2();
+    public static ServiceUserForm3 newInstance(String param1, String param2) {
+        ServiceUserForm3 fragment = new ServiceUserForm3();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -69,37 +65,11 @@ public class fragment_service_user_form_2 extends Fragment {
         nextPage.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
-                NavHostFragment.findNavController(fragment_service_user_form_2.this)
-                        .navigate(R.id.action_fragment_service_user_form_2_to_fragment_service_user_form_3);
+                NavHostFragment.findNavController(ServiceUserForm3.this)
+                        .navigate(R.id.action_ServiceUserForm3_to_fragment_ServiceUserForm4);
 
             }
         });
 
-        CheckBox rentCheckbox = view.findViewById(R.id.CHSRentCheckbox);
-        EditText rentField = view.findViewById(R.id.CHSRentField);
-        CheckBox injunctionCheckbox = view.findViewById(R.id.CHSInjunctionCheckbox);
-        EditText injunctionField = view.findViewById(R.id.CHSInjunctionField);
-        CheckBox concernCheckbox = view.findViewById(R.id.CHSConcernCheckbox);
-        EditText concernField = view.findViewById(R.id.CHSConcernField);
-
-        rentCheckbox.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                //doVisibility(rentCheckbox.isChecked(), rentField);
-            }
-        });
-
-        injunctionCheckbox.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                //doVisibility(injunctionCheckbox.isChecked(), injunctionField);
-            }
-        });
-
-        concernCheckbox.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                //doVisibility(concernCheckbox.isChecked(), concernField);
-            }
-        });
     }
-
 }
-
