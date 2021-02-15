@@ -88,6 +88,31 @@ public class ServiceUserForm extends Fragment {
             }
         });
 
+        CheckBox maleCB = view.findViewById(R.id.GenderMaleCheckbox);
+        CheckBox femaleCB= view.findViewById(R.id.GenderFemaleCheckbox);
+        CheckBox transCB = view.findViewById(R.id.GenderTransCheckbox);
+
+
+        maleCB.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                if (femaleCB.isChecked())
+                {
+                    maleCB.setChecked(false);
+                    transCB.setChecked(false);
+                }
+                if (maleCB.isChecked())
+                {
+                    femaleCB.setChecked(false);
+                    transCB.setChecked(false);
+                }
+                if (transCB.isChecked())
+                {
+                    maleCB.setChecked(false);
+                    femaleCB.setChecked(false);
+                }
+            }
+        });
+
         /*CheckBox rentCheckbox = view.findViewById(R.id.CHSRentCheckbox);
         EditText rentField = view.findViewById(R.id.CHSRentField);
         CheckBox injunctionCheckbox = view.findViewById(R.id.CHSInjunctionCheckbox);
