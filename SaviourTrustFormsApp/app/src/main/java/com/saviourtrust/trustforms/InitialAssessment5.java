@@ -2,18 +2,22 @@ package com.saviourtrust.trustforms;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ServiceUserFormJ#newInstance} factory method to
+ * Use the {@link InitialAssessment5#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ServiceUserFormJ extends Fragment {
+public class InitialAssessment5 extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +28,7 @@ public class ServiceUserFormJ extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public ServiceUserFormJ() {
+    public InitialAssessment5() {
         // Required empty public constructor
     }
 
@@ -34,12 +38,11 @@ public class ServiceUserFormJ extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ServiceUserFormJ.
+     * @return A new instance of fragment fragment_service_user_form_5.
      */
-
     // TODO: Rename and change types and number of parameters
-    public static ServiceUserFormJ newInstance(String param1, String param2) {
-        ServiceUserFormJ fragment = new ServiceUserFormJ();
+    public static InitialAssessment5 newInstance(String param1, String param2) {
+        InitialAssessment5 fragment = new InitialAssessment5();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -60,6 +63,22 @@ public class ServiceUserFormJ extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_service_user_form_j, container, false);
+        return inflater.inflate(R.layout.fragment_initial_asessment5, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        Button nextPage = view.findViewById(R.id.NextPageButton);
+        nextPage.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                NavHostFragment.findNavController(InitialAssessment5.this)
+                        .navigate(R.id.action_ServiceUserForm5_to_Homepage);
+
+            }
+        });
+
     }
 }

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:windowSoftInputMode="adjustPan"
+    tools:context=".InitialAssessment5">
+
+    <LinearLayout
+        android:id="@+id/menu_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        tools:ignore="HardcodedText">
+
+        <TextView
+            android:id="@+id/BenefitsField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What benefits do you receive?" />
+
+        <TextView
+            android:id="@+id/ESAField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ESA" />
+        <TextView
+            android:id="@+id/JobSeekersField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Job Seekers Allowance" />
+        <TextView
+            android:id="@+id/DisabilityLivingField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Disability living allowance" />
+        <TextView
+            android:id="@+id/SevereDisabilityField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Severe disability allowance" />
+        <TextView
+            android:id="@+id/IncapacityBenefitField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Incapacity Benefit" />
+        <TextView
+            android:id="@+id/UniversalCreditField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Universal Credit" />
+        <TextView
+            android:id="@+id/PIPField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PIP" />
+
+        <EditText
+            android:id="@+id/OtherField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint="Other(Please state)"/>
+
+        <TextView
+            android:id="@+id/NextPayDateField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="When is your next pay date?" />
+
+        <!--change to accept £££ -->
+        <TextView
+            android:id="@+id/NextPayAmountField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How much will you receive?£" />
+
+
+        <CheckBox
+            android:id="@+id/WeeklyPaymentCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weekly" />
+
+        <CheckBox
+            android:id="@+id/FortnightlyPaymentCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fortnightly" />
+
+        <Switch
+            android:id="@+id/EmployedSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you working?" />
+
+        <TextView
+            android:id="@+id/WeeklyHoursField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How many hours do you work a week?" />
+
+        <!--also change to accept £££ -->
+
+        <TextView
+            android:id="@+id/WeeklyEarningsField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What are your weekly earnings?£" />
+
+        <Switch
+            android:id="@+id/EducationSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you in education or on a training course?" />
+
+        <TextView
+            android:id="@+id/CourseField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What course are you doing?" />
+        <TextView
+            android:id="@+id/CourseHoursField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What hours do you do?" />
+
+        <Switch
+            android:id="@+id/ServiceUsersSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are the service users basic needs met?" />
+
+        <Switch
+            android:id="@+id/ClothingSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clothing?" />
+
+        <TextView
+            android:id="@+id/ClothingField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Support given:" />
+
+        <Switch
+            android:id="@+id/FoodSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Food?" />
+
+        <TextView
+            android:id="@+id/FoodField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Support given:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Submit Form" />
+
+            <Button
+                android:id="@+id/NextPageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Next Page >" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
