@@ -16,11 +16,18 @@
         tools:ignore="HardcodedText">
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Financial Situation:"
+            android:textSize="24sp"
+            android:textColor="@color/mainVariant"
+            android:textStyle="bold"/>
+
+        <TextView
             android:id="@+id/BenefitsLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="What benefits do you receive?" />
-
 
         <EditText
             android:id="@+id/BenefitsField"

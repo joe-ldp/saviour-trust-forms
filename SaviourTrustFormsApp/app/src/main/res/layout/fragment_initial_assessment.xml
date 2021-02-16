@@ -27,7 +27,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\nDear Applicant,\nWe will use the information gathered on this form to process your application.\n\nWe may need to collect information about you from other agencies in order to fully assess your application.\n"
-
             android:textSize="18sp" />
 
         <TextView
