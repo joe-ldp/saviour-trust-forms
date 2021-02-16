@@ -29,7 +29,8 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-            android:hint = "Family Situation:"/>
+            android:hint = "Family Situation:"
+            android:importantForAutofill="no"/>
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/SubstanceMisuseSwitch"
@@ -52,7 +53,8 @@
             android:inputType="textMultiLine"
             android:hint = "Details:"
             android:visibility="gone"
-            tools:visibility="visible"/>
+            tools:visibility="visible"
+            android:importantForAutofill="no"/>
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/WorkingWithAgencySwitch"
@@ -69,7 +71,8 @@
             android:inputType="textMultiLine"
             android:hint = "Details:"
             android:visibility="gone"
-            tools:visibility="visible"/>
+            tools:visibility="visible"
+            android:importantForAutofill="no"/>
 
         <EditText
             android:id="@+id/ContactNameField"
@@ -108,7 +111,8 @@
             android:inputType="textMultiLine"
             android:hint = "Details:"
             android:visibility="gone"
-            tools:visibility="visible"/>
+            tools:visibility="visible"
+            android:importantForAutofill="no"/>
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/ProbationSwitch"
@@ -131,7 +135,8 @@
             android:inputType="textMultiLine"
             android:hint = "Details:"
             android:visibility="gone"
-            tools:visibility="visible"/>
+            tools:visibility="visible"
+            android:importantForAutofill="no"/>
 
         <EditText
             android:id="@+id/ProbationOfficerNameField"
@@ -153,7 +158,8 @@
             android:inputType="textMultiLine"
             android:hint = "Details:"
             android:visibility="gone"
-            tools:visibility="visible"/>
+            tools:visibility="visible"
+            android:importantForAutofill="no"/>
 
         <LinearLayout
             android:id="@+id/RiskCheckboxLayout"

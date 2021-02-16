@@ -11,10 +11,15 @@ import androidx.navigation.fragment.NavHostFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Locale;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -116,5 +121,24 @@ public class InitialAssessment extends Fragment {
         NINCheckbox.setOnClickListener(view15 -> Utilities.doVisibility(NINCheckbox.isChecked(), NINField));
 
         IDCheckbox.setOnClickListener(view16 -> Utilities.doVisibility(IDCheckbox.isChecked(), IDField));
+
+        Spinner countrySpinner = view.findViewById(R.id.DropdownCountries);
+
+
+        Locale[] locale = Locale.getAvailableLocales();
+        ArrayList<String> countries = new ArrayList<String>();
+        for (Locale loc : locale) {
+            String country = loc.getDisplayCountry();
+            if (country.trim().length() > 0 && !countries.contains(country)) {
+                countries.add(country);
+            }
+        }
+        Collections.sort(countries, String.CASE_INSENSITIVE_ORDER);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, countries);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        countrySpinner.setAdapter(adapter);
     }
+
 }

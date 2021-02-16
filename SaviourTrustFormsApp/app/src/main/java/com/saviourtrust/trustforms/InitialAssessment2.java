@@ -13,6 +13,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -86,6 +89,15 @@ public class InitialAssessment2 extends Fragment {
         EditText injunctionField = view.findViewById(R.id.CHSInjunctionField);
         CheckBox concernCheckbox = view.findViewById(R.id.CHSConcernCheckbox);
         EditText concernField = view.findViewById(R.id.CHSConcernField);
+
+        FloatingActionButton newRowButton = view.findViewById(R.id.AddNewRowButton);
+
+        newRowButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
 
         rentCheckbox.setOnClickListener(new View.OnClickListener() {

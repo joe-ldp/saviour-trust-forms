@@ -30,7 +30,8 @@
             android:inputType="textMultiLine"
             android:hint = "Details:"
             android:visibility="gone"
-            tools:visibility="visible"/>
+            tools:visibility="visible"
+            android:importantForAutofill="no"/>
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/ArsonSwitch"
@@ -47,7 +48,8 @@
             android:inputType="textMultiLine"
             android:hint = "Details:"
             android:visibility="gone"
-            tools:visibility="visible"/>
+            tools:visibility="visible"
+            android:importantForAutofill="no"/>
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/LegalMattersSwitch"
@@ -64,7 +66,8 @@
             android:inputType="textMultiLine"
             android:hint = "Details:"
             android:visibility="gone"
-            tools:visibility="visible"/>
+            tools:visibility="visible"
+            android:importantForAutofill="no"/>
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/DisabilitySwitch"
@@ -81,7 +84,8 @@
             android:inputType="textMultiLine"
             android:hint = "Details:"
             android:visibility="gone"
-            tools:visibility="visible"/>
+            tools:visibility="visible"
+            android:importantForAutofill="no"/>
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/GPSwitch"
@@ -98,7 +102,8 @@
             android:inputType="textMultiLine"
             android:hint = "GP Details:"
             android:visibility="gone"
-            tools:visibility="visible"/>
+            tools:visibility="visible"
+            android:importantForAutofill="no"/>
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/MedicalConditionSwitch"
@@ -115,7 +120,8 @@
             android:inputType="textMultiLine"
             android:hint = "Details:"
             android:visibility="gone"
-            tools:visibility="visible"/>
+            tools:visibility="visible"
+            android:importantForAutofill="no"/>
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/MentalHealthIssuesSwitch"
@@ -132,7 +138,8 @@
             android:inputType="textMultiLine"
             android:hint = "Details:"
             android:visibility="gone"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            android:importantForAutofill="no"/>
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/RegisteredWithAgencySwitch"
@@ -149,7 +156,8 @@
             android:inputType="textMultiLine"
             android:hint = "Contact Details:"
             android:visibility="gone"
-            tools:visibility="visible"/>
+            tools:visibility="visible"
+            android:importantForAutofill="no"/>
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/DomesticAbuseSwitch"
@@ -166,7 +174,8 @@
             android:inputType="textMultiLine"
             android:hint = "Details:"
             android:visibility="gone"
-            tools:visibility="visible"/>
+            tools:visibility="visible"
+            android:importantForAutofill="no"/>
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/SupportSwitch"
@@ -183,7 +192,8 @@
             android:inputType="textMultiLine"
             android:hint = "Details:"
             android:visibility="gone"
-            tools:visibility="visible"/>
+            tools:visibility="visible"
+            android:importantForAutofill="no"/>
 
         <CheckBox
             android:id="@+id/PermanentAccommodationCheckbox"

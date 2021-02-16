@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent" android:layout_height="fill_parent"
-    android:windowSoftInputMode="adjustPan"
-    >
+    android:windowSoftInputMode="adjustPan">
 
     <LinearLayout
         android:id="@+id/menu_ll"
@@ -92,6 +91,7 @@
             android:autofillHints="" />
 
         <LinearLayout
+            android:id="@+id/TableHeadings"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
@@ -124,6 +124,58 @@
                 android:layout_weight="1"
                 android:text="@string/reason_for_leaving" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextTextPostalAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:importantForAutofill="no"/>
+
+            <EditText
+                android:id="@+id/editTextDate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="date"
+                android:importantForAutofill="no"/>
+
+            <EditText
+                android:id="@+id/editTextDate3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="date"
+                android:importantForAutofill="no"/>
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:importantForAutofill="no"/>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/AddNewRowButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@android:drawable/ic_menu_add" />
 
         <LinearLayout
             android:layout_width="match_parent"

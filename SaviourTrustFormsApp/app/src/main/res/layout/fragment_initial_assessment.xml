@@ -15,15 +15,51 @@
         android:orientation="vertical"
         tools:ignore="HardcodedText">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INITIAL SUPPORT ASSESSMENT"
+            android:textColor="@color/mainVariant"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\nDear Applicant,\nWe will use the information gathered on this form to process your application.\n\nWe may need to collect information about you from other agencies in order to fully assess your application.\n"
+
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Applicant's Details:\n"
+            android:textColor="@color/mainVariant"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="18sp" />
+
         <EditText
             android:id="@+id/NameField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Applicant's Name"
+            android:hint="John Smith"
             android:inputType="textPersonName"
             android:importantForAutofill="no" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address/Last Known Address:"
+            android:textSize="18sp" />
+
+<!-- TODO: address is weird format.-->
         <EditText
             android:id="@+id/AddressField"
             android:layout_width="match_parent"
@@ -33,21 +69,41 @@
             android:inputType="textPostalAddress"
             android:importantForAutofill="no" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Postcode:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Postcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPostalAddress"
+            android:hint="Postcode"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telephone Number"
+            android:textSize="18sp" />
+
         <EditText
             android:id="@+id/PhoneNoField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Telephone Number"
+            android:hint="0123 456 7890"
             android:inputType="phone"
             android:importantForAutofill="no" />
 
         <TextView
-            android:id="@+id/AltContactLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Alternative Contact Information"
-            android:textSize="24sp"/>
+            android:text="Alternative Contact Number/Name:"
+            android:textSize="18sp" />
 
         <LinearLayout
             android:id="@+id/horizontalLayoutAltContact"
@@ -75,57 +131,74 @@
                 android:inputType="phone" />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/ProofOfNINCheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Proof of N.I No" />
+
+            <EditText
+                android:id="@+id/NINField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="N.I No"
+                android:importantForAutofill="no"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/IDProducedCheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="I.D Produced:" />
+
+            <EditText
+                android:id="@+id/IDDetailsField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="ID Details"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </LinearLayout>
+
         <TextView
-            android:id="@+id/NINLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="National Insurance Information" />
+            android:text="Nationality:"
+            android:textSize="18sp" />
 
-
-        <CheckBox
-            android:id="@+id/ProofOfNINCheckbox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Proof of N.I No" />
-
-        <EditText
-            android:id="@+id/NINField"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="N.I No"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:visibility="gone"
-            tools:visibility="visible" />
-
-        <CheckBox
-            android:id="@+id/IDProducedCheckbox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="I.D Produced" />
-
-        <EditText
-            android:id="@+id/IDDetailsField"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="ID Details"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:visibility="gone"
-            tools:visibility="visible" />
-
-        <!--TODO: DOESN'T WORK-->
         <Spinner
             android:id="@+id/DropdownCountries"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingTop="20px"
+            android:paddingBottom="20px"
             android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of birth:"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/DOBField"
@@ -133,8 +206,14 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="date"
-            android:hint="Date Of Birth"
+            android:hint="DD/MM/YYYY"
             android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Age:"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/AgeField"
@@ -144,6 +223,12 @@
             android:inputType="numberDecimal"
             android:hint="Age"
             android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:textSize="18sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -173,19 +258,33 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/NOKLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Next of Kin's Details" />
+            android:text="Next of Kin's Details:"
+            android:textColor="@color/mainVariant"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/NOKNameField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Name"
+            android:hint="John Smith"
             android:inputType="textPersonName"
             android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/NOKAddressField"
@@ -196,14 +295,11 @@
             android:inputType="textPostalAddress"
             android:importantForAutofill="no" />
 
-        <EditText
-            android:id="@+id/NOKPhoneNoField"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Telephone Number"
-            android:inputType="phone"
-            android:importantForAutofill="no" />
+            android:text="Postcode:"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/NOKPostcode"
@@ -211,7 +307,23 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPostalAddress"
-            android:hint="Postcode" />
+            android:hint="Postcode"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telephone Number:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/NOKPhoneNoField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="0123 456 7890"
+            android:inputType="phone"
+            android:importantForAutofill="no" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -234,7 +346,6 @@
                 android:layout_weight="1"
                 android:text="Next Page >"
                 style="?android:attr/buttonBarButtonStyle" />
-
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

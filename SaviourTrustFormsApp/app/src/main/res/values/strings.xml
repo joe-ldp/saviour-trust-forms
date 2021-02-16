@@ -81,4 +81,5 @@
     <string name="property_address_amp_postcode"><![CDATA[Property Address & Postcode]]></string>
     <string name="submit_form">Submit Form</string>
     <string name="next_page"><![CDATA[Next Page >]]></string>
+    <string name="dob_example" />
 </resources>
