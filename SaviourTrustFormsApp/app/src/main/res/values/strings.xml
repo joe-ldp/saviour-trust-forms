@@ -52,7 +52,8 @@
     <string name="name_example">e.g. John Doe</string>
     <string name="name">Name</string>
     <string name="postcode">Postcode</string>
-    <string name="owner">Owner</string>
+    <string name="postcode_example">e.g. NG15 7HL</string>
+    <string name="owner">Owner Details</string>
     <string name="phone">Phone</string>
     <string name="rent_paid">Rent Paid</string>
     <string name="room_rate">Room Rate</string>
@@ -72,5 +73,12 @@
     <string name="save">Save</string>
     <string name="room_one_details">Room one details</string>
     <string name="room_two_details">Room two details</string>
-
+    <string name="electricity_info">Electricity Info</string>
+    <string name="gas_info">Gas Info</string>
+    <string name="phone_example">e.g. 01234 567890</string>
+    <string name="amount_paid_example">e.g. £1,820</string>
+    <string name="room_rate_example">e.g. £250 ppm</string>
+    <string name="number_of_voids">Number of Voids</string>
+    <string name="number_of_rooms">Number of Rooms</string>
+    <string name="property_address_amp_postcode"><![CDATA[Property Address & Postcode]]></string>
 </resources>
