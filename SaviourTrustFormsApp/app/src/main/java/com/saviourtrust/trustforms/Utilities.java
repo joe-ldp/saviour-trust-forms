@@ -5,15 +5,15 @@ import android.widget.EditText;
 
 public class Utilities
 {
-    public static void doVisibility(boolean checked, EditText et)
+    public static void doVisibility(boolean checked, View view)
     {
         if (checked)
         {
-            et.setVisibility(View.VISIBLE);
+            view.setVisibility(View.VISIBLE);
         }
         else
         {
-            et.setVisibility(View.GONE);
+            view.setVisibility(View.GONE);
         }
     }
 }
