@@ -81,70 +81,44 @@
             android:layout_height="wrap_content"
             android:text="National Insurance Information" />
 
-        <TableLayout
+
+        <CheckBox
+            android:id="@+id/ProofOfNINCheckbox"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Proof of N.I No" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <CheckBox
-                    android:id="@+id/ProofOfNINCheckbox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Proof of N.I No" />
-            </TableRow>
-            <TableRow>
-
-                <EditText
-                    android:id="@+id/NINField"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="N.I No"
-                    android:importantForAutofill="no"
-                    android:inputType="number"
-                    android:visibility="gone"
-                    tools:visibility="visible" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <CheckBox
-                    android:id="@+id/IDProducedCheckbox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="I.D Produced" />
-
-            </TableRow>
-            <TableRow>
-                <EditText
-                    android:id="@+id/IDDetailsField"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="ID Details"
-                    android:importantForAutofill="no"
-                    android:inputType="number"
-                    android:visibility="gone"
-                    tools:visibility="visible" />
-            </TableRow>
-
-        </TableLayout>
-        <LinearLayout
-            android:id="@+id/HorizontalLayoutNIN2"
+        <EditText
+            android:id="@+id/NINField"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="N.I No"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:visibility="gone"
+            tools:visibility="visible" />
 
-        </LinearLayout>
+        <CheckBox
+            android:id="@+id/IDProducedCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="I.D Produced" />
+
+        <EditText
+            android:id="@+id/IDDetailsField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="ID Details"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:visibility="gone"
+            tools:visibility="visible" />
 
         <!--TODO: DOESN'T WORK-->
         <Spinner
@@ -175,7 +149,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
-        <!--TODO: uncheck other boxes when one has been clicked -->
+
             <CheckBox
                 android:id="@+id/GenderMaleCheckbox"
                 android:layout_width="wrap_content"
@@ -239,25 +213,27 @@
             android:inputType="textPostalAddress"
             android:hint="Postcode" />
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            style="?android:attr/buttonBarStyle">
 
             <Button
                 android:id="@+id/btnSubmit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Submit Form" />
+                android:text="Submit Form"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btnNextPage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Next Page >" />
+                android:text="Next Page >"
+                style="?android:attr/buttonBarButtonStyle" />
 
         </LinearLayout>
     </LinearLayout>

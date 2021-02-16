@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -76,44 +77,34 @@ public class InitialAssessment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         Button nextPage = view.findViewById(R.id.btnNextPage);
-        nextPage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(InitialAssessment.this).navigate(R.id.action_initialAssessment_to_initialAssessment2);
-            }
-        });
+        nextPage.setOnClickListener(view14 ->
+                NavHostFragment.findNavController(InitialAssessment.this).navigate(R.id.action_initialAssessment_to_initialAssessment2));
 
         CheckBox maleCB = view.findViewById(R.id.GenderMaleCheckbox);
         CheckBox femaleCB = view.findViewById(R.id.GenderFemaleCheckbox);
         CheckBox transCB = view.findViewById(R.id.GenderTransCheckbox);
 
-        maleCB.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view) {
-                if (femaleCB.isChecked() || transCB.isChecked())
-                {
-                    femaleCB.setChecked(false);
-                    transCB.setChecked(false);
-                }
+        maleCB.setOnClickListener(view13 -> {
+            if (femaleCB.isChecked() || transCB.isChecked())
+            {
+                femaleCB.setChecked(false);
+                transCB.setChecked(false);
             }
         });
 
-        femaleCB.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view) {
-                if (maleCB.isChecked() || transCB.isChecked())
-                {
-                    maleCB.setChecked(false);
-                    transCB.setChecked(false);
-                }
+        femaleCB.setOnClickListener(view12 -> {
+            if (maleCB.isChecked() || transCB.isChecked())
+            {
+                maleCB.setChecked(false);
+                transCB.setChecked(false);
             }
         });
 
-        transCB.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view) {
-                if (femaleCB.isChecked() || maleCB.isChecked())
-                {
-                    femaleCB.setChecked(false);
-                    maleCB.setChecked(false);
-                }
+        transCB.setOnClickListener(view1 -> {
+            if (femaleCB.isChecked() || maleCB.isChecked())
+            {
+                femaleCB.setChecked(false);
+                maleCB.setChecked(false);
             }
         });
 
@@ -122,19 +113,8 @@ public class InitialAssessment extends Fragment {
         CheckBox IDCheckbox = view.findViewById(R.id.IDProducedCheckbox);
         EditText IDField = view.findViewById(R.id.IDDetailsField);
 
+        NINCheckbox.setOnClickListener(view15 -> Utilities.doVisibility(NINCheckbox.isChecked(), NINField));
 
-
-
-        NINCheckbox.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Utilities.doVisibility(NINCheckbox.isChecked(), NINField);
-            }
-        });
-
-        IDCheckbox.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Utilities.doVisibility(IDCheckbox.isChecked(), IDField);
-            }
-        });
+        IDCheckbox.setOnClickListener(view16 -> Utilities.doVisibility(IDCheckbox.isChecked(), IDField));
     }
 }

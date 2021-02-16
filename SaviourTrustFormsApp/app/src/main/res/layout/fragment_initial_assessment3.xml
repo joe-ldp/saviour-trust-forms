@@ -13,7 +13,7 @@
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="5dp"
         android:orientation="vertical"
-        tools:ignore="UseSwitchCompatOrMaterialXml, HardcodedText">
+        tools:ignore="HardcodedText">
 
         <TextView
             android:id="@+id/AboutYouLabel"
@@ -31,13 +31,13 @@
             android:inputType="textMultiLine"
             android:hint = "Family Situation:"/>
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/SubstanceMisuseSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Substance misuse?"/>
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/IllicitSubstancesSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,9 +50,11 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-            android:hint = "Details:"/>
+            android:hint = "Details:"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/WorkingWithAgencySwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -91,7 +93,7 @@
             android:visibility="gone"
             tools:visibility="visible"/>
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/CriminalRecordSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -108,13 +110,13 @@
             android:visibility="gone"
             tools:visibility="visible"/>
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/ProbationSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Probation?" />
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/MappaSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -127,7 +129,9 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-            android:hint = "Details:"/>
+            android:hint = "Details:"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <EditText
             android:id="@+id/ProbationOfficerNameField"
@@ -136,20 +140,28 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:hint="Probation officer's Name:"
-            android:importantForAutofill="no" />
+            android:importantForAutofill="no"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
-        <TextView
+        <EditText
             android:id="@+id/AreaField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Area:" />
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint = "Details:"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <LinearLayout
             android:id="@+id/RiskCheckboxLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <!--TODO: uncheck other boxes when one has been clicked -->
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="visible">
             <CheckBox
                 android:id="@+id/HighRiskCheckbox"
                 android:layout_width="wrap_content"
@@ -174,21 +186,24 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            style="?android:attr/buttonBarStyle">
 
             <Button
                 android:id="@+id/btnSubmit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Submit Form" />
+                android:text="Submit Form"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btnNextPage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Next Page >" />
+                android:text="Next Page >"
+                style="?android:attr/buttonBarButtonStyle" />
 
         </LinearLayout>
     </LinearLayout>

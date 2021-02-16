@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SwitchCompat;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
@@ -11,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Switch;
@@ -83,53 +85,60 @@ public class InitialAssessment3 extends Fragment {
         });
 
 
-        Switch substanceMisuseSwitch = view.findViewById(R.id.SubstanceMisuseSwitch);
-        Switch illicitSubstanceSwitch = view.findViewById(R.id.IllicitSubstancesSwitch);
+        SwitchCompat substanceMisuseSwitch = view.findViewById(R.id.SubstanceMisuseSwitch);
+        SwitchCompat illicitSubstanceSwitch = view.findViewById(R.id.IllicitSubstancesSwitch);
         EditText substanceField = view.findViewById(R.id.SubstanceDetailsField);
 
-        Switch WWA = view.findViewById(R.id.WorkingWithAgencySwitch);
+        SwitchCompat WWA = view.findViewById(R.id.WorkingWithAgencySwitch);
         EditText WWADetails = view.findViewById(R.id.WWADetailsField);
         EditText WWAName = view.findViewById(R.id.ContactNameField);
         EditText WWANumber = view.findViewById(R.id.ContactNumberField);
 
-        Switch criminalRecordSwitch = view.findViewById(R.id.CriminalRecordSwitch);
+        SwitchCompat criminalRecordSwitch = view.findViewById(R.id.CriminalRecordSwitch);
         EditText CRField = view.findViewById(R.id.CRDetailsField);
 
-        Switch probationSwitch = view.findViewById(R.id.ProbationSwitch);
-        Switch mappaSwitch = view.findViewById(R.id.MappaSwitch);
+        SwitchCompat probationSwitch = view.findViewById(R.id.ProbationSwitch);
+        SwitchCompat mappaSwitch = view.findViewById(R.id.MappaSwitch);
         EditText detailsField = view.findViewById(R.id.ProbationDetailsField);
         EditText POField = view.findViewById(R.id.ProbationOfficerNameField);
 
-        TextView areaField = view.findViewById(R.id.AreaField);
+        EditText areaField = view.findViewById(R.id.AreaField);
         LinearLayout riskCheckboxes = view.findViewById(R.id.RiskCheckboxLayout);
 
 
         probationSwitch.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                Utilities.doVisibility(probationSwitch.isChecked(), detailsField);
-                Utilities.doVisibility(probationSwitch.isChecked(), POField);
-                //Utilities.doVisibility(probationSwitch.isChecked(), areaField);
-
+                if (!mappaSwitch.isChecked()) {
+                    Utilities.doVisibility(probationSwitch.isChecked(), detailsField);
+                    Utilities.doVisibility(probationSwitch.isChecked(), POField);
+                    Utilities.doVisibility(probationSwitch.isChecked(), areaField);
+                    Utilities.doVisibility(probationSwitch.isChecked(), riskCheckboxes);
+                }
             }
         });
 
         mappaSwitch.setOnClickListener(new View.OnClickListener() {
            public void onClick(View view) {
-               Utilities.doVisibility(probationSwitch.isChecked(), detailsField);
-               Utilities.doVisibility(probationSwitch.isChecked(), POField);
-               //Utilities.doVisibility(probationSwitch.isChecked(), areaField);
+               if (!probationSwitch.isChecked()) {
+                   Utilities.doVisibility(mappaSwitch.isChecked(), detailsField);
+                   Utilities.doVisibility(mappaSwitch.isChecked(), POField);
+                   Utilities.doVisibility(mappaSwitch.isChecked(), areaField);
+                   Utilities.doVisibility(mappaSwitch.isChecked(), riskCheckboxes);
+               }
            }
         });
 
         substanceMisuseSwitch.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Utilities.doVisibility(substanceMisuseSwitch.isChecked(), substanceField);
+                if(!illicitSubstanceSwitch.isChecked())
+                    Utilities.doVisibility(substanceMisuseSwitch.isChecked(), substanceField);
             }
         });
 
         illicitSubstanceSwitch.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Utilities.doVisibility(illicitSubstanceSwitch.isChecked(), substanceField);
+                if(!substanceMisuseSwitch.isChecked())
+                    Utilities.doVisibility(illicitSubstanceSwitch.isChecked(), substanceField);
             }
         });
 
@@ -146,6 +155,41 @@ public class InitialAssessment3 extends Fragment {
                 Utilities.doVisibility(criminalRecordSwitch.isChecked(), CRField);
             }
         });
+
+        CheckBox highRiskCB = view.findViewById(R.id.HighRiskCheckbox);
+        CheckBox mediumRiskCB = view.findViewById(R.id.MediumRiskCheckbox);
+        CheckBox lowRiskCB = view.findViewById(R.id.LowRiskCheckbox);
+
+        highRiskCB.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                if (mediumRiskCB.isChecked() || lowRiskCB.isChecked())
+                {
+                    mediumRiskCB.setChecked(false);
+                    lowRiskCB.setChecked(false);
+                }
+            }
+        });
+
+        mediumRiskCB.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                if (highRiskCB.isChecked() || lowRiskCB.isChecked())
+                {
+                    highRiskCB.setChecked(false);
+                    lowRiskCB.setChecked(false);
+                }
+            }
+        });
+
+        lowRiskCB.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                if (mediumRiskCB.isChecked() || highRiskCB.isChecked())
+                {
+                    mediumRiskCB.setChecked(false);
+                    highRiskCB.setChecked(false);
+                }
+            }
+        });
+
 
     }
 }

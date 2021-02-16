@@ -15,7 +15,7 @@
         android:orientation="vertical"
         tools:ignore="HardcodedText">
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/SexOffenderSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
             android:visibility="gone"
             tools:visibility="visible"/>
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/ArsonSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
             android:visibility="gone"
             tools:visibility="visible"/>
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/LegalMattersSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
             android:visibility="gone"
             tools:visibility="visible"/>
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/DisabilitySwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -100,11 +100,11 @@
             android:visibility="gone"
             tools:visibility="visible"/>
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/MedicalConditionSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mappa?" />
+            android:text="Are there any other medical conditions that you would like to disclose?" />
 
         <EditText
             android:id="@+id/MedicalConditionDetailsField"
@@ -117,7 +117,7 @@
             android:visibility="gone"
             tools:visibility="visible"/>
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/MentalHealthIssuesSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -134,7 +134,7 @@
             android:visibility="gone"
             tools:visibility="visible" />
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/RegisteredWithAgencySwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -151,7 +151,7 @@
             android:visibility="gone"
             tools:visibility="visible"/>
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/DomesticAbuseSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -164,9 +164,11 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-            android:hint = "Details:"/>
+            android:hint = "Details:"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/SupportSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -188,54 +190,67 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Permanent Checkbox" />
+            android:text="Permanent Checkbox"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <CheckBox
             android:id="@+id/MentalHealthCheckbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Mental Health" />
+            android:text="Mental Health"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <CheckBox
             android:id="@+id/EmploymentCheckbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Employment" />
+            android:text="Employment"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <CheckBox
             android:id="@+id/BudgetCheckbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Budget" />
+            android:text="Budget"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <CheckBox
             android:id="@+id/OtherCheckbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Other" />
+            android:text="Other"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            style="?android:attr/buttonBarStyle">
 
             <Button
                 android:id="@+id/btnSubmit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Submit Form" />
+                android:text="Submit Form"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btnNextPage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Next Page >" />
+                android:text="Next Page >"
+                style="?android:attr/buttonBarButtonStyle" />
 
         </LinearLayout>
     </LinearLayout>

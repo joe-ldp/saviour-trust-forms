@@ -82,31 +82,34 @@ public class InitialAssessment4 extends Fragment {
             }
         });
 
-        Switch SOSwitch = view.findViewById(R.id.SexOffenderSwitch);
+        SwitchCompat SOSwitch = view.findViewById(R.id.SexOffenderSwitch);
         EditText SOField = view.findViewById(R.id.SOField);
 
-        Switch arsonSwitch = view.findViewById(R.id.ArsonSwitch);
+        SwitchCompat arsonSwitch = view.findViewById(R.id.ArsonSwitch);
         EditText arsonField = view.findViewById(R.id.ArsonDetailsField);
 
-        Switch LMSwitch = view.findViewById(R.id.LegalMattersSwitch);
+        SwitchCompat LMSwitch = view.findViewById(R.id.LegalMattersSwitch);
         EditText LMField = view.findViewById(R.id.LegalMattersField);
 
-        Switch disabilitySwitch = view.findViewById(R.id.DisabilitySwitch);
+        SwitchCompat disabilitySwitch = view.findViewById(R.id.DisabilitySwitch);
         EditText disabilityField = view.findViewById(R.id.DisabilityField);
 
         SwitchCompat GPSwitch = view.findViewById(R.id.GPSwitch);
         EditText GPField = view.findViewById(R.id.GPDetailsField);
 
-        Switch MCSwitch = view.findViewById(R.id.MedicalConditionSwitch);
+        SwitchCompat MHISwitch = view.findViewById(R.id.MentalHealthIssuesSwitch);
+        EditText MHIField = view.findViewById(R.id.MHIDetailsField);
+
+        SwitchCompat MCSwitch = view.findViewById(R.id.MedicalConditionSwitch);
         EditText MCField = view.findViewById(R.id.MedicalConditionDetailsField);
 
-        Switch RWASwitch = view.findViewById(R.id.RegisteredWithAgencySwitch);
+        SwitchCompat RWASwitch = view.findViewById(R.id.RegisteredWithAgencySwitch);
         EditText RWAField = view.findViewById(R.id.RWADetailsField);
 
-        Switch DASwitch = view.findViewById(R.id.DomesticAbuseSwitch);
+        SwitchCompat DASwitch = view.findViewById(R.id.DomesticAbuseSwitch);
         EditText DAField = view.findViewById(R.id.DADetailsField);
 
-        Switch supportSwitch = view.findViewById(R.id.SupportSwitch);
+        SwitchCompat supportSwitch = view.findViewById(R.id.SupportSwitch);
         EditText supportField = view.findViewById(R.id.SupportDetailsField);
 
         CheckBox PACB = view.findViewById(R.id.PermanentAccommodationCheckbox);
@@ -114,6 +117,12 @@ public class InitialAssessment4 extends Fragment {
         CheckBox employmentCB = view.findViewById(R.id.EmploymentCheckbox);
         CheckBox budgetCB = view.findViewById(R.id.BudgetCheckbox);
         CheckBox otherCB = view.findViewById(R.id.OtherCheckbox);
+
+        MHISwitch.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Utilities.doVisibility(MHISwitch.isChecked(), MHIField);
+            }
+        });
 
         SOSwitch.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -166,6 +175,11 @@ public class InitialAssessment4 extends Fragment {
         supportSwitch.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Utilities.doVisibility(supportSwitch.isChecked(), supportField);
+                Utilities.doVisibility(supportSwitch.isChecked(), PACB);
+                Utilities.doVisibility(supportSwitch.isChecked(), MHCB);
+                Utilities.doVisibility(supportSwitch.isChecked(), employmentCB);
+                Utilities.doVisibility(supportSwitch.isChecked(), budgetCB);
+                Utilities.doVisibility(supportSwitch.isChecked(), otherCB);
             }
         });
 

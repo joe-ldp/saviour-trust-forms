@@ -19,8 +19,6 @@
     <string name="from">From</string>
     <string name="to">To</string>
     <string name="reason_for_leaving">Reason for leaving</string>
-    <string name="next_page">Next Page</string>
-    <string name="submit_form">Submit Form</string>
     <string name="notes_on_toaster">Notes on toaster</string>
     <string name="notes_on_fryer">Notes on fryer</string>
     <string name="notes_on_hoover">Notes on hoover</string>
@@ -81,5 +79,6 @@
     <string name="number_of_voids">Number of Voids</string>
     <string name="number_of_rooms">Number of Rooms</string>
     <string name="property_address_amp_postcode"><![CDATA[Property Address & Postcode]]></string>
-    <string name="dob_example">e.g. 14/06/1987</string>
+    <string name="submit_form">Submit Form</string>
+    <string name="next_page"><![CDATA[Next Page >]]></string>
 </resources>

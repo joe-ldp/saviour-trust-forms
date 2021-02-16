@@ -16,46 +16,116 @@
         tools:ignore="HardcodedText">
 
         <TextView
-            android:id="@+id/BenefitsField"
+            android:id="@+id/BenefitsLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="What benefits do you receive?" />
 
+
+        <EditText
+            android:id="@+id/BenefitsField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
         <TextView
-            android:id="@+id/ESAField"
+            android:id="@+id/ESALabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="ESA" />
+
+        <EditText
+            android:id="@+id/ESAField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
         <TextView
-            android:id="@+id/JobSeekersField"
+            android:id="@+id/JobSeekersLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Job Seekers Allowance" />
+
+        <EditText
+            android:id="@+id/JobSeekersField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
         <TextView
-            android:id="@+id/DisabilityLivingField"
+            android:id="@+id/DisabilityLivingLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Disability living allowance" />
+
+        <EditText
+            android:id="@+id/DisabilityField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
         <TextView
-            android:id="@+id/SevereDisabilityField"
+            android:id="@+id/SevereDisabilityLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Severe disability allowance" />
+        <EditText
+            android:id="@+id/SevereDisabilityField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
         <TextView
-            android:id="@+id/IncapacityBenefitField"
+            android:id="@+id/IncapacityBenefitLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Incapacity Benefit" />
+
+        <EditText
+            android:id="@+id/IncapacityBenefitField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
         <TextView
-            android:id="@+id/UniversalCreditField"
+            android:id="@+id/UniversalCreditLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Universal Credit" />
+
+        <EditText
+            android:id="@+id/UniversalCreditField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
         <TextView
-            android:id="@+id/PIPField"
+            android:id="@+id/PIPLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="PIP" />
+
+        <EditText
+            android:id="@+id/PIPField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/Otherlabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Other(Please state)"/>
 
         <EditText
             android:id="@+id/OtherField"
@@ -63,22 +133,34 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="start|top"
-            android:inputType="textMultiLine"
-            android:hint="Other(Please state)"/>
+            android:inputType="textMultiLine" />
 
         <TextView
-            android:id="@+id/NextPayDateField"
+            android:id="@+id/NextPayDateLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="When is your next pay date?" />
 
         <!--change to accept £££ -->
+        <EditText
+            android:id="@+id/NextPayDateField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date" />
+
         <TextView
-            android:id="@+id/NextPayAmountField"
+            android:id="@+id/NextPayAmountLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="How much will you receive?£" />
 
+        <EditText
+            android:id="@+id/NextPayAmountField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
 
         <CheckBox
             android:id="@+id/WeeklyPaymentCheckbox"
@@ -92,91 +174,134 @@
             android:layout_height="wrap_content"
             android:text="Fortnightly" />
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/EmployedSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Are you working?" />
 
         <TextView
+            android:id="@+id/WeeklyHoursLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How many hours do you work a week?"
+            />
+
+
+        <EditText
             android:id="@+id/WeeklyHoursField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="How many hours do you work a week?" />
-
-        <!--also change to accept £££ -->
+            android:ems="10"
+            android:inputType="number"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <TextView
-            android:id="@+id/WeeklyEarningsField"
+            android:id="@+id/WeeklyEarningsLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="What are your weekly earnings?£" />
 
-        <Switch
+        <EditText
+            android:id="@+id/WeeklyEarningField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/EducationSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Are you in education or on a training course?" />
 
         <TextView
-            android:id="@+id/CourseField"
+            android:id="@+id/CourseLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="What course are you doing?" />
+
+        <EditText
+            android:id="@+id/CourseField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
         <TextView
-            android:id="@+id/CourseHoursField"
+            android:id="@+id/CourseHoursLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="What hours do you do?" />
 
-        <Switch
+        <EditText
+            android:id="@+id/CourseHoursField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/ServiceUsersSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Are the service users basic needs met?" />
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/ClothingSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Clothing?" />
 
-        <TextView
+        <EditText
             android:id="@+id/ClothingField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Support given:" />
+            android:hint="Support given:"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/FoodSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Food?" />
 
-        <TextView
+        <EditText
             android:id="@+id/FoodField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Support given:" />
+            android:hint="Support given:"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            style="?android:attr/buttonBarStyle">
 
             <Button
                 android:id="@+id/btnSubmit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Submit Form" />
+                android:text="Submit Form"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btnNextPage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Next Page >" />
+                android:text="Next Page >"
+                style="?android:attr/buttonBarButtonStyle" />
 
         </LinearLayout>
     </LinearLayout>

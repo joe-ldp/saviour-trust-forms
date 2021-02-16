@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SwitchCompat;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
@@ -11,6 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Switch;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -77,6 +80,28 @@ public class InitialAssessment5 extends Fragment {
                 NavHostFragment.findNavController(InitialAssessment5.this).navigate(R.id.action_initialAssessment5_to_Homepage);
             }
         });
+
+        SwitchCompat clothingSwitch = view.findViewById(R.id.ClothingSwitch);
+        EditText clothingField = view.findViewById(R.id.ClothingField);
+
+        SwitchCompat foodSwitch = view.findViewById(R.id.FoodSwitch);
+        EditText foodField = view.findViewById(R.id.FoodField);
+
+        clothingSwitch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Utilities.doVisibility(clothingSwitch.isChecked(), clothingField);
+            }
+        });
+
+        foodSwitch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Utilities.doVisibility(foodSwitch.isChecked(), foodField);
+            }
+        });
+
+
 
     }
 }
