@@ -13,22 +13,212 @@
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="5dp"
 
-        tools:ignore="DuplicateIds, HardcodedText">
+        tools:ignore="HardcodedText">
 
         <TextView
-            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Name" />
+            android:text="Full Name &amp; Phone Number" />
 
         <EditText
-            android:id="@+id/editTextName"
+            android:id="@+id/editTextSurname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="e.g. John Doe"
+            android:hint="Surname e.g. Smith"
             android:autofillHints="AUTOFILL_HINT_NAME" />
+
+        <EditText
+            android:id="@+id/editTextForename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="AUTOFILL_HINT_NAME"
+            android:ems="10"
+            android:hint="First Name e.g. John"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextMiddleNames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="AUTOFILL_HINT_NAME"
+            android:ems="10"
+            android:hint="Middle Name(s) e.g. Martin"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/phone_example"
+            android:inputType="phone"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Property Address &amp; Occupancy Info" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="16"
+                android:hint="@string/address_example"
+                android:inputType="textPostalAddress"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/editTextRoomNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:hint="Room"
+                android:inputType="number"
+                android:importantForAutofill="no" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextArrivalDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="9"
+                android:hint="Arrival Date"
+                android:inputType="date"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/editTextLeavingDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Leaving Date"
+                android:inputType="date"
+                android:importantForAutofill="no" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Debts &amp; Benefits Info" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextRentDebt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="9"
+                android:hint="Rent Debt"
+                android:inputType="numberDecimal"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/editTextOtherDebt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Other Debt"
+                android:inputType="numberDecimal"
+                android:importantForAutofill="no" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextBenefit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:ems="10"
+            android:hint="Benefits"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="National Insurance Number" />
+
+        <EditText
+            android:id="@+id/editTextNatInsNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:ems="10"
+            android:hint="e.g. AA 12 34 56 C"
+            android:inputType="textVisiblePassword" />
+
+        <CheckBox
+            android:id="@+id/cbIDSeen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID Seen" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth" />
+
+        <EditText
+            android:id="@+id/editTextDoB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:ems="10"
+            android:hint="@string/dob_example"
+            android:inputType="date" />
+
+        <CheckBox
+            android:id="@+id/cbSupportWorker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Support worker?" />
+
+        <EditText
+            android:id="@+id/editTextMoveOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:ems="10"
+            android:hint="Move on"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextReferralOutcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:ems="10"
+            android:hint="Referral outcome"
+            android:inputType="text" />
+
+        <CheckBox
+            android:id="@+id/cbRiskAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Risk Alert" />
+
+        <EditText
+            android:id="@+id/editTextOutcomeOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:ems="10"
+            android:hint="Outcome 1..."
+            android:inputType="text" />
 
         <Button
             android:id="@+id/btnSubmit"
