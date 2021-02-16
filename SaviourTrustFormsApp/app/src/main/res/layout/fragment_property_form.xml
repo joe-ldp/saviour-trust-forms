@@ -7,15 +7,22 @@
     android:fillViewport="true">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/menu_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_height="wrap_content">
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/property_address_amp_postcode" />
 
         <EditText
             android:id="@+id/editTextAddress"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="12dp"
-            android:hint="@string/address"
+            android:hint="@string/address_example"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="AUTOFILL_HINT_ADDRESS"
@@ -23,19 +30,20 @@
 
         <EditText
             android:id="@+id/editTextPostcode"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="12dp"
-            android:hint="@string/postcode"
+            android:hint="@string/postcode_example"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="AUTOFILL_HINT_POSTCODE"
             android:inputType="text" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/owner" />
+
         <EditText
             android:id="@+id/editTextOwner"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="12dp"
-            android:hint="@string/owner"
+            android:hint="@string/name_example"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="AUTOFILL_HINT_NAME"
@@ -43,100 +51,83 @@
 
         <EditText
             android:id="@+id/editTextPhone"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="12dp"
-            android:hint="@string/phone"
+            android:hint="@string/phone_example"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="AUTOFILL_HINT_PHONE_NUMBER"
             android:inputType="phone" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rent_paid" />
+
         <EditText
             android:id="@+id/editTextRentPaid"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="12dp"
-            android:hint="@string/rent_paid"
+            android:hint="@string/amount_paid_example"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="Amount of rent paid"
-            android:inputType="textNoSuggestions" />
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/room_rate" />
 
         <EditText
             android:id="@+id/editTextRoomRate"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="12dp"
-            android:hint="@string/room_rate"
+            android:hint="@string/room_rate_example"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="Cost of room"
-            android:inputType="textNoSuggestions" />
+            android:inputType="numberDecimal" />
 
         <LinearLayout
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="12dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-            <CheckBox
-                android:id="@+id/cbSpareRoom"
-                android:text="@string/spare_room"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-            <CheckBox
-                android:id="@+id/cbSrVoid"
-                android:text="@string/sr_void"
-                android:layout_marginLeft="22dp"
+            <EditText
+                android:id="@+id/editTextNumRooms"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="22dp" />
+                android:ems="10"
+                android:hint="@string/number_of_rooms"
+                android:inputType="number"
+                android:autofillHints="no" />
+
+            <EditText
+                android:id="@+id/editTextNumVoids"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/number_of_voids"
+                android:inputType="number"
+                android:autofillHints="no" />
 
         </LinearLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date Property" />
+
         <EditText
             android:id="@+id/editTextDate"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="12dp"
             android:hint="@string/date_property"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints=""
             android:inputType="date" />
 
-        <EditText
-            android:id="@+id/editTextRoom"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="12dp"
-            android:hint="@string/rooms"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:importantForAutofill="no"
-            android:inputType="textLongMessage" />
-
-        <EditText
-            android:id="@+id/editTextVoids"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="12dp"
-            android:hint="@string/voids"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:importantForAutofill="no"
-            android:inputType="textLongMessage" />
-
-        <EditText
-            android:id="@+id/editTextGasExp"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="12dp"
-            android:hint="@string/gas_cert_expiry"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:importantForAutofill="no"
-            android:inputType="text" />
+            android:text="@string/electricity_info" />
 
         <EditText
             android:id="@+id/editTextElectExp"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="12dp"
             android:hint="@string/elec_cert_expiry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -144,39 +135,15 @@
             android:inputType="date" />
 
         <EditText
-            android:id="@+id/editTextGasSerialNo"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="12dp"
-            android:hint="@string/gas_serial_number"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:importantForAutofill="no"
-            android:inputType="text" />
-
-        <EditText
             android:id="@+id/editTextElectSerialNo"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="12dp"
             android:hint="@string/elec_serial_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:importantForAutofill="no"
-            android:inputType="text" />
-
-        <EditText
-            android:id="@+id/editTextGasProvider"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="12dp"
-            android:hint="@string/gas_provider"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:importantForAutofill="no"
-            android:inputType="text" />
+            android:inputType="textVisiblePassword"/>
 
         <EditText
             android:id="@+id/editTextElecProvider"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="12dp"
             android:hint="@string/electric_provider"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -184,20 +151,45 @@
             android:inputType="text" />
 
         <EditText
-            android:id="@+id/editTextGasMeter"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="12dp"
-            android:hint="@string/gas_meter"
+            android:id="@+id/editTextElecMeter"
+            android:hint="@string/elec_meter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gas_info" />
+
+        <EditText
+            android:id="@+id/editTextGasExp"
+            android:hint="@string/gas_cert_expiry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:importantForAutofill="no"
             android:inputType="text" />
 
         <EditText
-            android:id="@+id/editTextElecMeter"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="12dp"
-            android:hint="@string/elec_meter"
+            android:id="@+id/editTextGasSerialNo"
+            android:hint="@string/gas_serial_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="textVisiblePassword" />
+
+        <EditText
+            android:id="@+id/editTextGasProvider"
+            android:hint="@string/gas_provider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextGasMeter"
+            android:hint="@string/gas_meter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:importantForAutofill="no"
@@ -206,10 +198,9 @@
         <Button
             android:id="@+id/btnSubmit"
             android:text="@string/submit_form"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginVertical="12dp"
+            android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
