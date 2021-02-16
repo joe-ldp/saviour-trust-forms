@@ -5,11 +5,13 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 
@@ -72,7 +74,9 @@ public class InitialAssessment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)
     {
         super.onViewCreated(view, savedInstanceState);
-        view.findViewById(R.id.NextPageButton).setOnClickListener(new View.OnClickListener() {
+
+        Button nextPage = view.findViewById(R.id.btnNextPage);
+        nextPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(InitialAssessment.this).navigate(R.id.action_initialAssessment_to_initialAssessment2);
@@ -117,6 +121,8 @@ public class InitialAssessment extends Fragment {
         EditText NINField = view.findViewById(R.id.NINField);
         CheckBox IDCheckbox = view.findViewById(R.id.IDProducedCheckbox);
         EditText IDField = view.findViewById(R.id.IDDetailsField);
+
+
 
 
         NINCheckbox.setOnClickListener(new View.OnClickListener() {

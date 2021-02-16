@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Switch;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -73,6 +74,14 @@ public class InitialAssessment3 extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        Button nextPage = view.findViewById(R.id.btnNextPage);
+        nextPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(InitialAssessment3.this).navigate(R.id.action_initialAssessment3_to_initialAssessment4);
+            }
+        });
+
 
         Switch substanceMisuseSwitch = view.findViewById(R.id.SubstanceMisuseSwitch);
         Switch illicitSubstanceSwitch = view.findViewById(R.id.IllicitSubstancesSwitch);
@@ -90,22 +99,16 @@ public class InitialAssessment3 extends Fragment {
         Switch mappaSwitch = view.findViewById(R.id.MappaSwitch);
         EditText detailsField = view.findViewById(R.id.ProbationDetailsField);
         EditText POField = view.findViewById(R.id.ProbationOfficerNameField);
-        EditText areaField = view.findViewById(R.id.AreaField);
 
+        TextView areaField = view.findViewById(R.id.AreaField);
         LinearLayout riskCheckboxes = view.findViewById(R.id.RiskCheckboxLayout);
 
-        view.findViewById(R.id.NextPageButton).setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                NavHostFragment.findNavController(InitialAssessment3.this)
-                        .navigate(R.id.action_initialAssessment3_to_initialAssessment4);
-            }
-        });
 
         probationSwitch.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 Utilities.doVisibility(probationSwitch.isChecked(), detailsField);
                 Utilities.doVisibility(probationSwitch.isChecked(), POField);
-                Utilities.doVisibility(probationSwitch.isChecked(), areaField);
+                //Utilities.doVisibility(probationSwitch.isChecked(), areaField);
 
             }
         });
@@ -114,10 +117,9 @@ public class InitialAssessment3 extends Fragment {
            public void onClick(View view) {
                Utilities.doVisibility(probationSwitch.isChecked(), detailsField);
                Utilities.doVisibility(probationSwitch.isChecked(), POField);
-               Utilities.doVisibility(probationSwitch.isChecked(), areaField);
+               //Utilities.doVisibility(probationSwitch.isChecked(), areaField);
            }
         });
-
 
         substanceMisuseSwitch.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {

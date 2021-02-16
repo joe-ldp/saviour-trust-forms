@@ -74,13 +74,11 @@ public class InitialAssessment4 extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button nextPage = view.findViewById(R.id.NextPageButton);
+        Button nextPage = view.findViewById(R.id.btnNextPage);
         nextPage.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View view) {
-
-                NavHostFragment.findNavController(InitialAssessment4.this)
-                        .navigate(R.id.action_initialAssessment4_to_initialAssessment5);
-
+                NavHostFragment.findNavController(InitialAssessment4.this).navigate(R.id.action_initialAssessment4_to_initialAssessment5);
             }
         });
 
