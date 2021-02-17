@@ -1,5 +1,6 @@
 package com.saviourtrust.trustforms;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,6 +15,8 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -91,10 +94,13 @@ public class InitialAssessment2 extends Fragment {
         EditText concernField = view.findViewById(R.id.CHSConcernField);
 
         FloatingActionButton newRowButton = view.findViewById(R.id.AddNewRowButton);
+        TableLayout housingTable = view.findViewById(R.id.HousingTable);
 
         newRowButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                View view1 = getLayoutInflater().inflate(R.layout.fragment_housing_table, housingTable, false);
+                housingTable.addView(view1);
 
             }
         });
