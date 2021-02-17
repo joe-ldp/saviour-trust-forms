@@ -19,33 +19,72 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Thank you for completing this application form" />
+            android:text="Thank you for completing this application form"
+            android:textColor="@color/mainVariant"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Our commitment" />
+            android:text="Our commitment"
+            android:textColor="@color/mainVariant"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="\u2022  We will confirm with you that we have received your application.
-                          \u2022  We are bound by Confidentiality procedures and Data Protection legislation. Other than potentially being shared amongst our staff team, your application and its contents will not be shared with any outside agency or person(s).
-                          \u2022  If we think we may be able to help you, we will invite you to an interview to discuss your application in more detail.
-                          \u2022  We will keep you informed about how your application is progressing.
-                          \u2022  If we cannot offer you a place with our service we will let you know and give you the reasons for our decision.
-                          \u2022  We will make sure we treat your application fairly and without discrimination.
-" />
+                          \n\n\u2022  We are bound by Confidentiality procedures and Data Protection legislation. Other than potentially being shared amongst our staff team, your application and its contents will not be shared with any outside agency or person(s).
+                          \n\n\u2022  If we think we may be able to help you, we will invite you to an interview to discuss your application in more detail.
+                          \n\n\u2022  We will keep you informed about how your application is progressing.
+                          \n\n\u2022  If we cannot offer you a place with our service we will let you know and give you the reasons for our decision.
+                          \n\n\u2022  We will make sure we treat your application fairly and without discrimination.\n"
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Appeals Process"
+            android:textColor="@color/mainVariant"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="If you are unhappy about any decision made in the application process, you can appeal to the General Manager. You can do this in writing, by telephone, or in person.\nTheir details can be found on the foot of this form."
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\nI consent to, and understand that, my name and address may be shared with the Police, Emergency Services, Wakefield Council and Probation Services"
+            android:textColor="@color/mainVariant"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Signed (applicant)" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Print name:"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="Date" />
 
         <LinearLayout
             android:layout_width="match_parent"
