@@ -80,7 +80,6 @@
             tools:visibility="visible"
             android:importantForAutofill="no"/>
 
-<!--TODO: RA boxes-->
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/WorkingWithAgencySwitch"
@@ -122,21 +121,25 @@
             android:visibility="gone"
             tools:visibility="visible"/>
 
-        <!--<TextView
-            android:id="@+id/textView"
+        <TextView
+            android:id="@+id/RALabel"
             android:layout_width="39dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:gravity="center"
-            android:text="RA" />
+            android:text="RA"
+            android:visibility="gone"
+            tools:visibility="visible" />
 
         <EditText
-            android:id="@+id/RAField"
+            android:id="@+id/RABox"
             android:layout_width="39dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:ems="10"
-            android:inputType="number" />-->
+            android:inputType="number"
+            android:visibility="gone"
+            tools:visibility="visible" />
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/CriminalRecordSwitch"
@@ -155,6 +158,26 @@
             android:visibility="gone"
             tools:visibility="visible"
             android:importantForAutofill="no"/>
+
+        <TextView
+            android:id="@+id/RALabel2"
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="RA"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/RABox2"
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:ems="10"
+            android:inputType="number"
+            android:visibility="gone"
+            tools:visibility="visible" />
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/ProbationSwitch"
@@ -231,28 +254,40 @@
                 android:layout_weight="1"
                 android:text="Low Risk" />
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            style="?android:attr/buttonBarStyle">
 
-            <Button
-                android:id="@+id/btnSubmit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Submit Form"
-                style="?android:attr/buttonBarButtonStyle" />
+        <TextView
+            android:id="@+id/RALabel3"
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="RA"
+            android:visibility="gone"
+            tools:visibility="visible" />
 
-            <Button
-                android:id="@+id/btnNextPage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Next Page >"
-                style="?android:attr/buttonBarButtonStyle" />
+        <EditText
+            android:id="@+id/RABox3"
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:ems="10"
+            android:inputType="number"
+            android:visibility="gone"
+            tools:visibility="visible" />
 
-        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnNextPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Next Page >"
+            android:gravity="center"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
     </LinearLayout>
 </ScrollView>

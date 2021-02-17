@@ -82,4 +82,5 @@
     <string name="submit_form">Submit Form</string>
     <string name="next_page"><![CDATA[Next Page >]]></string>
     <string name="dob_example" />
+    <string name="ra">RA</string>
 </resources>

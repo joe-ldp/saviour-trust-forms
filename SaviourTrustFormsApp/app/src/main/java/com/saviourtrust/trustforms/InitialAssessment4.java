@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Switch;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -118,9 +119,14 @@ public class InitialAssessment4 extends Fragment {
         CheckBox budgetCB = view.findViewById(R.id.BudgetCheckbox);
         CheckBox otherCB = view.findViewById(R.id.OtherCheckbox);
 
+        TextView RALabel = view.findViewById(R.id.RALabel);
+        EditText RABox = view.findViewById(R.id.RABox);
+
         MHISwitch.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Utilities.doVisibility(MHISwitch.isChecked(), MHIField);
+                Utilities.doVisibility(MHISwitch.isChecked(), RALabel);
+                Utilities.doVisibility(MHISwitch.isChecked(), RABox);
             }
         });
 

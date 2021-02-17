@@ -157,7 +157,6 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="@string/reason_for_leaving" />
-
                 </LinearLayout>
         </TableLayout>
 
@@ -170,43 +169,34 @@
             app:srcCompat="@android:drawable/ic_input_add" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/RALabel"
             android:layout_width="39dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:gravity="center"
-            android:text="RA" />
+            android:text="@string/ra" />
 
         <EditText
-            android:id="@+id/RAField"
+            android:id="@+id/RABox"
             android:layout_width="39dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:ems="10"
             android:inputType="number" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            style="?android:attr/buttonBarStyle">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnNextPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/next_page"
+            android:gravity="center"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
 
-            <Button
-                android:id="@+id/btnSubmit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/submit_form"
-                style="?android:attr/buttonBarButtonStyle" />
-
-            <Button
-                android:id="@+id/btnNextPage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/next_page"
-                style="?android:attr/buttonBarButtonStyle" />
-
-        </LinearLayout>
     </LinearLayout>
 </ScrollView>

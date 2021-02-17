@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:windowSoftInputMode="adjustPan"
+    tools:context=".InitialAssessment7">
+
+    <LinearLayout
+        android:id="@+id/menu_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        tools:ignore="HardcodedText">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thank you for completing this application form" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our commitment" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\u2022  We will confirm with you that we have received your application.
+                          \u2022  We are bound by Confidentiality procedures and Data Protection legislation. Other than potentially being shared amongst our staff team, your application and its contents will not be shared with any outside agency or person(s).
+                          \u2022  If we think we may be able to help you, we will invite you to an interview to discuss your application in more detail.
+                          \u2022  We will keep you informed about how your application is progressing.
+                          \u2022  If we cannot offer you a place with our service we will let you know and give you the reasons for our decision.
+                          \u2022  We will make sure we treat your application fairly and without discrimination.
+" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/SubmitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Submit Form >"
+                android:gravity="center"
+                style="?android:attr/buttonBarButtonStyle" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

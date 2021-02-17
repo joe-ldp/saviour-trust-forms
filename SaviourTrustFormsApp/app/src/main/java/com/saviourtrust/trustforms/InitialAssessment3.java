@@ -18,6 +18,8 @@ import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link InitialAssessment3#newInstance} factory method to
@@ -105,6 +107,15 @@ public class InitialAssessment3 extends Fragment {
         EditText areaField = view.findViewById(R.id.AreaField);
         LinearLayout riskCheckboxes = view.findViewById(R.id.RiskCheckboxLayout);
 
+        TextView RALabel = view.findViewById(R.id.RALabel);
+        EditText RABox = view.findViewById(R.id.RABox);
+
+        TextView RALabel2 = view.findViewById(R.id.RALabel2);
+        EditText RABox2 = view.findViewById(R.id.RABox2);
+
+        TextView RALabel3 = view.findViewById(R.id.RALabel3);
+        EditText RABox3 = view.findViewById(R.id.RABox3);
+
 
         probationSwitch.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
@@ -113,6 +124,9 @@ public class InitialAssessment3 extends Fragment {
                     Utilities.doVisibility(probationSwitch.isChecked(), POField);
                     Utilities.doVisibility(probationSwitch.isChecked(), areaField);
                     Utilities.doVisibility(probationSwitch.isChecked(), riskCheckboxes);
+                    Utilities.doVisibility(criminalRecordSwitch.isChecked(), RABox3);
+                    Utilities.doVisibility(criminalRecordSwitch.isChecked(), RALabel3);
+
                 }
             }
         });
@@ -147,12 +161,16 @@ public class InitialAssessment3 extends Fragment {
                 Utilities.doVisibility(WWA.isChecked(), WWADetails);
                 Utilities.doVisibility(WWA.isChecked(), WWAName);
                 Utilities.doVisibility(WWA.isChecked(), WWANumber);
+                Utilities.doVisibility(WWA.isChecked(), RALabel);
+                Utilities.doVisibility(WWA.isChecked(), RABox);
             }
         });
 
         criminalRecordSwitch.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Utilities.doVisibility(criminalRecordSwitch.isChecked(), CRField);
+                Utilities.doVisibility(criminalRecordSwitch.isChecked(), RALabel2);
+                Utilities.doVisibility(criminalRecordSwitch.isChecked(), RABox2);
             }
         });
 

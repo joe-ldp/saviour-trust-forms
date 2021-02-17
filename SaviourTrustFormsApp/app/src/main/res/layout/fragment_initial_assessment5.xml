@@ -217,8 +217,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="How many hours do you work a week?"
-            />
-
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <EditText
             android:id="@+id/WeeklyHoursField"
@@ -235,7 +235,9 @@
             android:id="@+id/WeeklyEarningsLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="What are your weekly earnings?£" />
+            android:text="What are your weekly earnings?£"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <EditText
             android:id="@+id/WeeklyEarningField"
@@ -258,7 +260,9 @@
             android:id="@+id/CourseLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="What course are you doing?" />
+            android:text="What course are you doing?"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <EditText
             android:id="@+id/CourseField"
@@ -268,13 +272,15 @@
             android:visibility="gone"
             tools:visibility="visible"
             android:importantForAutofill="no"
-            android:hint="Course"/>
+            android:hint="Course Title"/>
 
         <TextView
             android:id="@+id/CourseHoursLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="What hours do you do?" />
+            android:text="What hours do you do?"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
         <EditText
             android:id="@+id/CourseHoursField"
@@ -284,7 +290,8 @@
             android:inputType="number"
             android:visibility="gone"
             tools:visibility="visible"
-            android:importantForAutofill="no" />
+            android:importantForAutofill="no"
+            android:hint="Weekly Hours"/>
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/ServiceUsersSwitch"
@@ -325,16 +332,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            style="?android:attr/buttonBarStyle">
-
-            <Button
-                android:id="@+id/btnSubmit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Submit Form"
-                style="?android:attr/buttonBarButtonStyle" />
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btnNextPage"
@@ -342,8 +340,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Next Page >"
+                android:gravity="center"
                 style="?android:attr/buttonBarButtonStyle" />
-
         </LinearLayout>
+
     </LinearLayout>
 </ScrollView>

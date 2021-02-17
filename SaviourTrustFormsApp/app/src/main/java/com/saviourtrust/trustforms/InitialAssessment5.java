@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Switch;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -77,7 +78,7 @@ public class InitialAssessment5 extends Fragment {
         nextPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(InitialAssessment5.this).navigate(R.id.action_initialAssessment5_to_Homepage);
+                NavHostFragment.findNavController(InitialAssessment5.this).navigate(R.id.action_initialAssessment5_to_initialAssessment6);
             }
         });
 
@@ -86,6 +87,41 @@ public class InitialAssessment5 extends Fragment {
 
         SwitchCompat foodSwitch = view.findViewById(R.id.FoodSwitch);
         EditText foodField = view.findViewById(R.id.FoodField);
+
+        SwitchCompat workSwitch = view.findViewById(R.id.EmployedSwitch);
+        TextView workHoursLabel = view.findViewById(R.id.WeeklyHoursLabel);
+        EditText workHoursField = view.findViewById(R.id.WeeklyHoursField);
+        EditText workEarningsField = view.findViewById(R.id.WeeklyEarningField);
+        TextView workEarningsLabel = view.findViewById(R.id.WeeklyEarningsLabel);
+
+
+        SwitchCompat educationSwitch = view.findViewById(R.id.EducationSwitch);
+        TextView educationLabel = view.findViewById(R.id.CourseLabel);
+        EditText educationField = view.findViewById(R.id.CourseField);
+        TextView educationHoursLabel = view.findViewById(R.id.CourseHoursLabel);
+        EditText educationHoursField = view.findViewById(R.id.CourseHoursField);
+
+        workSwitch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Utilities.doVisibility(workSwitch.isChecked(), workEarningsField);
+                Utilities.doVisibility(workSwitch.isChecked(), workHoursField);
+                Utilities.doVisibility(workSwitch.isChecked(), workHoursLabel);
+                Utilities.doVisibility(workSwitch.isChecked(), workEarningsLabel);
+            }
+        });
+
+        educationSwitch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Utilities.doVisibility(educationSwitch.isChecked(), educationField);
+                Utilities.doVisibility(educationSwitch.isChecked(), educationHoursField);
+                Utilities.doVisibility(educationSwitch.isChecked(), educationLabel);
+                Utilities.doVisibility(educationSwitch.isChecked(), educationHoursLabel);
+            }
+        });
+
+
 
         clothingSwitch.setOnClickListener(new View.OnClickListener() {
             @Override

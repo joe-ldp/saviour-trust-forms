@@ -96,8 +96,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-1810" />
-                            <option name="y" value="-924" />
+                            <option name="x" value="-2338" />
+                            <option name="y" value="-908" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -117,8 +117,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-1568" />
-                            <option name="y" value="-914" />
+                            <option name="x" value="-2096" />
+                            <option name="y" value="-898" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -138,8 +138,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-1339" />
-                            <option name="y" value="-919" />
+                            <option name="x" value="-1867" />
+                            <option name="y" value="-903" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -159,8 +159,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-1064" />
-                            <option name="y" value="-919" />
+                            <option name="x" value="-1592" />
+                            <option name="y" value="-903" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -180,18 +180,42 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-804" />
-                            <option name="y" value="-916" />
+                            <option name="x" value="-1332" />
+                            <option name="y" value="-900" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_initialAssessment5_to_Homepage">
+                            <entry key="action_initialAssessment5_to_initialAssessment6">
                               <value>
                                 <LayoutPositions />
                               </value>
                             </entry>
                           </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="initialAssessment6">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-1080" />
+                            <option name="y" value="-903" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="initialAssessment7">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-779" />
+                            <option name="y" value="-902" />
+                          </Point>
                         </option>
                       </LayoutPositions>
                     </value>

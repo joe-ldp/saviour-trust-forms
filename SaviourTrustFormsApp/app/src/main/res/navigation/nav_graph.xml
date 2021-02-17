@@ -84,8 +84,8 @@
         android:label="fragment_initial_asessment5"
         tools:layout="@layout/fragment_initial_assessment5" >
         <action
-            android:id="@+id/action_initialAssessment5_to_Homepage"
-            app:destination="@id/Homepage" />
+            android:id="@+id/action_initialAssessment5_to_initialAssessment6"
+            app:destination="@id/initialAssessment6" />
     </fragment>
 
     <fragment
@@ -105,6 +105,24 @@
         <action
             android:id="@+id/action_initialAssessment_to_initialAssessment2"
             app:destination="@id/initialAssessment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/initialAssessment6"
+        android:name="com.saviourtrust.trustforms.InitialAssessment6"
+        android:label="fragment_initial_assessment6"
+        tools:layout="@layout/fragment_initial_assessment6" >
+        <action
+            android:id="@+id/action_initialAssessment6_to_initialAssessment7"
+            app:destination="@id/initialAssessment7" />
+    </fragment>
+    <fragment
+        android:id="@+id/initialAssessment7"
+        android:name="com.saviourtrust.trustforms.InitialAssessment7"
+        android:label="fragment_initial_assessment7"
+        tools:layout="@layout/fragment_initial_assessment7" >
+        <action
+            android:id="@+id/action_initialAssessment7_to_Homepage"
+            app:destination="@id/Homepage" />
     </fragment>
 
 </navigation>
