@@ -162,7 +162,7 @@
             android:inputType="textVisiblePassword" />
 
         <CheckBox
-            android:id="@+id/cbIDSeen"
+            android:id="@+id/checkBoxIDSeen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="ID Seen" />
@@ -182,7 +182,7 @@
             android:inputType="date" />
 
         <CheckBox
-            android:id="@+id/cbSupportWorker"
+            android:id="@+id/checkBoxSupportWorker"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Support worker?" />
@@ -206,7 +206,7 @@
             android:inputType="text" />
 
         <CheckBox
-            android:id="@+id/cbRiskAlert"
+            android:id="@+id/checkBoxRiskAlert"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Risk Alert" />

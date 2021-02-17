@@ -2,64 +2,126 @@ package com.saviourtrust.trustforms;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.EditText;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ServiceUserForm#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class ServiceUserForm extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    EditText editTextSurname;
+    String surname;
+    EditText editTextForename;
+    String forename;
+    EditText editTextMiddleNames;
+    String middleNames;
+    EditText editTextPhone;
+    String phone;
+    EditText editTextAddress;
+    String address;
+    EditText editTextRoomNo;
+    String roomNo;
+    EditText editTextArrivalDate;
+    String arrivalDate;
+    EditText editTextLeavingDate;
+    String leavingDate;
+    EditText editTextRentDebt;
+    String rentDebt;
+    EditText editTextOtherDebt;
+    String otherDebt;
+    EditText editTextBenefit;
+    String benefit;
+    EditText editTextNatInsNo;
+    String natInsNo;
+    EditText editTextDoB;
+    String doB;
+    EditText editTextMoveOn;
+    String moveOn;
+    EditText editTextReferralOutcome;
+    String referralOutcome;
+    EditText editTextOutcomeOne;
+    String outcomeOne;
+    CheckBox checkBoxIDSeen;
+    boolean idSeen;
+    CheckBox checkBoxSupportWorker;
+    boolean supportWorker;
+    CheckBox checkBoxRiskAlert;
+    boolean riskAlert;
 
     public ServiceUserForm() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment ServiceUserFormJ.
-     */
-
-    // TODO: Rename and change types and number of parameters
-    public static ServiceUserForm newInstance(String param1, String param2) {
+    public static ServiceUserForm newInstance() {
         ServiceUserForm fragment = new ServiceUserForm();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_service_user_form, container, false);
+    }
+
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        editTextSurname = (EditText) view.findViewById(R.id.editTextSurname);
+        editTextForename = (EditText) view.findViewById(R.id.editTextForename);
+        editTextMiddleNames = (EditText) view.findViewById(R.id.editTextMiddleNames);
+        editTextPhone = (EditText) view.findViewById(R.id.editTextPhone);
+        editTextAddress = (EditText) view.findViewById(R.id.editTextAddress);
+        editTextRoomNo = (EditText) view.findViewById(R.id.editTextRoomNo);
+        editTextArrivalDate = (EditText) view.findViewById(R.id.editTextArrivalDate);
+        editTextLeavingDate = (EditText) view.findViewById(R.id.editTextLeavingDate);
+        editTextRentDebt = (EditText) view.findViewById(R.id.editTextRentDebt);
+        editTextOtherDebt = (EditText) view.findViewById(R.id.editTextOtherDebt);
+        editTextBenefit = (EditText) view.findViewById(R.id.editTextBenefit);
+        editTextNatInsNo = (EditText) view.findViewById(R.id.editTextNatInsNo);
+        editTextDoB = (EditText) view.findViewById(R.id.editTextDoB);
+        editTextMoveOn = (EditText) view.findViewById(R.id.editTextMoveOn);
+        editTextReferralOutcome = (EditText) view.findViewById(R.id.editTextReferralOutcome);
+        editTextOutcomeOne = (EditText) view.findViewById(R.id.editTextOutcomeOne);
+        checkBoxIDSeen = (CheckBox) view.findViewById(R.id.checkBoxIDSeen);
+        checkBoxSupportWorker = (CheckBox) view.findViewById(R.id.checkBoxSupportWorker);
+        checkBoxRiskAlert = (CheckBox) view.findViewById(R.id.checkBoxRiskAlert);
+
+        view.findViewById(R.id.btnSubmit).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                surname = editTextSurname.getText().toString();
+                forename = editTextForename.getText().toString();
+                middleNames = editTextMiddleNames.getText().toString();
+                phone = editTextPhone.getText().toString();
+                address = editTextAddress.getText().toString();
+                roomNo = editTextRoomNo.getText().toString();
+                arrivalDate = editTextArrivalDate.getText().toString();
+                leavingDate = editTextLeavingDate.getText().toString();
+                rentDebt = editTextRentDebt.getText().toString();
+                otherDebt = editTextOtherDebt.getText().toString();
+                benefit = editTextBenefit.getText().toString();
+                natInsNo = editTextNatInsNo.getText().toString();
+                doB = editTextDoB.getText().toString();
+                moveOn = editTextMoveOn.getText().toString();
+                referralOutcome = editTextReferralOutcome.getText().toString();
+                outcomeOne = editTextOutcomeOne.getText().toString();
+                idSeen = checkBoxIDSeen.isChecked();
+                supportWorker = checkBoxSupportWorker.isChecked();
+                riskAlert = checkBoxRiskAlert.isChecked();
+
+                NavHostFragment.findNavController(ServiceUserForm.this).navigate(R.id.action_serviceUserForm_to_Homepage);
+            }
+        });
     }
 }
