@@ -29,6 +29,11 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_Homepage_to_initialAssessment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_Homepage_to_serviceUserForm">
                               <value>
                                 <LayoutPositions />
@@ -79,6 +84,11 @@
                           </map>
                         </option>
                       </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="action_serviceUserForm_to_Homepage">
+                    <value>
+                      <LayoutPositions />
                     </value>
                   </entry>
                   <entry key="initialAssessment">

@@ -48,6 +48,7 @@
             android:id="@+id/action_WeeklyForm_to_Homepage"
             app:destination="@id/Homepage" />
     </fragment>
+
     <fragment
         android:id="@+id/initialAssessment2"
         android:name="com.saviourtrust.trustforms.InitialAssessment2"
@@ -56,6 +57,7 @@
             android:id="@+id/action_initialAssessment2_to_initialAssessment3"
             app:destination="@id/initialAssessment3" />
     </fragment>
+
     <fragment
         android:id="@+id/initialAssessment3"
         android:name="com.saviourtrust.trustforms.InitialAssessment3"
@@ -65,6 +67,7 @@
             android:id="@+id/action_initialAssessment3_to_initialAssessment4"
             app:destination="@id/initialAssessment4" />
     </fragment>
+
     <fragment
         android:id="@+id/initialAssessment4"
         android:name="com.saviourtrust.trustforms.InitialAssessment4"
@@ -74,6 +77,7 @@
             android:id="@+id/action_initialAssessment4_to_initialAssessment5"
             app:destination="@id/initialAssessment5" />
     </fragment>
+
     <fragment
         android:id="@+id/initialAssessment5"
         android:name="com.saviourtrust.trustforms.InitialAssessment5"
@@ -83,10 +87,17 @@
             android:id="@+id/action_initialAssessment5_to_Homepage"
             app:destination="@id/Homepage" />
     </fragment>
+
     <fragment
         android:id="@+id/serviceUserForm"
         android:name="com.saviourtrust.trustforms.ServiceUserForm"
-        android:label="ServiceUserForm" />
+        android:label="ServiceUserForm"
+        android:layout="@layout/fragment_service_user_form" >
+        <action
+            android:id="@+id/action_serviceUserForm_to_Homepage"
+            app:destination="@id/Homepage" />
+    </fragment>
+
     <fragment
         android:id="@+id/initialAssessment"
         android:name="com.saviourtrust.trustforms.InitialAssessment"
