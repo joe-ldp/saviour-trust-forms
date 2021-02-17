@@ -83,4 +83,6 @@
     <string name="next_page"><![CDATA[Next Page >]]></string>
     <string name="dob_example" />
     <string name="ra">RA</string>
+    <string name="previous_page"><![CDATA[< Previous Page]]></string>
+    <string name="backhome"><![CDATA[< Back Home]]></string>
 </resources>

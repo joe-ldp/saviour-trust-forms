@@ -177,7 +177,7 @@
             android:ems="10"
             android:inputType="date"
             android:importantForAutofill="no"
-            android:hint="Next Pay Date"/>
+            android:hint="DD/MM/YYYY"/>
 
         <TextView
             android:id="@+id/NextPayAmountLabel"
@@ -333,6 +333,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPreviousPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/previous_page"
+                android:gravity="center"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btnNextPage"

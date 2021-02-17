@@ -77,5 +77,13 @@ public class InitialAssessment7 extends Fragment {
                 NavHostFragment.findNavController(InitialAssessment7.this).navigate(R.id.action_initialAssessment7_to_Homepage);
             }
         });
+
+        Button previousPage = view.findViewById(R.id.btnPreviousPage);
+        previousPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(InitialAssessment7.this).navigate(R.id.action_initialAssessment7_to_initialAssessment6);
+            }
+        });
     }
 }

@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -82,6 +83,14 @@ public class InitialAssessment5 extends Fragment {
             }
         });
 
+        Button previousPage = view.findViewById(R.id.btnPreviousPage);
+        previousPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(InitialAssessment5.this).navigate(R.id.action_initialAssessment5_to_initialAssessment4);
+            }
+        });
+
         SwitchCompat clothingSwitch = view.findViewById(R.id.ClothingSwitch);
         EditText clothingField = view.findViewById(R.id.ClothingField);
 
@@ -121,8 +130,6 @@ public class InitialAssessment5 extends Fragment {
             }
         });
 
-
-
         clothingSwitch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -136,6 +143,56 @@ public class InitialAssessment5 extends Fragment {
                 Utilities.doVisibility(foodSwitch.isChecked(), foodField);
             }
         });
+
+
+        CheckBox weekCB = view.findViewById(R.id.WeeklyPaymentCheckbox);
+        CheckBox fortnightCB = view.findViewById(R.id.FortnightlyPaymentCheckbox);
+
+        weekCB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (fortnightCB.isChecked())
+                    fortnightCB.setChecked(false);
+            }
+        });
+
+        fortnightCB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (weekCB.isChecked())
+                    weekCB.setChecked(false);
+            }
+        });
+
+
+
+        /*CheckBox maleCB = view.findViewById(R.id.GenderMaleCheckbox);
+        CheckBox femaleCB = view.findViewById(R.id.GenderFemaleCheckbox);
+        CheckBox transCB = view.findViewById(R.id.GenderTransCheckbox);
+
+        maleCB.setOnClickListener(view13 -> {
+            if (femaleCB.isChecked() || transCB.isChecked())
+            {
+                femaleCB.setChecked(false);
+                transCB.setChecked(false);
+            }
+        });
+
+        femaleCB.setOnClickListener(view12 -> {
+            if (maleCB.isChecked() || transCB.isChecked())
+            {
+                maleCB.setChecked(false);
+                transCB.setChecked(false);
+            }
+        });
+
+        transCB.setOnClickListener(view1 -> {
+            if (femaleCB.isChecked() || maleCB.isChecked())
+            {
+                femaleCB.setChecked(false);
+                maleCB.setChecked(false);
+            }
+        });*/
 
 
 

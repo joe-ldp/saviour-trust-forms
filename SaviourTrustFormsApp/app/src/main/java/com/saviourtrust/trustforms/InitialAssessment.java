@@ -52,10 +52,10 @@ public class InitialAssessment extends Fragment {
     // TODO: Rename and change types and number of parameters
     public static InitialAssessment newInstance(String param1, String param2) {
         InitialAssessment fragment = new InitialAssessment();
-        Bundle args = new Bundle();
+        /*Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
+        fragment.setArguments(args);*/
         return fragment;
     }
 
@@ -63,10 +63,10 @@ public class InitialAssessment extends Fragment {
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
+        /*if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+        }*/
     }
 
     @Override
@@ -84,6 +84,14 @@ public class InitialAssessment extends Fragment {
         Button nextPage = view.findViewById(R.id.btnNextPage);
         nextPage.setOnClickListener(view14 ->
                 NavHostFragment.findNavController(InitialAssessment.this).navigate(R.id.action_initialAssessment_to_initialAssessment2));
+
+        Button previousPage = view.findViewById(R.id.btnPreviousPage);
+        previousPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(InitialAssessment.this).navigate(R.id.action_initialAssessment_to_Homepage);
+            }
+        });
 
         CheckBox maleCB = view.findViewById(R.id.GenderMaleCheckbox);
         CheckBox femaleCB = view.findViewById(R.id.GenderFemaleCheckbox);
@@ -129,11 +137,12 @@ public class InitialAssessment extends Fragment {
         ArrayList<String> countries = new ArrayList<String>();
         for (Locale loc : locale) {
             String country = loc.getDisplayCountry();
-            if (country.trim().length() > 0 && !countries.contains(country)) {
+            if (country.trim().length() > 0 && !countries.contains(country) && !country.equals("United Kingdom")) {
                 countries.add(country);
             }
         }
         Collections.sort(countries, String.CASE_INSENSITIVE_ORDER);
+        countries.add(0, "United Kingdom");
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, countries);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

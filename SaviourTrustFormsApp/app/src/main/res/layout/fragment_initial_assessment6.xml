@@ -30,7 +30,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/editTextNumber"
+                android:id="@+id/RAScore"
                 android:layout_width="39dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -45,6 +45,7 @@
             <androidx.appcompat.widget.SwitchCompat
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingLeft="30px"
                 android:text="Housed?" />
         </LinearLayout>
 
@@ -94,7 +95,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="date"
-            android:hint="Date" />
+            android:hint="Date (DD/MM/YYYY)" />
 
         <TextView
             android:layout_width="match_parent"
@@ -129,12 +130,21 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="date"
-            android:hint="Date" />
+            android:hint="Date (DD/MM/YYYY)" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPreviousPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/previous_page"
+                android:gravity="center"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btnNextPage"

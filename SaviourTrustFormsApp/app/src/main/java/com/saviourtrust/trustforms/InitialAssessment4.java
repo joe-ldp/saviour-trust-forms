@@ -83,6 +83,14 @@ public class InitialAssessment4 extends Fragment {
             }
         });
 
+        Button previousPage = view.findViewById(R.id.btnPreviousPage);
+        previousPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(InitialAssessment4.this).navigate(R.id.action_initialAssessment4_to_initialAssessment3);
+            }
+        });
+
         SwitchCompat SOSwitch = view.findViewById(R.id.SexOffenderSwitch);
         EditText SOField = view.findViewById(R.id.SOField);
 

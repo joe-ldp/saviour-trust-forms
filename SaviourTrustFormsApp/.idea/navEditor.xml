@@ -86,22 +86,22 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="action_serviceUserForm_to_Homepage">
-                    <value>
-                      <LayoutPositions />
-                    </value>
-                  </entry>
                   <entry key="initialAssessment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-2338" />
-                            <option name="y" value="-908" />
+                            <option name="x" value="-1218" />
+                            <option name="y" value="-1216" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_initialAssessment_to_Homepage">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_initialAssessment_to_initialAssessment2">
                               <value>
                                 <LayoutPositions />
@@ -117,12 +117,17 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-2096" />
-                            <option name="y" value="-898" />
+                            <option name="x" value="-976" />
+                            <option name="y" value="-1206" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_initialAssessment2_to_initialAssessment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_initialAssessment2_to_initialAssessment3">
                               <value>
                                 <LayoutPositions />
@@ -138,12 +143,17 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-1867" />
-                            <option name="y" value="-903" />
+                            <option name="x" value="-747" />
+                            <option name="y" value="-1211" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_initialAssessment3_to_initialAssessment2">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_initialAssessment3_to_initialAssessment4">
                               <value>
                                 <LayoutPositions />
@@ -159,12 +169,17 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-1592" />
-                            <option name="y" value="-903" />
+                            <option name="x" value="-472" />
+                            <option name="y" value="-1211" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_initialAssessment4_to_initialAssessment3">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_initialAssessment4_to_initialAssessment5">
                               <value>
                                 <LayoutPositions />
@@ -180,12 +195,17 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-1332" />
-                            <option name="y" value="-900" />
+                            <option name="x" value="-212" />
+                            <option name="y" value="-1208" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_initialAssessment5_to_initialAssessment4">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_initialAssessment5_to_initialAssessment6">
                               <value>
                                 <LayoutPositions />
@@ -201,9 +221,23 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-1080" />
-                            <option name="y" value="-903" />
+                            <option name="x" value="40" />
+                            <option name="y" value="-1211" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_initialAssessment6_to_initialAssessment5">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_initialAssessment6_to_initialAssessment7">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -213,9 +247,23 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-779" />
-                            <option name="y" value="-902" />
+                            <option name="x" value="341" />
+                            <option name="y" value="-1210" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_initialAssessment7_to_Homepage">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_initialAssessment7_to_initialAssessment6">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -228,6 +276,15 @@
                             <option name="x" value="-1519" />
                             <option name="y" value="-103" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_serviceUserForm_to_Homepage">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>

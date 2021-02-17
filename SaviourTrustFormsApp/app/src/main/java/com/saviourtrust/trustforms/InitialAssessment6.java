@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -77,5 +78,17 @@ public class InitialAssessment6 extends Fragment {
                 NavHostFragment.findNavController(InitialAssessment6.this).navigate(R.id.action_initialAssessment6_to_initialAssessment7);
             }
         });
+
+        Button previousPage = view.findViewById(R.id.btnPreviousPage);
+        previousPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(InitialAssessment6.this).navigate(R.id.action_initialAssessment6_to_initialAssessment5);
+            }
+        });
+
+        EditText RANumber = view.findViewById(R.id.RAScore);
+
+
     }
 }
