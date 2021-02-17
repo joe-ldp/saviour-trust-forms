@@ -42,7 +42,7 @@
             android:text="@string/owner" />
 
         <EditText
-            android:id="@+id/editTextOwner"
+            android:id="@+id/editTextOwnerName"
             android:hint="@string/name_example"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editTextPhone"
+            android:id="@+id/editTextOwnerPhone"
             android:hint="@string/phone_example"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -111,11 +111,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Date Property" />
+            android:text="Date" />
 
         <EditText
             android:id="@+id/editTextDate"
-            android:hint="@string/date_property"
+            android:hint="@string/date_example"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints=""
@@ -127,7 +127,7 @@
             android:text="@string/electricity_info" />
 
         <EditText
-            android:id="@+id/editTextElectExp"
+            android:id="@+id/editTextElectCertExpiry"
             android:hint="@string/elec_cert_expiry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -143,7 +143,7 @@
             android:inputType="textVisiblePassword"/>
 
         <EditText
-            android:id="@+id/editTextElecProvider"
+            android:id="@+id/editTextElectProvider"
             android:hint="@string/electric_provider"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -151,7 +151,7 @@
             android:inputType="text" />
 
         <EditText
-            android:id="@+id/editTextElecMeter"
+            android:id="@+id/editTextElectMeter"
             android:hint="@string/elec_meter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -164,7 +164,7 @@
             android:text="@string/gas_info" />
 
         <EditText
-            android:id="@+id/editTextGasExp"
+            android:id="@+id/editTextGasCertExpiry"
             android:hint="@string/gas_cert_expiry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
