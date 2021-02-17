@@ -78,11 +78,7 @@ public class WeeklyForm extends Fragment
     String toaster;
 
     @Override
-    public View onCreateView(
-            LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState)
-    {
-        // Inflate the layout for this fragment
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_weekly_form, container, false);
     }
 
@@ -99,8 +95,8 @@ public class WeeklyForm extends Fragment
         editTextKitchen = (EditText) view.findViewById(R.id.editTextKitchen);
         editTextLivingRoom = (EditText) view.findViewById(R.id.editTextLivingRoom);
         editTextBathroom = (EditText) view.findViewById(R.id.editTextBathroom);
-        radioButtonToiletGood = (RadioButton) view.findViewById(R.id.radioButtonToiletPoor);
-        radioButtonToiletOk = (RadioButton) view.findViewById(R.id.radioButtonToiletPoor);
+        radioButtonToiletGood = (RadioButton) view.findViewById(R.id.radioButtonToiletGood);
+        radioButtonToiletOk = (RadioButton) view.findViewById(R.id.radioButtonToiletOk);
         radioButtonToiletPoor = (RadioButton) view.findViewById(R.id.radioButtonToiletPoor);
         editTextRoomOne = (EditText) view.findViewById(R.id.editTextRoomOne);
         editTextRoomTwo = (EditText) view.findViewById(R.id.editTextRoomTwo);
