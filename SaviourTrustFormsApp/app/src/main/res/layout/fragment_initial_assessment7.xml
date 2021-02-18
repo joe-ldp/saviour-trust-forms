@@ -65,12 +65,26 @@
             android:textSize="14sp"
             android:textStyle="bold" />
 
-        <EditText
+        <!--<EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="Signed (applicant)" />
+            android:hint="Signed (applicant)" />-->
+
+        <Button
+            android:id="@+id/OpenPad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN NAME" />
+
+        <LinearLayout
+            android:id="@+id/DrawingPad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
 
         <EditText
             android:layout_width="match_parent"

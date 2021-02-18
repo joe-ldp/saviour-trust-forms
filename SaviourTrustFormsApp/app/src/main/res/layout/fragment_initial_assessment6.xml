@@ -76,12 +76,26 @@
             android:text="I confirm that the information given is correct. I confirm that I have not committed any sexual offences and I am not currently on or have in the past been on the sex offenders register. I understand that if any information I have provided is found to be false you may withdraw any service or offer of a service, including housing."
             android:textSize="18sp" />
 
-        <EditText
+        <!--<EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="Signed (applicant)" />
+            android:hint="Signed (applicant)" />-->
+
+        <Button
+            android:id="@+id/OpenPad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN NAME" />
+
+        <LinearLayout
+            android:id="@+id/DrawingPad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
 
         <EditText
             android:layout_width="match_parent"
@@ -111,12 +125,26 @@
             android:text="(Please sign if you are applying with the support of a referral agency)\n\nI give my permission for staff at The SaviourTrust to discuss the application and all the information I have provided in this form with the referral agency named on page 1 of this form."
             android:textSize="18sp" />
 
-        <EditText
+        <!--<EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="Signed (applicant)" />
+            android:hint="Signed (applicant)" />-->
+
+        <Button
+            android:id="@+id/OpenPad2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN NAME" />
+
+        <LinearLayout
+            android:id="@+id/DrawingPad2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
 
         <EditText
             android:layout_width="match_parent"

@@ -13,11 +13,13 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
     private static MainActivity instance;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
