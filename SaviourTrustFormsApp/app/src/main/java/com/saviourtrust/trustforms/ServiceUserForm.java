@@ -120,7 +120,7 @@ public class ServiceUserForm extends Fragment {
                 supportWorker = checkBoxSupportWorker.isChecked();
                 riskAlert = checkBoxRiskAlert.isChecked();
 
-                NavHostFragment.findNavController(ServiceUserForm.this).navigate(R.id.action_serviceUserForm_to_Homepage);
+                NavHostFragment.findNavController(ServiceUserForm.this).navigate(R.id.action_ServiceUserForm_to_Homepage);
             }
         });
     }

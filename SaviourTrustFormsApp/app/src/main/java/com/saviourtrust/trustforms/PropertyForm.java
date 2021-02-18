@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,7 +24,8 @@ public class PropertyForm extends Fragment {
     EditText editTextOwnerName;
     String ownerName;
     EditText editTextOwnerPhone;
-    String ownerPhone;
+    int ownerPhone;
+    String ownerPhoneString;
     EditText editTextRentPaid;
     double rentPaid;
     String rentPaidString;
@@ -109,7 +111,8 @@ public class PropertyForm extends Fragment {
                 //address = .getText().toString();
                 postcode = editTextPostcode.getText().toString();
                 ownerName = editTextOwnerName.getText().toString();
-                ownerPhone = editTextOwnerPhone.getText().toString();
+                ownerPhoneString = editTextOwnerPhone.getText().toString();
+                ownerPhone = Integer.parseInt(ownerPhoneString);
                 rentPaidString = editTextRentPaid.getText().toString();
                 rentPaid = Double.parseDouble(rentPaidString);
                 roomRateString = editTextRoomRate.getText().toString();
@@ -130,6 +133,9 @@ public class PropertyForm extends Fragment {
                 gasSerialNo = editTextGasSerialNo.getText().toString();
                 gasProvider = editTextGasProvider.getText().toString();
                 gasMeter = editTextGasMeter.getText().toString();
+
+                NavHostFragment.findNavController(PropertyForm.this).navigate(R.id.action_PropertyForm_to_Homepage);
+
             }
         });
     }
