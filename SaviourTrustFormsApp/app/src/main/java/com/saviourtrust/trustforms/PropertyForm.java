@@ -1,5 +1,7 @@
 package com.saviourtrust.trustforms;
 
+import android.app.Activity;
+import android.content.Context;
 import android.location.Address;
 import android.os.Bundle;
 
@@ -7,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -60,7 +63,6 @@ public class PropertyForm extends Fragment {
     EditText editTextGasMeter;
     String gasMeter;
 
-
     public PropertyForm() {
         // Required empty public constructor
     }
@@ -107,12 +109,20 @@ public class PropertyForm extends Fragment {
         view.findViewById(R.id.btnSubmit).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                FormData data = new FormData();
+                data.addHeaders(new String[] {"Address", "Postcode", "OwnerName", "OwnerPhone"});
+
                 addressString = editTextAddress.getText().toString();
+                data.addData(addressString);
                 //address = .getText().toString();
                 postcode = editTextPostcode.getText().toString();
+                data.addData(postcode);
                 ownerName = editTextOwnerName.getText().toString();
+                data.addData(ownerName);
                 ownerPhoneString = editTextOwnerPhone.getText().toString();
-                ownerPhone = Integer.parseInt(ownerPhoneString);
+                data.addData(ownerPhoneString);
+                /*ownerPhone = Integer.parseInt(ownerPhoneString);
                 rentPaidString = editTextRentPaid.getText().toString();
                 rentPaid = Double.parseDouble(rentPaidString);
                 roomRateString = editTextRoomRate.getText().toString();
@@ -132,7 +142,14 @@ public class PropertyForm extends Fragment {
                 //gasCertExpiry = gasCertExpiryString;
                 gasSerialNo = editTextGasSerialNo.getText().toString();
                 gasProvider = editTextGasProvider.getText().toString();
-                gasMeter = editTextGasMeter.getText().toString();
+                gasMeter = editTextGasMeter.getText().toString();*/
+
+                try {
+                    data.CSV();
+                }
+                catch(java.io.IOException err) {
+                    Log.e("IOException", err.toString());
+                }
 
                 NavHostFragment.findNavController(PropertyForm.this).navigate(R.id.action_PropertyForm_to_Homepage);
 

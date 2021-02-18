@@ -1,5 +1,6 @@
 package com.saviourtrust.trustforms;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -16,12 +17,15 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static MainActivity instance;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.titleBar);
         setSupportActionBar(toolbar);
+        instance = this;
     }
 
     @Override
@@ -46,5 +50,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
+    public static Context getContext() {
+        return instance;
+    }
 }
