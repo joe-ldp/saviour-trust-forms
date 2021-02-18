@@ -17,51 +17,18 @@ import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link InitialAssessment5#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class InitialAssessment5 extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public InitialAssessment5() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment fragment_service_user_form_5.
-     */
-    // TODO: Rename and change types and number of parameters
     public static InitialAssessment5 newInstance(String param1, String param2) {
         InitialAssessment5 fragment = new InitialAssessment5();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
@@ -103,7 +70,6 @@ public class InitialAssessment5 extends Fragment {
         EditText workEarningsField = view.findViewById(R.id.WeeklyEarningField);
         TextView workEarningsLabel = view.findViewById(R.id.WeeklyEarningsLabel);
 
-
         SwitchCompat educationSwitch = view.findViewById(R.id.EducationSwitch);
         TextView educationLabel = view.findViewById(R.id.CourseLabel);
         EditText educationField = view.findViewById(R.id.CourseField);
@@ -144,7 +110,6 @@ public class InitialAssessment5 extends Fragment {
             }
         });
 
-
         CheckBox weekCB = view.findViewById(R.id.WeeklyPaymentCheckbox);
         CheckBox fortnightCB = view.findViewById(R.id.FortnightlyPaymentCheckbox);
 
@@ -163,38 +128,5 @@ public class InitialAssessment5 extends Fragment {
                     weekCB.setChecked(false);
             }
         });
-
-
-
-        /*CheckBox maleCB = view.findViewById(R.id.GenderMaleCheckbox);
-        CheckBox femaleCB = view.findViewById(R.id.GenderFemaleCheckbox);
-        CheckBox transCB = view.findViewById(R.id.GenderTransCheckbox);
-
-        maleCB.setOnClickListener(view13 -> {
-            if (femaleCB.isChecked() || transCB.isChecked())
-            {
-                femaleCB.setChecked(false);
-                transCB.setChecked(false);
-            }
-        });
-
-        femaleCB.setOnClickListener(view12 -> {
-            if (maleCB.isChecked() || transCB.isChecked())
-            {
-                maleCB.setChecked(false);
-                transCB.setChecked(false);
-            }
-        });
-
-        transCB.setOnClickListener(view1 -> {
-            if (femaleCB.isChecked() || maleCB.isChecked())
-            {
-                femaleCB.setChecked(false);
-                maleCB.setChecked(false);
-            }
-        });*/
-
-
-
     }
 }

@@ -67,10 +67,8 @@ public class PropertyForm extends Fragment {
         // Required empty public constructor
     }
 
-    // TODO: Rename and change types and number of parameters
     public static PropertyForm newInstance(String param1, String param2) {
         PropertyForm fragment = new PropertyForm();
-        Bundle args = new Bundle();
         return fragment;
     }
 

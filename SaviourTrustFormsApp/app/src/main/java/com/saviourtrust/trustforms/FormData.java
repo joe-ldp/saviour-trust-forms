@@ -43,8 +43,8 @@ public class FormData {
         for (String data : this.formData) {
             csvWriter.append(data + ",");
         }
-        csvWriter.append("\n");
 
+        csvWriter.append("\n");
         csvWriter.flush();
         csvWriter.close();
     }

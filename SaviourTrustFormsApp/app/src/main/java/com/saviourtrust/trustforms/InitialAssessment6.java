@@ -14,11 +14,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link InitialAssessment6#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class InitialAssessment6 extends Fragment {
 
 
@@ -34,7 +29,6 @@ public class InitialAssessment6 extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override

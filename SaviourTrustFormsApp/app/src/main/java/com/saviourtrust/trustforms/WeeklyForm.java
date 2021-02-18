@@ -45,7 +45,6 @@ public class WeeklyForm extends Fragment
     RadioButton radioButtonToiletGood;
 
     RadioButton radioButtonToiletOk;
-
     RadioButton radioButtonToiletPoor;
 
     EditText editTextRoomOne;
