@@ -45,59 +45,8 @@
         tools:layout="@layout/fragment_property_form">
 
         <action
-            android:id="@+id/action_WeeklyForm_to_Homepage"
+            android:id="@+id/action_PropertyForm_to_Homepage"
             app:destination="@id/Homepage" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/initialAssessment2"
-        android:name="com.saviourtrust.trustforms.InitialAssessment2"
-        android:label="InitialAssessment2" >
-        <action
-            android:id="@+id/action_initialAssessment2_to_initialAssessment3"
-            app:destination="@id/initialAssessment3" />
-        <action
-            android:id="@+id/action_initialAssessment2_to_initialAssessment"
-            app:destination="@id/initialAssessment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/initialAssessment3"
-        android:name="com.saviourtrust.trustforms.InitialAssessment3"
-        android:label="fragment_initial_asessment3"
-        tools:layout="@layout/fragment_initial_assessment3" >
-        <action
-            android:id="@+id/action_initialAssessment3_to_initialAssessment4"
-            app:destination="@id/initialAssessment4" />
-        <action
-            android:id="@+id/action_initialAssessment3_to_initialAssessment2"
-            app:destination="@id/initialAssessment2" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/initialAssessment4"
-        android:name="com.saviourtrust.trustforms.InitialAssessment4"
-        android:label="fragment_initial_asessment4"
-        tools:layout="@layout/fragment_initial_assessment4" >
-        <action
-            android:id="@+id/action_initialAssessment4_to_initialAssessment5"
-            app:destination="@id/initialAssessment5" />
-        <action
-            android:id="@+id/action_initialAssessment4_to_initialAssessment3"
-            app:destination="@id/initialAssessment3" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/initialAssessment5"
-        android:name="com.saviourtrust.trustforms.InitialAssessment5"
-        android:label="fragment_initial_asessment5"
-        tools:layout="@layout/fragment_initial_assessment5" >
-        <action
-            android:id="@+id/action_initialAssessment5_to_initialAssessment6"
-            app:destination="@id/initialAssessment6" />
-        <action
-            android:id="@+id/action_initialAssessment5_to_initialAssessment4"
-            app:destination="@id/initialAssessment4" />
     </fragment>
 
     <fragment
@@ -106,7 +55,7 @@
         android:label="ServiceUserForm"
         android:layout="@layout/fragment_service_user_form" >
         <action
-            android:id="@+id/action_serviceUserForm_to_Homepage"
+            android:id="@+id/action_ServiceUserForm_to_Homepage"
             app:destination="@id/Homepage" />
     </fragment>
 
@@ -115,24 +64,77 @@
         android:name="com.saviourtrust.trustforms.InitialAssessment"
         android:label="InitialAssessment" >
         <action
-            android:id="@+id/action_initialAssessment_to_initialAssessment2"
+            android:id="@+id/action_InitialAssessment_to_InitialAssessment2"
             app:destination="@id/initialAssessment2" />
         <action
-            android:id="@+id/action_initialAssessment_to_Homepage"
+            android:id="@+id/action_InitialAssessment_to_Homepage"
             app:destination="@id/Homepage" />
     </fragment>
+
+    <fragment
+        android:id="@+id/initialAssessment2"
+        android:name="com.saviourtrust.trustforms.InitialAssessment2"
+        android:label="InitialAssessment2" >
+        <action
+            android:id="@+id/action_InitialAssessment2_to_InitialAssessment3"
+            app:destination="@id/initialAssessment3" />
+        <action
+            android:id="@+id/action_InitialAssessment2_to_InitialAssessment"
+            app:destination="@id/initialAssessment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/initialAssessment3"
+        android:name="com.saviourtrust.trustforms.InitialAssessment3"
+        android:label="fragment_initial_assessment3"
+        tools:layout="@layout/fragment_initial_assessment3" >
+        <action
+            android:id="@+id/action_InitialAssessment3_to_InitialAssessment4"
+            app:destination="@id/initialAssessment4" />
+        <action
+            android:id="@+id/action_InitialAssessment3_to_InitialAssessment2"
+            app:destination="@id/initialAssessment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/initialAssessment4"
+        android:name="com.saviourtrust.trustforms.InitialAssessment4"
+        android:label="fragment_initial_assessment4"
+        tools:layout="@layout/fragment_initial_assessment4" >
+        <action
+            android:id="@+id/action_InitialAssessment4_to_InitialAssessment5"
+            app:destination="@id/initialAssessment5" />
+        <action
+            android:id="@+id/action_InitialAssessment4_to_InitialAssessment3"
+            app:destination="@id/initialAssessment3" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/initialAssessment5"
+        android:name="com.saviourtrust.trustforms.InitialAssessment5"
+        android:label="fragment_initial_assessment5"
+        tools:layout="@layout/fragment_initial_assessment5" >
+        <action
+            android:id="@+id/action_InitialAssessment5_to_InitialAssessment6"
+            app:destination="@id/initialAssessment6" />
+        <action
+            android:id="@+id/action_InitialAssessment5_to_InitialAssessment4"
+            app:destination="@id/initialAssessment4" />
+    </fragment>
+
     <fragment
         android:id="@+id/initialAssessment6"
         android:name="com.saviourtrust.trustforms.InitialAssessment6"
         android:label="fragment_initial_assessment6"
         tools:layout="@layout/fragment_initial_assessment6" >
         <action
-            android:id="@+id/action_initialAssessment6_to_initialAssessment7"
+            android:id="@+id/action_InitialAssessment6_to_InitialAssessment7"
             app:destination="@id/initialAssessment7" />
         <action
-            android:id="@+id/action_initialAssessment6_to_initialAssessment5"
+            android:id="@+id/action_InitialAssessment6_to_InitialAssessment5"
             app:destination="@id/initialAssessment5" />
     </fragment>
+
     <fragment
         android:id="@+id/initialAssessment7"
         android:name="com.saviourtrust.trustforms.InitialAssessment7"
@@ -142,7 +144,7 @@
             android:id="@+id/action_initialAssessment7_to_Homepage"
             app:destination="@id/Homepage" />
         <action
-            android:id="@+id/action_initialAssessment7_to_initialAssessment6"
+            android:id="@+id/action_InitialAssessment7_to_InitialAssessment6"
             app:destination="@id/initialAssessment6" />
     </fragment>
 
