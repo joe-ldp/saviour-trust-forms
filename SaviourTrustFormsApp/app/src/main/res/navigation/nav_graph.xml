@@ -52,7 +52,7 @@
     <fragment
         android:id="@+id/ServiceUserForm"
         android:name="com.saviourtrust.trustforms.ServiceUserForm"
-        android:label="Service User Form"
+        android:label="@string/serviceUserFormLabel"
         android:layout="@layout/fragment_service_user_form" >
         <action
             android:id="@+id/action_ServiceUserForm_to_Homepage"
@@ -62,7 +62,7 @@
     <fragment
         android:id="@+id/InitialAssessment"
         android:name="com.saviourtrust.trustforms.InitialAssessment"
-        android:label="Initial Assessment" >
+        android:label="@string/initialAssessmentLabel" >
         <action
             android:id="@+id/action_InitialAssessment_to_InitialAssessment2"
             app:destination="@id/InitialAssessment2" />
@@ -74,7 +74,7 @@
     <fragment
         android:id="@+id/InitialAssessment2"
         android:name="com.saviourtrust.trustforms.InitialAssessment2"
-        android:label="Initial Assessment Page 2" >
+        android:label="@string/initialAssessment2Label" >
         <action
             android:id="@+id/action_InitialAssessment2_to_InitialAssessment3"
             app:destination="@id/initialAssessment3" />
@@ -86,7 +86,7 @@
     <fragment
         android:id="@+id/initialAssessment3"
         android:name="com.saviourtrust.trustforms.InitialAssessment3"
-        android:label="Initial Assessment Page 3"
+        android:label="@string/initialAssessment3Label"
         tools:layout="@layout/fragment_initial_assessment3" >
         <action
             android:id="@+id/action_InitialAssessment3_to_InitialAssessment4"
@@ -99,7 +99,7 @@
     <fragment
         android:id="@+id/InitialAssessment4"
         android:name="com.saviourtrust.trustforms.InitialAssessment4"
-        android:label="Initial Assessment Page 4"
+        android:label="@string/initialAssessment4Label"
         tools:layout="@layout/fragment_initial_assessment4" >
         <action
             android:id="@+id/action_InitialAssessment4_to_InitialAssessment5"
@@ -112,7 +112,7 @@
     <fragment
         android:id="@+id/InitialAssessment5"
         android:name="com.saviourtrust.trustforms.InitialAssessment5"
-        android:label="Initial Assessment Page 5"
+        android:label="@string/initialAssessment5Label"
         tools:layout="@layout/fragment_initial_assessment5" >
         <action
             android:id="@+id/action_InitialAssessment5_to_InitialAssessment6"
@@ -125,7 +125,7 @@
     <fragment
         android:id="@+id/InitialAssessment6"
         android:name="com.saviourtrust.trustforms.InitialAssessment6"
-        android:label="Initial Assessment Page 6"
+        android:label="@string/initialAssessment6Label"
         tools:layout="@layout/fragment_initial_assessment6" >
         <action
             android:id="@+id/action_InitialAssessment6_to_InitialAssessment7"
@@ -138,7 +138,7 @@
     <fragment
         android:id="@+id/InitialAssessment7"
         android:name="com.saviourtrust.trustforms.InitialAssessment7"
-        android:label="Initial Assessment Page 7"
+        android:label="@string/initialAssessment7Label"
         tools:layout="@layout/fragment_initial_assessment7" >
         <action
             android:id="@+id/action_InitialAssessment7_to_Homepage"

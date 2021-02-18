@@ -33,7 +33,7 @@
     <string name="room_two">Room Two</string>
     <string name="room_one">Room One</string>
     <string name="poor">Poor</string>
-    <string name="ok">Ok</string>
+    <string name="ok">OK</string>
     <string name="good">Good</string>
     <string name="toilet_check">Toilet Check</string>
     <string name="bathrooms">Bathrooms</string>
@@ -85,4 +85,12 @@
     <string name="ra">RA</string>
     <string name="previous_page"><![CDATA[< Previous Page]]></string>
     <string name="backhome"><![CDATA[< Back Home]]></string>
+    <string name="serviceUserFormLabel">Service User Form</string>
+    <string name="initialAssessmentLabel">Initial Assessment</string>
+    <string name="initialAssessment2Label">Initial Assessment Page 2</string>
+    <string name="initialAssessment3Label">Initial Assessment Page 3</string>
+    <string name="initialAssessment4Label">Initial Assessment Page 4</string>
+    <string name="initialAssessment5Label">Initial Assessment Page 5</string>
+    <string name="initialAssessment6Label">Initial Assessment Page 6</string>
+    <string name="initialAssessment7Label">Initial Assessment Page 7</string>
 </resources>
