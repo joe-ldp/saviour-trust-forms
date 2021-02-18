@@ -13,28 +13,28 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-493" />
-                            <option name="y" value="-758" />
+                            <option name="x" value="-444" />
+                            <option name="y" value="-738" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_Homepage_to_InitialAssessment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_Homepage_to_PropertyForm">
                               <value>
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_Homepage_to_ServiceUserForm">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_Homepage_to_WeeklyForm">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_Homepage_to_initialAssessment">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_Homepage_to_serviceUserForm">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -49,8 +49,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="256" />
-                            <option name="y" value="368" />
+                            <option name="x" value="-1119" />
+                            <option name="y" value="-1219" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -75,8 +75,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="12" />
-                            <option name="y" value="368" />
+                            <option name="x" value="-904" />
+                            <option name="y" value="-1216" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -101,8 +101,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="256" />
-                            <option name="y" value="12" />
+                            <option name="x" value="-450" />
+                            <option name="y" value="-1216" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -127,8 +127,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="500" />
-                            <option name="y" value="12" />
+                            <option name="x" value="-230" />
+                            <option name="y" value="-1212" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -148,102 +148,13 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="PropertyForm">
+                  <entry key="InitialAssessment6">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-1168" />
-                            <option name="y" value="224" />
-                          </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_PropertyForm_to_Homepage">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="ServiceUserForm">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="12" />
-                            <option name="y" value="12" />
-                          </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_ServiceUserForm_to_Homepage">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="WeeklyForm">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="-189" />
-                            <option name="y" value="73" />
-                          </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_WeeklyForm_to_Homepage">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="initialAssessment3">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="-747" />
-                            <option name="y" value="-1211" />
-                          </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_InitialAssessment3_to_InitialAssessment2">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_InitialAssessment3_to_InitialAssessment4">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="initialAssessment6">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="40" />
-                            <option name="y" value="-1211" />
+                            <option name="x" value="-5" />
+                            <option name="y" value="-1203" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -263,23 +174,112 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="initialAssessment7">
+                  <entry key="InitialAssessment7">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="341" />
-                            <option name="y" value="-1210" />
+                            <option name="x" value="220" />
+                            <option name="y" value="-1206" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_InitialAssessment7_to_Homepage">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_InitialAssessment7_to_InitialAssessment6">
                               <value>
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_initialAssessment7_to_Homepage">
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="PropertyForm">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="112" />
+                            <option name="y" value="-718" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_PropertyForm_to_Homepage">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="ServiceUserForm">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-376" />
+                            <option name="y" value="-314" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_ServiceUserForm_to_Homepage">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="WeeklyForm">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-911" />
+                            <option name="y" value="-559" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_WeeklyForm_to_Homepage">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="initialAssessment3">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-681" />
+                            <option name="y" value="-1217" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_InitialAssessment3_to_InitialAssessment2">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_InitialAssessment3_to_InitialAssessment4">
                               <value>
                                 <LayoutPositions />
                               </value>
