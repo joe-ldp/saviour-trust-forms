@@ -83,13 +83,13 @@ public class InitialAssessment extends Fragment {
 
         Button nextPage = view.findViewById(R.id.btnNextPage);
         nextPage.setOnClickListener(view14 ->
-                NavHostFragment.findNavController(InitialAssessment.this).navigate(R.id.action_initialAssessment_to_initialAssessment2));
+                NavHostFragment.findNavController(InitialAssessment.this).navigate(R.id.action_InitialAssessment_to_InitialAssessment2));
 
         Button previousPage = view.findViewById(R.id.btnPreviousPage);
         previousPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(InitialAssessment.this).navigate(R.id.action_initialAssessment_to_Homepage);
+                NavHostFragment.findNavController(InitialAssessment.this).navigate(R.id.action_InitialAssessment_to_Homepage);
             }
         });
 

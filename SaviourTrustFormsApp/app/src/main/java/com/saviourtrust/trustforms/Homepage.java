@@ -28,7 +28,7 @@ public class Homepage extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(Homepage.this)
-                        .navigate(R.id.action_Homepage_to_initialAssessment);
+                        .navigate(R.id.action_Homepage_to_InitialAssessment);
             }
         });
 
@@ -52,7 +52,7 @@ public class Homepage extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(Homepage.this)
-                        .navigate(R.id.action_Homepage_to_serviceUserForm);
+                        .navigate(R.id.action_Homepage_to_ServiceUserForm);
             }
         });
 

@@ -74,7 +74,7 @@ public class InitialAssessment7 extends Fragment {
         submitForm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(InitialAssessment7.this).navigate(R.id.action_initialAssessment7_to_Homepage);
+                NavHostFragment.findNavController(InitialAssessment7.this).navigate(R.id.action_InitialAssessment7_to_Homepage);
             }
         });
 
@@ -82,7 +82,7 @@ public class InitialAssessment7 extends Fragment {
         previousPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(InitialAssessment7.this).navigate(R.id.action_initialAssessment7_to_initialAssessment6);
+                NavHostFragment.findNavController(InitialAssessment7.this).navigate(R.id.action_InitialAssessment7_to_InitialAssessment6);
             }
         });
     }
