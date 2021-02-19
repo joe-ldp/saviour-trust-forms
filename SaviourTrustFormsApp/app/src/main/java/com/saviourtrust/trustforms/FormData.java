@@ -38,13 +38,13 @@ public class FormData {
 
         for (int i = 0; i < this.headers.size(); i++) {
             csvWriter.append(this.headers.get(i));
-            if (i < this.headers.size()) csvWriter.append(",");
+            if (i < this.headers.size()-1) csvWriter.append(",");
         }
         csvWriter.append("\n");
 
         for (int i = 0; i < this.formData.size(); i++) {
             csvWriter.append(this.formData.get(i));
-            if (i < this.formData.size()) csvWriter.append(",");
+            if (i < this.formData.size()-1) csvWriter.append(",");
         }
         csvWriter.append("\n");
 
