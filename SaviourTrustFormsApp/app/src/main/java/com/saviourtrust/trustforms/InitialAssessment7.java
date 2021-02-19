@@ -25,10 +25,11 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class InitialAssessment7 extends Fragment {
 
     SignaturePad signaturePad;
+    Button openPad;
+    LinearLayout pad;
     Button saveButton, clearButton;
 
     public InitialAssessment7() {
-        // Required empty public constructor
     }
 
     public static InitialAssessment7 newInstance(String param1, String param2) {
@@ -52,17 +53,19 @@ public class InitialAssessment7 extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button openPad = view.findViewById(R.id.OpenPad);
-        LinearLayout pad = view.findViewById(R.id.DrawingPad);
+        openPad = view.findViewById(R.id.OpenPad);
+        pad = view.findViewById(R.id.DrawingPad);
 
+        signaturePad = view.findViewById(R.id.signaturePad);
 
+        saveButton = view.findViewById(R.id.saveButton);
+        clearButton = view.findViewById(R.id.clearButton);
 
         openPad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 View view1 = getLayoutInflater().inflate(R.layout.signingpad, pad, false);
                 pad.addView(view1);
-
             }
         });
 

@@ -15,7 +15,10 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 
 public class InitialAssessment6 extends Fragment {
-
+    Button openPad;
+    LinearLayout pad;
+    Button openPad2;
+    LinearLayout pad2;
 
     public InitialAssessment6() {
     }
@@ -56,12 +59,10 @@ public class InitialAssessment6 extends Fragment {
             }
         });
 
-        Button openPad = view.findViewById(R.id.OpenPad);
-        LinearLayout pad = view.findViewById(R.id.DrawingPad);
-
-        Button openPad2 = view.findViewById(R.id.OpenPad2);
-        LinearLayout pad2 = view.findViewById(R.id.DrawingPad2);
-
+        openPad = view.findViewById(R.id.OpenPad);
+        pad = view.findViewById(R.id.DrawingPad);
+        openPad2 = view.findViewById(R.id.OpenPad2);
+        pad2 = view.findViewById(R.id.DrawingPad2);
 
         openPad.setOnClickListener(new View.OnClickListener() {
             @Override
