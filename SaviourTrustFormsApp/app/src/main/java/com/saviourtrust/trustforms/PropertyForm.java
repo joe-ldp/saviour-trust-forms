@@ -82,6 +82,7 @@ public class PropertyForm extends Fragment {
         return inflater.inflate(R.layout.fragment_property_form, container, false);
     }
 
+
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState)
     {
         super.onViewCreated(view, savedInstanceState);

@@ -21,7 +21,6 @@ public class signingpad extends Fragment {
         // Required empty public constructor
     }
 
-    // TODO: Rename and change types and number of parameters
     public static signingpad newInstance(String param1, String param2) {
         signingpad fragment = new signingpad();
         return fragment;
@@ -73,7 +72,7 @@ public class signingpad extends Fragment {
             @Override
             public void onClick(View v) {
                 //write code for saving the signature here
-                //Toast.makeText(signingpad.this, "Signature Saved", Toast.LENGTH_SHORT).show();
+
             }
         });
 

@@ -39,7 +39,6 @@ public class InitialAssessment7 extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -55,6 +54,7 @@ public class InitialAssessment7 extends Fragment {
 
         Button openPad = view.findViewById(R.id.OpenPad);
         LinearLayout pad = view.findViewById(R.id.DrawingPad);
+
 
 
         openPad.setOnClickListener(new View.OnClickListener() {
