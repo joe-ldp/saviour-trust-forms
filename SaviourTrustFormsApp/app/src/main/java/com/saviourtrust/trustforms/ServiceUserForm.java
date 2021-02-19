@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,14 +45,15 @@ public class ServiceUserForm extends Fragment {
     String moveOn;
     EditText editTextReferralOutcome;
     String referralOutcome;
-    EditText editTextOutcomeOne;
-    String outcomeOne;
     CheckBox checkBoxIDSeen;
     boolean idSeen;
+    String idSeenString;
     CheckBox checkBoxSupportWorker;
     boolean supportWorker;
+    String supportWorkerString;
     CheckBox checkBoxRiskAlert;
     boolean riskAlert;
+    String riskAlertString;
 
     public ServiceUserForm() {
         // Required empty public constructor
@@ -91,7 +93,6 @@ public class ServiceUserForm extends Fragment {
         editTextDoB = (EditText) view.findViewById(R.id.editTextDoB);
         editTextMoveOn = (EditText) view.findViewById(R.id.editTextMoveOn);
         editTextReferralOutcome = (EditText) view.findViewById(R.id.editTextReferralOutcome);
-        editTextOutcomeOne = (EditText) view.findViewById(R.id.editTextOutcomeOne);
         checkBoxIDSeen = (CheckBox) view.findViewById(R.id.checkBoxIDSeen);
         checkBoxSupportWorker = (CheckBox) view.findViewById(R.id.checkBoxSupportWorker);
         checkBoxRiskAlert = (CheckBox) view.findViewById(R.id.checkBoxRiskAlert);
@@ -100,25 +101,55 @@ public class ServiceUserForm extends Fragment {
             @Override
             public void onClick(View view) {
 
+                FormData data = new FormData();
+                data.addHeaders(new String[] {"Surname", "Forename", "MiddleName", "Phone", "Address", "RoomNo", "ArrivalDate", "LeavingDate", "RentDebt", "OtherDebt", "Benefit", "NatInsNo", "DoB", "MoveOn", "Referral", "idSeen", "SupportWorker", "RiskAlert"});
+
                 surname = editTextSurname.getText().toString();
+                data.addData(surname);
                 forename = editTextForename.getText().toString();
+                data.addData(forename);
                 middleNames = editTextMiddleNames.getText().toString();
+                data.addData(middleNames);
                 phone = editTextPhone.getText().toString();
+                data.addData(phone);
                 address = editTextAddress.getText().toString();
+                data.addData(address);
                 roomNo = editTextRoomNo.getText().toString();
+                data.addData(roomNo);
                 arrivalDate = editTextArrivalDate.getText().toString();
+                data.addData(arrivalDate);
                 leavingDate = editTextLeavingDate.getText().toString();
+                data.addData(leavingDate);
                 rentDebt = editTextRentDebt.getText().toString();
+                data.addData(rentDebt);
                 otherDebt = editTextOtherDebt.getText().toString();
+                data.addData(otherDebt);
                 benefit = editTextBenefit.getText().toString();
+                data.addData(benefit);
                 natInsNo = editTextNatInsNo.getText().toString();
+                data.addData(natInsNo);
                 doB = editTextDoB.getText().toString();
+                data.addData(doB);
                 moveOn = editTextMoveOn.getText().toString();
+                data.addData(moveOn);
                 referralOutcome = editTextReferralOutcome.getText().toString();
-                outcomeOne = editTextOutcomeOne.getText().toString();
+                data.addData(referralOutcome);
                 idSeen = checkBoxIDSeen.isChecked();
+                idSeenString = idSeen ? "true" : "false";
+                data.addData(idSeenString);
                 supportWorker = checkBoxSupportWorker.isChecked();
+                supportWorkerString = supportWorker ? "true" : "false";
+                data.addData(supportWorkerString);
                 riskAlert = checkBoxRiskAlert.isChecked();
+                riskAlertString = riskAlert ? "true" : "false";
+                data.addData(riskAlertString);
+
+                try {
+                    data.CSV("ServiceUserForm");
+                }
+                catch(java.io.IOException err) {
+                    Log.e("IOException", err.toString());
+                }
 
                 NavHostFragment.findNavController(ServiceUserForm.this).navigate(R.id.action_ServiceUserForm_to_Homepage);
             }

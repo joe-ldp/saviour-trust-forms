@@ -2,6 +2,7 @@ package com.saviourtrust.trustforms;
 
 import android.location.Address;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,7 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import java.sql.Time;
+import java.text.Normalizer;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -141,29 +143,60 @@ public class WeeklyForm extends Fragment
             @Override
             public void onClick(View view) {
 
+                FormData data = new FormData();
+                data.addHeaders(new String[] {"Name", "Date", "Time", "Address", "Present", "Hall", "Kitchen", "Living Room", "Bathroom", "RoomOne", "RoomTwo", "Firedoor", "SmokeAlarms", "CarbonMonoxideAlarms", "fFridgeFreezer", "Washer", "Microwave", "Kettle", "Hoover", "Fryer", "Toaster"});
+
                 name = editTextName.getText().toString();
+                data.addData(name);
                 dateString = editTextDate.getText().toString();
+                data.addData(dateString);
                 timeString = editTextTime.getText().toString();
+                data.addData(timeString);
                 addressString = editTextAddress.getText().toString();
+                data.addData(addressString);
                 present = editTextPresent.getText().toString();
+                data.addData(present);
                 hall = editTextHall.getText().toString();
+                data.addData(hall);
                 kitchen = editTextKitchen.getText().toString();
+                data.addData(kitchen);
                 livingRoom = editTextLivingRoom.getText().toString();
+                data.addData(livingRoom);
                 bathroom = editTextBathroom.getText().toString();
+                data.addData(bathroom);
                 roomOne = editTextRoomOne.getText().toString();
+                data.addData(roomOne);
                 roomTwo = editTextRoomTwo.getText().toString();
+                data.addData(roomTwo);
                 fireDoor = editTextFireDoor.getText().toString();
+                data.addData(fireDoor);
                 bSmokeAlarms = checkBoxSmokeAlarms.isChecked();
                 smokeAlarms = editTextSmokeAlarms.getText().toString();
+                data.addData(smokeAlarms);
                 bCarbonMonoxideAlarms = checkBoxCarbonMonoxideAlarms.isChecked();
                 carbonMonoxideAlarms = editTextCarbonMonoxideAlarms.getText().toString();
+                data.addData(carbonMonoxideAlarms);
                 fridgeFreezer = editTextFridgeFreezer.getText().toString();
+                data.addData(fridgeFreezer);
                 washer = editTextWasher.getText().toString();
+                data.addData(washer);
                 microwave = editTextMicrowave.getText().toString();
+                data.addData(microwave);
                 kettle = editTextKettle.getText().toString();
+                data.addData(kettle);
                 hoover = editTextHoover.getText().toString();
+                data.addData(hoover);
                 fryer = editTextFryer.getText().toString();
+                data.addData(fryer);
                 toaster = editTextToaster.getText().toString();
+                data.addData(toaster);
+
+                try {
+                    data.CSV("WeeklyForm");
+                }
+                catch(java.io.IOException err) {
+                    Log.e("IOException", err.toString());
+                }
 
                 NavHostFragment.findNavController(WeeklyForm.this).navigate(R.id.action_WeeklyForm_to_Homepage);
             }

@@ -7,7 +7,7 @@
     android:fillViewport="true">
 
     <LinearLayout
-        android:id="@+id/menu_ll"
+        android:id="@+id/main_layout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -169,7 +169,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:importantForAutofill="no"
-            android:inputType="text" />
+            android:inputType="date" />
 
         <EditText
             android:id="@+id/editTextGasSerialNo"
@@ -194,6 +194,13 @@
             android:layout_height="wrap_content"
             android:importantForAutofill="no"
             android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textViewFillOutAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fill_out_all"
+            android:textColor="#FF0000" />
 
         <Button
             android:id="@+id/btnSubmit"

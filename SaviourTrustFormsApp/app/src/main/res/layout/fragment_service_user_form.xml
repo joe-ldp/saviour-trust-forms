@@ -211,15 +211,6 @@
             android:layout_height="wrap_content"
             android:text="Risk Alert" />
 
-        <EditText
-            android:id="@+id/editTextOutcomeOne"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:importantForAutofill="no"
-            android:ems="10"
-            android:hint="Outcome 1..."
-            android:inputType="text" />
-
         <Button
             android:id="@+id/btnSubmit"
             android:layout_width="match_parent"

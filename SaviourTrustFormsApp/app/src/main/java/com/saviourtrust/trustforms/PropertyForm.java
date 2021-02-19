@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.Date;
 
@@ -63,11 +64,13 @@ public class PropertyForm extends Fragment {
     EditText editTextGasMeter;
     String gasMeter;
 
+    View textViewFillOutAll;
+
     public PropertyForm() {
         // Required empty public constructor
     }
 
-    public static PropertyForm newInstance(String param1, String param2) {
+    public static PropertyForm newInstance() {
         PropertyForm fragment = new PropertyForm();
         return fragment;
     }
@@ -105,46 +108,65 @@ public class PropertyForm extends Fragment {
         editTextGasProvider = (EditText) view.findViewById(R.id.editTextGasProvider);
         editTextGasMeter = (EditText) view.findViewById(R.id.editTextGasMeter);
 
+        textViewFillOutAll = view.findViewById(R.id.textViewFillOutAll);
+        Utilities.doVisibility(false, textViewFillOutAll);
+
         view.findViewById(R.id.btnSubmit).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 FormData data = new FormData();
-                data.addHeaders(new String[] {"Address", "Postcode", "OwnerName", "OwnerPhone"});
+                data.addHeaders(new String[] {"Address", "Postcode", "OwnerName", "OwnerPhone", "RentPaid", "RoomRate", "NumRooms", "NumVoids", "DateProperty", "ElectCertExpiry", "ElectSerialNo", "ElectProvider", "ElectMeter", "GasCertExpiry", "GasSerialNo", "GasProvider", "GasMeter"});
 
                 addressString = editTextAddress.getText().toString();
+                //address = ;
                 data.addData(addressString);
-                //address = .getText().toString();
                 postcode = editTextPostcode.getText().toString();
                 data.addData(postcode);
                 ownerName = editTextOwnerName.getText().toString();
                 data.addData(ownerName);
                 ownerPhoneString = editTextOwnerPhone.getText().toString();
+                //ownerPhone = Integer.parseInt(ownerPhoneString);
                 data.addData(ownerPhoneString);
-                /*ownerPhone = Integer.parseInt(ownerPhoneString);
                 rentPaidString = editTextRentPaid.getText().toString();
-                rentPaid = Double.parseDouble(rentPaidString);
+                //rentPaid = Double.parseDouble(rentPaidString);
+                data.addData(rentPaidString);
                 roomRateString = editTextRoomRate.getText().toString();
-                roomRate = Double.parseDouble(roomRateString);
+                //roomRate = Double.parseDouble(roomRateString);
+                data.addData(roomRateString);
                 numRoomsString = editTextNumRooms.getText().toString();
-                numRooms = Integer.parseInt(numRoomsString);
+                //numRooms = Integer.parseInt(numRoomsString);
+                data.addData(numRoomsString);
                 numVoidsString = editTextNumVoids.getText().toString();
-                numVoids = Integer.parseInt(numVoidsString);
+                //numVoids = Integer.parseInt(numVoidsString);
+                data.addData(numVoidsString);
                 dateString = editTextDate.getText().toString();
                 //date = dateString;
+                data.addData(dateString);
                 electCertExpiryString = editTextElectCertExpiry.getText().toString();
                 //electCertExpiry = electCertExpiryString;
+                data.addData(electCertExpiryString);
                 electSerialNo = editTextElectSerialNo.getText().toString();
+                data.addData(electSerialNo);
                 electProvider = editTextElectProvider.getText().toString();
+                data.addData(electProvider);
                 electMeter = editTextElectMeter.getText().toString();
+                data.addData(electMeter);
                 gasCertExpiryString = editTextGasCertExpiry.getText().toString();
                 //gasCertExpiry = gasCertExpiryString;
+                data.addData(gasCertExpiryString);
                 gasSerialNo = editTextGasSerialNo.getText().toString();
+                data.addData(gasSerialNo);
                 gasProvider = editTextGasProvider.getText().toString();
-                gasMeter = editTextGasMeter.getText().toString();*/
+                data.addData(gasProvider);
+                gasMeter = editTextGasMeter.getText().toString();
+                data.addData(gasMeter);
+
+                //View layout = view.findViewById(R.id.main_layout);
+                //Utilities.doVisibility(true, textViewFillOutAll);
 
                 try {
-                    data.CSV();
+                    data.CSV("PropertyForm");
                 }
                 catch(java.io.IOException err) {
                     Log.e("IOException", err.toString());

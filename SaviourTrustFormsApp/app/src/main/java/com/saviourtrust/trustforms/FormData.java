@@ -31,20 +31,23 @@ public class FormData {
         formData.add(data);
     }
 
-    public void CSV() throws IOException {
+    public void CSV(String name) throws IOException {
         Context context = MainActivity.getContext();
-        FileWriter csvWriter = new FileWriter(context.getFilesDir() + "/new.csv");
-        //Log.d("bruh", context.getFilesDir().toString());
-        for (String header : this.headers) {
-            csvWriter.append(header + ",");
+        String path = context.getFilesDir() + "/" + name + ".csv";
+        FileWriter csvWriter = new FileWriter(path);
+
+        for (int i = 0; i < this.headers.size(); i++) {
+            csvWriter.append(this.headers.get(i));
+            if (i < this.headers.size()) csvWriter.append(",");
         }
         csvWriter.append("\n");
 
-        for (String data : this.formData) {
-            csvWriter.append(data + ",");
+        for (int i = 0; i < this.formData.size(); i++) {
+            csvWriter.append(this.formData.get(i));
+            if (i < this.formData.size()) csvWriter.append(",");
         }
-
         csvWriter.append("\n");
+
         csvWriter.flush();
         csvWriter.close();
     }
