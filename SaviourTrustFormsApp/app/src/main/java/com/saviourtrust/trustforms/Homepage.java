@@ -27,7 +27,6 @@ public class Homepage extends Fragment {
         view.findViewById(R.id.button_initial_assessment).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MailSender sendmail;
                 NavHostFragment.findNavController(Homepage.this)
                         .navigate(R.id.action_Homepage_to_InitialAssessment);
             }

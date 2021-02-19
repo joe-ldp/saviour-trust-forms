@@ -195,13 +195,6 @@
             android:importantForAutofill="no"
             android:inputType="text" />
 
-        <TextView
-            android:id="@+id/textViewFillOutAll"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/fill_out_all"
-            android:textColor="#FF0000" />
-
         <Button
             android:id="@+id/btnSubmit"
             android:text="@string/submit_form"

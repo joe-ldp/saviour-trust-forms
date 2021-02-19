@@ -108,8 +108,8 @@ public class PropertyForm extends Fragment {
         editTextGasProvider = (EditText) view.findViewById(R.id.editTextGasProvider);
         editTextGasMeter = (EditText) view.findViewById(R.id.editTextGasMeter);
 
-        textViewFillOutAll = view.findViewById(R.id.textViewFillOutAll);
-        Utilities.doVisibility(false, textViewFillOutAll);
+        //textViewFillOutAll = view.findViewById(R.id.textViewFillOutAll);
+        //Utilities.doVisibility(false, textViewFillOutAll);
 
         view.findViewById(R.id.btnSubmit).setOnClickListener(new View.OnClickListener() {
             @Override
