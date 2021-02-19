@@ -17,12 +17,35 @@ import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link InitialAssessment4#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class InitialAssessment4 extends Fragment {
+    SwitchCompat SOSwitch;
+    EditText SOField;
+    SwitchCompat arsonSwitch;
+    EditText arsonField;
+    SwitchCompat LMSwitch;
+    EditText LMField;
+    SwitchCompat disabilitySwitch;
+    EditText disabilityField;
+    SwitchCompat GPSwitch;
+    EditText GPField;
+    SwitchCompat MHISwitch;
+    EditText MHIField;
+    SwitchCompat MCSwitch;
+    EditText MCField;
+    SwitchCompat RWASwitch;
+    EditText RWAField;
+    SwitchCompat DASwitch;
+    EditText DAField;
+    SwitchCompat supportSwitch;
+    EditText supportField;
+    CheckBox PACB;
+    CheckBox MHCB;
+    CheckBox employmentCB;
+    CheckBox budgetCB;
+    EditText RABox;
+    CheckBox otherCB;
+    TextView RALabel;
 
     public InitialAssessment4() {
         // Required empty public constructor
@@ -30,7 +53,6 @@ public class InitialAssessment4 extends Fragment {
 
     public static InitialAssessment4 newInstance(String param1, String param2) {
         InitialAssessment4 fragment = new InitialAssessment4();
-
         return fragment;
     }
 
@@ -50,7 +72,8 @@ public class InitialAssessment4 extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button nextPage = view.findViewById(R.id.btnNextPage);
+        Button nextPage;
+        nextPage = view.findViewById(R.id.btnNextPage);
         nextPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -58,7 +81,8 @@ public class InitialAssessment4 extends Fragment {
             }
         });
 
-        Button previousPage = view.findViewById(R.id.btnPreviousPage);
+        Button previousPage;
+        previousPage = view.findViewById(R.id.btnPreviousPage);
         previousPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -66,44 +90,44 @@ public class InitialAssessment4 extends Fragment {
             }
         });
 
-        SwitchCompat SOSwitch = view.findViewById(R.id.SexOffenderSwitch);
-        EditText SOField = view.findViewById(R.id.SOField);
+        SOSwitch = view.findViewById(R.id.SexOffenderSwitch);
+        SOField = view.findViewById(R.id.SOField);
 
-        SwitchCompat arsonSwitch = view.findViewById(R.id.ArsonSwitch);
-        EditText arsonField = view.findViewById(R.id.ArsonDetailsField);
+        arsonSwitch = view.findViewById(R.id.ArsonSwitch);
+        arsonField = view.findViewById(R.id.ArsonDetailsField);
 
-        SwitchCompat LMSwitch = view.findViewById(R.id.LegalMattersSwitch);
-        EditText LMField = view.findViewById(R.id.LegalMattersField);
+        LMSwitch = view.findViewById(R.id.LegalMattersSwitch);
+        LMField = view.findViewById(R.id.LegalMattersField);
 
-        SwitchCompat disabilitySwitch = view.findViewById(R.id.DisabilitySwitch);
-        EditText disabilityField = view.findViewById(R.id.DisabilityField);
+        disabilitySwitch = view.findViewById(R.id.DisabilitySwitch);
+        disabilityField = view.findViewById(R.id.DisabilityField);
 
-        SwitchCompat GPSwitch = view.findViewById(R.id.GPSwitch);
-        EditText GPField = view.findViewById(R.id.GPDetailsField);
+        GPSwitch = view.findViewById(R.id.GPSwitch);
+        GPField = view.findViewById(R.id.GPDetailsField);
 
-        SwitchCompat MHISwitch = view.findViewById(R.id.MentalHealthIssuesSwitch);
-        EditText MHIField = view.findViewById(R.id.MHIDetailsField);
+        MHISwitch = view.findViewById(R.id.MentalHealthIssuesSwitch);
+        MHIField = view.findViewById(R.id.MHIDetailsField);
 
-        SwitchCompat MCSwitch = view.findViewById(R.id.MedicalConditionSwitch);
-        EditText MCField = view.findViewById(R.id.MedicalConditionDetailsField);
+        MCSwitch = view.findViewById(R.id.MedicalConditionSwitch);
+        MCField = view.findViewById(R.id.MedicalConditionDetailsField);
 
-        SwitchCompat RWASwitch = view.findViewById(R.id.RegisteredWithAgencySwitch);
-        EditText RWAField = view.findViewById(R.id.RWADetailsField);
+        RWASwitch = view.findViewById(R.id.RegisteredWithAgencySwitch);
+        RWAField = view.findViewById(R.id.RWADetailsField);
 
-        SwitchCompat DASwitch = view.findViewById(R.id.DomesticAbuseSwitch);
-        EditText DAField = view.findViewById(R.id.DADetailsField);
+        DASwitch = view.findViewById(R.id.DomesticAbuseSwitch);
+        DAField = view.findViewById(R.id.DADetailsField);
 
-        SwitchCompat supportSwitch = view.findViewById(R.id.SupportSwitch);
-        EditText supportField = view.findViewById(R.id.SupportDetailsField);
+        supportSwitch = view.findViewById(R.id.SupportSwitch);
+        supportField = view.findViewById(R.id.SupportDetailsField);
 
-        CheckBox PACB = view.findViewById(R.id.PermanentAccommodationCheckbox);
-        CheckBox MHCB = view.findViewById(R.id.MentalHealthCheckbox);
-        CheckBox employmentCB = view.findViewById(R.id.EmploymentCheckbox);
-        CheckBox budgetCB = view.findViewById(R.id.BudgetCheckbox);
-        CheckBox otherCB = view.findViewById(R.id.OtherCheckbox);
+        PACB = view.findViewById(R.id.PermanentAccommodationCheckbox);
+        MHCB = view.findViewById(R.id.MentalHealthCheckbox);
+        employmentCB = view.findViewById(R.id.EmploymentCheckbox);
+        budgetCB = view.findViewById(R.id.BudgetCheckbox);
+        otherCB = view.findViewById(R.id.OtherCheckbox);
 
-        TextView RALabel = view.findViewById(R.id.RALabel);
-        EditText RABox = view.findViewById(R.id.RABox);
+        RALabel = view.findViewById(R.id.RALabel);
+        RABox = view.findViewById(R.id.RABox);
 
         MHISwitch.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {

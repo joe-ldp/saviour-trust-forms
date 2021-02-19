@@ -22,7 +22,6 @@
             android:textColor="@color/mainVariant"
             android:textStyle="bold"/>
 
-
         <EditText
             android:id="@+id/CHSDetailsField"
             android:layout_width="match_parent"
@@ -114,7 +113,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/HousingTable">
-
 
                 <LinearLayout
                     android:layout_width="match_parent"

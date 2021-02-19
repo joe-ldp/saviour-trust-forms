@@ -22,6 +22,32 @@ import org.w3c.dom.Text;
 
 public class InitialAssessment3 extends Fragment {
 
+    EditText familySituationField;
+    SwitchCompat substanceMisuseSwitch;
+    SwitchCompat illicitSubstanceSwitch;
+    EditText substanceField;
+    SwitchCompat WWA;
+    EditText WWADetails;
+    EditText WWAName;
+    EditText WWANumber;
+    SwitchCompat criminalRecordSwitch;
+    EditText CRField;
+    SwitchCompat probationSwitch;
+    SwitchCompat mappaSwitch;
+    EditText detailsField;
+    EditText POField;
+    EditText areaField;
+    LinearLayout riskCheckboxes;
+    TextView RALabel;
+    EditText RABox;
+    TextView RALabel2;
+    EditText RABox2;
+    EditText RABox3;
+    CheckBox mediumRiskCB;
+    CheckBox lowRiskCB;
+    CheckBox highRiskCB;
+    TextView RALabel3;
+
     public static InitialAssessment3 newInstance(String param1, String param2) {
         InitialAssessment3 fragment = new InitialAssessment3();
         return fragment;
@@ -30,7 +56,6 @@ public class InitialAssessment3 extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -44,7 +69,8 @@ public class InitialAssessment3 extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button nextPage = view.findViewById(R.id.btnNextPage);
+        Button nextPage;
+        nextPage = view.findViewById(R.id.btnNextPage);
         nextPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,7 +78,8 @@ public class InitialAssessment3 extends Fragment {
             }
         });
 
-        Button previousPage = view.findViewById(R.id.btnPreviousPage);
+        Button previousPage;
+        previousPage = view.findViewById(R.id.btnPreviousPage);
         previousPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,35 +87,35 @@ public class InitialAssessment3 extends Fragment {
             }
         });
 
+        familySituationField = view.findViewById(R.id.FamilySituationField);
+        substanceMisuseSwitch = view.findViewById(R.id.SubstanceMisuseSwitch);
+        illicitSubstanceSwitch = view.findViewById(R.id.IllicitSubstancesSwitch);
+        substanceField = view.findViewById(R.id.SubstanceDetailsField);
 
-        SwitchCompat substanceMisuseSwitch = view.findViewById(R.id.SubstanceMisuseSwitch);
-        SwitchCompat illicitSubstanceSwitch = view.findViewById(R.id.IllicitSubstancesSwitch);
-        EditText substanceField = view.findViewById(R.id.SubstanceDetailsField);
+        WWA = view.findViewById(R.id.WorkingWithAgencySwitch);
+        WWADetails = view.findViewById(R.id.WWADetailsField);
+        WWAName = view.findViewById(R.id.ContactNameField);
+        WWANumber = view.findViewById(R.id.ContactNumberField);
 
-        SwitchCompat WWA = view.findViewById(R.id.WorkingWithAgencySwitch);
-        EditText WWADetails = view.findViewById(R.id.WWADetailsField);
-        EditText WWAName = view.findViewById(R.id.ContactNameField);
-        EditText WWANumber = view.findViewById(R.id.ContactNumberField);
+        criminalRecordSwitch = view.findViewById(R.id.CriminalRecordSwitch);
+        CRField = view.findViewById(R.id.CRDetailsField);
 
-        SwitchCompat criminalRecordSwitch = view.findViewById(R.id.CriminalRecordSwitch);
-        EditText CRField = view.findViewById(R.id.CRDetailsField);
+        probationSwitch = view.findViewById(R.id.ProbationSwitch);
+        mappaSwitch = view.findViewById(R.id.MappaSwitch);
+        detailsField = view.findViewById(R.id.ProbationDetailsField);
+        POField = view.findViewById(R.id.ProbationOfficerNameField);
 
-        SwitchCompat probationSwitch = view.findViewById(R.id.ProbationSwitch);
-        SwitchCompat mappaSwitch = view.findViewById(R.id.MappaSwitch);
-        EditText detailsField = view.findViewById(R.id.ProbationDetailsField);
-        EditText POField = view.findViewById(R.id.ProbationOfficerNameField);
+        areaField = view.findViewById(R.id.AreaField);
+        riskCheckboxes = view.findViewById(R.id.RiskCheckboxLayout);
 
-        EditText areaField = view.findViewById(R.id.AreaField);
-        LinearLayout riskCheckboxes = view.findViewById(R.id.RiskCheckboxLayout);
+        RALabel = view.findViewById(R.id.RALabel);
+        RABox = view.findViewById(R.id.RABox);
 
-        TextView RALabel = view.findViewById(R.id.RALabel);
-        EditText RABox = view.findViewById(R.id.RABox);
+        RALabel2 = view.findViewById(R.id.RALabel2);
+        RABox2 = view.findViewById(R.id.RABox2);
 
-        TextView RALabel2 = view.findViewById(R.id.RALabel2);
-        EditText RABox2 = view.findViewById(R.id.RABox2);
-
-        TextView RALabel3 = view.findViewById(R.id.RALabel3);
-        EditText RABox3 = view.findViewById(R.id.RABox3);
+        RALabel3 = view.findViewById(R.id.RALabel3);
+        RABox3 = view.findViewById(R.id.RABox3);
 
 
         probationSwitch.setOnClickListener(new View.OnClickListener(){
@@ -100,7 +127,6 @@ public class InitialAssessment3 extends Fragment {
                     Utilities.doVisibility(probationSwitch.isChecked(), riskCheckboxes);
                     Utilities.doVisibility(criminalRecordSwitch.isChecked(), RABox3);
                     Utilities.doVisibility(criminalRecordSwitch.isChecked(), RALabel3);
-
                 }
             }
         });
@@ -148,9 +174,9 @@ public class InitialAssessment3 extends Fragment {
             }
         });
 
-        CheckBox highRiskCB = view.findViewById(R.id.HighRiskCheckbox);
-        CheckBox mediumRiskCB = view.findViewById(R.id.MediumRiskCheckbox);
-        CheckBox lowRiskCB = view.findViewById(R.id.LowRiskCheckbox);
+        highRiskCB = view.findViewById(R.id.HighRiskCheckbox);
+        mediumRiskCB = view.findViewById(R.id.MediumRiskCheckbox);
+        lowRiskCB = view.findViewById(R.id.LowRiskCheckbox);
 
         highRiskCB.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {

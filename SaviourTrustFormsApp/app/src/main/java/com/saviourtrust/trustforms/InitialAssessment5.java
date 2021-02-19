@@ -20,6 +20,33 @@ import android.widget.TextView;
 
 public class InitialAssessment5 extends Fragment {
 
+    CheckBox fortnightCB;
+    CheckBox weekCB;
+    EditText educationHoursField;
+    TextView educationHoursLabel;
+    TextView educationLabel;
+    SwitchCompat educationSwitch;
+    TextView workEarningsLabel;
+    EditText workEarningsField;
+    EditText workHoursField;
+    TextView workHoursLabel;
+    SwitchCompat workSwitch;
+    EditText foodField;
+    EditText clothingField;
+    SwitchCompat foodSwitch;
+    EditText educationField;
+    SwitchCompat clothingSwitch;
+    EditText benefitsField;
+    EditText ESAField;
+    EditText jobSeekersField;
+    EditText disabilityField;
+    EditText incapacityBenefitsField;
+    EditText universalCreditField;
+    EditText PIPField;
+    EditText otherField;
+
+
+
 
     public static InitialAssessment5 newInstance(String param1, String param2) {
         InitialAssessment5 fragment = new InitialAssessment5();
@@ -42,6 +69,15 @@ public class InitialAssessment5 extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        benefitsField = view.findViewById(R.id.BenefitsField);
+        ESAField = view.findViewById(R.id.ESAField);
+        jobSeekersField = view.findViewById(R.id.JobSeekersField);
+        disabilityField = view.findViewById(R.id.DisabilityField);
+        incapacityBenefitsField = view.findViewById(R.id.IncapacityBenefitField);
+        universalCreditField = view.findViewById(R.id.UniversalCreditField);
+        PIPField = view.findViewById(R.id.PIPField);
+        otherField = view.findViewById(R.id.OtherField);
+
         Button nextPage = view.findViewById(R.id.btnNextPage);
         nextPage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,23 +94,23 @@ public class InitialAssessment5 extends Fragment {
             }
         });
 
-        SwitchCompat clothingSwitch = view.findViewById(R.id.ClothingSwitch);
-        EditText clothingField = view.findViewById(R.id.ClothingField);
+        clothingSwitch = view.findViewById(R.id.ClothingSwitch);
+        clothingField = view.findViewById(R.id.ClothingField);
 
-        SwitchCompat foodSwitch = view.findViewById(R.id.FoodSwitch);
-        EditText foodField = view.findViewById(R.id.FoodField);
+        foodSwitch = view.findViewById(R.id.FoodSwitch);
+        foodField = view.findViewById(R.id.FoodField);
 
-        SwitchCompat workSwitch = view.findViewById(R.id.EmployedSwitch);
-        TextView workHoursLabel = view.findViewById(R.id.WeeklyHoursLabel);
-        EditText workHoursField = view.findViewById(R.id.WeeklyHoursField);
-        EditText workEarningsField = view.findViewById(R.id.WeeklyEarningField);
-        TextView workEarningsLabel = view.findViewById(R.id.WeeklyEarningsLabel);
+        workSwitch = view.findViewById(R.id.EmployedSwitch);
+        workHoursLabel = view.findViewById(R.id.WeeklyHoursLabel);
+        workHoursField = view.findViewById(R.id.WeeklyHoursField);
+        workEarningsField = view.findViewById(R.id.WeeklyEarningField);
+        workEarningsLabel = view.findViewById(R.id.WeeklyEarningsLabel);
 
-        SwitchCompat educationSwitch = view.findViewById(R.id.EducationSwitch);
-        TextView educationLabel = view.findViewById(R.id.CourseLabel);
-        EditText educationField = view.findViewById(R.id.CourseField);
-        TextView educationHoursLabel = view.findViewById(R.id.CourseHoursLabel);
-        EditText educationHoursField = view.findViewById(R.id.CourseHoursField);
+        educationSwitch = view.findViewById(R.id.EducationSwitch);
+        educationLabel = view.findViewById(R.id.CourseLabel);
+        educationField = view.findViewById(R.id.CourseField);
+        educationHoursLabel = view.findViewById(R.id.CourseHoursLabel);
+        educationHoursField = view.findViewById(R.id.CourseHoursField);
 
         workSwitch.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -110,8 +146,8 @@ public class InitialAssessment5 extends Fragment {
             }
         });
 
-        CheckBox weekCB = view.findViewById(R.id.WeeklyPaymentCheckbox);
-        CheckBox fortnightCB = view.findViewById(R.id.FortnightlyPaymentCheckbox);
+        weekCB = view.findViewById(R.id.WeeklyPaymentCheckbox);
+        fortnightCB = view.findViewById(R.id.FortnightlyPaymentCheckbox);
 
         weekCB.setOnClickListener(new View.OnClickListener() {
             @Override

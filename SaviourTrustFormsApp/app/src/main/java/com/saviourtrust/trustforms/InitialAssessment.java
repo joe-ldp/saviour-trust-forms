@@ -23,6 +23,33 @@ import java.util.Locale;
 
 public class InitialAssessment extends Fragment {
 
+    Spinner countrySpinner;
+    Button nextPage;
+    Button previousPage;
+    CheckBox maleCB;
+    CheckBox transCB;
+    CheckBox femaleCB;
+    EditText IDField;
+    CheckBox IDCheckbox;
+    EditText NINField;
+    CheckBox NINCheckbox;
+    EditText nameField;
+    EditText addressField;
+    EditText postcodeField;
+    EditText phoneNoField;
+    EditText altContactNameField;
+    EditText altContactPhoneNoField;
+    EditText DOBField;
+    EditText ageField;
+    EditText NOKNameField;
+    EditText NOKAddressField;
+    EditText NOKPostcodeField;
+    EditText NOKPhoneNoField;
+
+
+
+
+
     public InitialAssessment() {
         // Required empty public constructor
     }
@@ -51,11 +78,24 @@ public class InitialAssessment extends Fragment {
     {
         super.onViewCreated(view, savedInstanceState);
 
-        Button nextPage = view.findViewById(R.id.btnNextPage);
+        nameField = view.findViewById(R.id.NameField);
+        addressField = view.findViewById(R.id.AddressField);
+        postcodeField = view.findViewById(R.id.Postcode);
+        phoneNoField = view.findViewById(R.id.PhoneNoField);
+        altContactNameField = view.findViewById(R.id.AltContactName);
+        altContactPhoneNoField = view.findViewById(R.id.AltContactPhoneNo);
+        DOBField = view.findViewById(R.id.DOBField);
+        ageField = view.findViewById(R.id.AgeField);
+        NOKNameField = view.findViewById(R.id.NOKNameField);
+        NOKAddressField = view.findViewById(R.id.NOKAddressField);
+        NOKPostcodeField = view.findViewById(R.id.NOKPostcode);
+        NOKPhoneNoField = view.findViewById(R.id.NOKPhoneNoField);
+
+        nextPage = view.findViewById(R.id.btnNextPage);
         nextPage.setOnClickListener(view14 ->
                 NavHostFragment.findNavController(InitialAssessment.this).navigate(R.id.action_InitialAssessment_to_InitialAssessment2));
 
-        Button previousPage = view.findViewById(R.id.btnPreviousPage);
+        previousPage = view.findViewById(R.id.btnPreviousPage);
         previousPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,9 +103,9 @@ public class InitialAssessment extends Fragment {
             }
         });
 
-        CheckBox maleCB = view.findViewById(R.id.GenderMaleCheckbox);
-        CheckBox femaleCB = view.findViewById(R.id.GenderFemaleCheckbox);
-        CheckBox transCB = view.findViewById(R.id.GenderTransCheckbox);
+        maleCB = view.findViewById(R.id.GenderMaleCheckbox);
+        femaleCB = view.findViewById(R.id.GenderFemaleCheckbox);
+        transCB = view.findViewById(R.id.GenderTransCheckbox);
 
         maleCB.setOnClickListener(view13 -> {
             if (femaleCB.isChecked() || transCB.isChecked())
@@ -91,16 +131,16 @@ public class InitialAssessment extends Fragment {
             }
         });
 
-        CheckBox NINCheckbox = view.findViewById(R.id.ProofOfNINCheckbox);
-        EditText NINField = view.findViewById(R.id.NINField);
-        CheckBox IDCheckbox = view.findViewById(R.id.IDProducedCheckbox);
-        EditText IDField = view.findViewById(R.id.IDDetailsField);
+        NINCheckbox = view.findViewById(R.id.ProofOfNINCheckbox);
+        NINField = view.findViewById(R.id.NINField);
+        IDCheckbox = view.findViewById(R.id.IDProducedCheckbox);
+        IDField = view.findViewById(R.id.IDDetailsField);
 
         NINCheckbox.setOnClickListener(view15 -> Utilities.doVisibility(NINCheckbox.isChecked(), NINField));
 
         IDCheckbox.setOnClickListener(view16 -> Utilities.doVisibility(IDCheckbox.isChecked(), IDField));
-
-        Spinner countrySpinner = view.findViewById(R.id.DropdownCountries);
+        
+        countrySpinner = view.findViewById(R.id.DropdownCountries);
 
         Locale[] locale = Locale.getAvailableLocales();
         ArrayList<String> countries = new ArrayList<String>();

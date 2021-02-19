@@ -22,6 +22,20 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class InitialAssessment2 extends Fragment {
 
+    EditText CHSDetailsField;
+    EditText RABox;
+    TableLayout housingTable;
+    FloatingActionButton newRowButton;
+    EditText concernField;
+    CheckBox concernCheckbox;
+    EditText injunctionField;
+    CheckBox injunctionCheckbox;
+    EditText rentField;
+    CheckBox rentCheckbox;
+    Button previousPage;
+    Button nextPage;
+
+
 
     public InitialAssessment2() {
         // Required empty public constructor
@@ -47,8 +61,9 @@ public class InitialAssessment2 extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        Button nextPage = view.findViewById(R.id.btnNextPage);
+        CHSDetailsField = view.findViewById(R.id.CHSDetailsField);
+        RABox = view.findViewById(R.id.RABox);
+        nextPage = view.findViewById(R.id.btnNextPage);
 
         nextPage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +72,7 @@ public class InitialAssessment2 extends Fragment {
             }
         });
 
-        Button previousPage = view.findViewById(R.id.btnPreviousPage);
+        previousPage = view.findViewById(R.id.btnPreviousPage);
         previousPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,15 +80,15 @@ public class InitialAssessment2 extends Fragment {
             }
         });
 
-        CheckBox rentCheckbox = view.findViewById(R.id.CHSRentCheckbox);
-        EditText rentField = view.findViewById(R.id.CHSRentField);
-        CheckBox injunctionCheckbox = view.findViewById(R.id.CHSInjunctionCheckbox);
-        EditText injunctionField = view.findViewById(R.id.CHSInjunctionField);
-        CheckBox concernCheckbox = view.findViewById(R.id.CHSConcernCheckbox);
-        EditText concernField = view.findViewById(R.id.CHSConcernField);
+        rentCheckbox = view.findViewById(R.id.CHSRentCheckbox);
+        rentField = view.findViewById(R.id.CHSRentField);
+        injunctionCheckbox = view.findViewById(R.id.CHSInjunctionCheckbox);
+        injunctionField = view.findViewById(R.id.CHSInjunctionField);
+        concernCheckbox = view.findViewById(R.id.CHSConcernCheckbox);
+        concernField = view.findViewById(R.id.CHSConcernField);
 
-        FloatingActionButton newRowButton = view.findViewById(R.id.AddNewRowButton);
-        TableLayout housingTable = view.findViewById(R.id.HousingTable);
+        newRowButton = view.findViewById(R.id.AddNewRowButton);
+        housingTable = view.findViewById(R.id.HousingTable);
 
         newRowButton.setOnClickListener(new View.OnClickListener() {
             @Override

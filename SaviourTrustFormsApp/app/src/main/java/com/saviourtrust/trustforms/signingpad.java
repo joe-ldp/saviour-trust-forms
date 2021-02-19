@@ -46,6 +46,9 @@ public class signingpad extends Fragment {
         Button saveButton = view.findViewById(R.id.saveButton);
         Button clearButton = view.findViewById(R.id.clearButton);
 
+
+
+
         //disable both buttons at start
         saveButton.setEnabled(false);
         clearButton.setEnabled(false);
